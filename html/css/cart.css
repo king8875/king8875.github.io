@@ -1,0 +1,41 @@
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+
+}
+div, input, textarea {
+    box-sizing: border-box;
+}
+html {
+    line-height: 1.15;
+}
+.container {
+    width: 100%;
+    padding: 30px;
+    background-color: #eee;
+}
+img {
+    width: 200px;
+}
+.cart-table {
+    width: 100%;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.cart-table td {
+    padding: 15px;
+    border-bottom: 1px solid #c2d3de;
+}
+.cart-table td:nth-child(3) {
+    width: 400px;
+}
+.cell-long {
+    width: 300px;
+}
+
+
