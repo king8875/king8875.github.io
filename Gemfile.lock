@@ -89,10 +89,6 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    mini_portile2 (2.8.5)
-    nokogiri (1.16.3)
-      mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
     nokogiri (1.16.3-aarch64-linux)
       racc (~> 1.4)
     nokogiri (1.16.3-arm-linux)
@@ -118,16 +114,9 @@ GEM
     rexml (3.2.6)
     rouge (4.2.0)
     safe_yaml (1.0.5)
-    sass-embedded (1.72.0)
-      google-protobuf (>= 3.25, < 5.0)
-      rake (>= 13.0.0)
-    sass-embedded (1.72.0-aarch64-linux-android)
-      google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.72.0-aarch64-linux-gnu)
       google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.72.0-aarch64-linux-musl)
-      google-protobuf (>= 3.25, < 5.0)
-    sass-embedded (1.72.0-arm-linux-androideabi)
       google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.72.0-arm-linux-gnueabihf)
       google-protobuf (>= 3.25, < 5.0)
@@ -135,15 +124,11 @@ GEM
       google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.72.0-arm64-darwin)
       google-protobuf (>= 3.25, < 5.0)
-    sass-embedded (1.72.0-x86-linux-android)
-      google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.72.0-x86-linux-gnu)
       google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.72.0-x86-linux-musl)
       google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.72.0-x86_64-darwin)
-      google-protobuf (>= 3.25, < 5.0)
-    sass-embedded (1.72.0-x86_64-linux-android)
       google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.72.0-x86_64-linux-gnu)
       google-protobuf (>= 3.25, < 5.0)
@@ -160,21 +145,17 @@ GEM
 
 PLATFORMS
   aarch64-linux
-  aarch64-linux-android
   aarch64-linux-gnu
   aarch64-linux-musl
-  arm-linux-androideabi
+  arm-linux
   arm-linux-gnueabihf
   arm-linux-musleabihf
   arm64-darwin
-  ruby
   x86-linux
-  x86-linux-android
   x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
   x86_64-linux
-  x86_64-linux-android
   x86_64-linux-gnu
   x86_64-linux-musl
 
