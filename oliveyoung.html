@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLIVEYOUNG</title>
+    <link href="css/oliveyoung.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header>
+            <div class="top_util">
+                <ul class="top_util_ul"></ul>
+            </div>
+
+            <div class="main_header">
+                <h1 class="main_logo">
+                    <a href="#">
+                        <img src="https://static.oliveyoung.co.kr/pc-static-root/image/comm/h1_logo.png">
+                    </a>
+                </h1>
+
+                <div class="search_box">
+                    <input placeholder="상품, 브랜드, 성분 검색">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <ul class="my_menu">
+                    <li class="delivery">
+                        <a>
+                            <span>오늘드림</span>
+                            <img src="https://static.oliveyoung.co.kr/pc-static-root/image/comm/ico_delivery_flag.png">
+                        </a>
+
+                        <div class="delivery_pop">
+                            <div class="delivery_pop_wrapper">
+                                <p>배송지를 등록하고 오늘드림으로 구매 가능한 상품을 확인하세요!</p>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="store">
+                        <a>관심매장소식</a>
+                        <i class="fa-solid fa-sort-down" id="arrow"></i>
+                        <div class="store_pop">
+                            <p class="store_pop_text"><span>로그인</span>하시면 자주가는 매장을 <br>관심 매장으로 설정 할 수 있습니다</p>
+                            <button>로그인</button>
+                        </div>
+                    </li>
+
+                    <li class="recent">
+                        <a>최근 본 상품</a>
+                        <i class="fa-solid fa-sort-down" id="arrow"></i>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="category_con">
+            <div class="top_category">
+                <a class="category_open">
+                    <i class="fa-solid fa-bars" id="menu_icon"></i>
+                    <p>카테고리</p>
+                </a>
+                <ul class="category_menu_list"></ul>
+            </div>
+            <div class="main_category_con">
+                <ul class="main_category_list"></ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="contents">
+
+        
+                <div class="main_full_banner">
+                    <div class="main_full_slider">
+                        <button type="button" class="pre_btn pre_arrow">이전슬라이드</button>
+
+
+                        <div class="slide_list">
+                            <div class="slide_track">
+
+                                <div class="slide_item" data-slide-index='0'>
+                                    <a href="#">
+                                        <img src="src/img/olive_img/olive01.jpg">
+
+                                        <p class="banner_text">
+                                            <span>가정의 달 기프트</span>
+                                            <strong>가정의 달을 <br>위한 <br> 베스트 선물</strong>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="slide_item">
+                                    <a href="#">
+                                        <p class="banner_text">
+                                            <span>가정의 달 기프트</span>
+                                            <strong>가정의 달을 <br>위한 <br> 베스트 선물</strong>
+                                        </p>
+                                        <img src="src/img/olive_img/olive02.jpg">
+                                    </a>
+                                </div>
+                                <div class="slide_item">
+                                    <a href="#">
+                                        <p class="banner_text">
+                                            <span>가정의 달 기프트</span>
+                                            <strong>가정의 달을 <br>위한 <br> 베스트 선물</strong>
+                                        </p>
+                                        <img src="src/img/olive_img/olive03.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="slide_item">
+                                    <a href="#">
+                                        <p class="banner_text">
+                                            <span>가정의 달 기프트</span>
+                                            <strong>가정의 달을 <br>위한 <br> 베스트 선물</strong>
+                                        </p>
+                                        <img src="src/img/olive_img/olive04.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="next_btn pre_arrow">다음슬라이드</button>
+                    </div>
+
+                </div>
+
+                <div class="main_mid_banner">
+                    <div class="main_banner_item01_con">
+                        <img src="src/img/olive_img/olive_mid_img01.jpg">
+                    </div>
+                    <div class="main_banner_item01_con">
+                        <img src="src/img/olive_img/olive_img01.jpg">
+                    </div>
+                </div>
+
+                <div class="curation_wrap">
+                    <div class="curation_area">
+                        <div class="content left">
+                            <div class="top">
+                                <strong>요즘 주목 받는 상품</strong>
+                                <button><span>더보기</span></button>
+                            </div>
+
+                            <div class="mid">
+                                <ul class="mid_ul">
+                                    <li class="itemli_01">
+                                        <span class="img_best">베스트</span>
+                                        <img src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0020/A00000020461805ko.jpg?l=ko">
+
+                                        <div class="title">
+                                            <p id="mid_item01">title</p>
+                                        </div>
+
+                                        <div class="price">
+                                            <span class="price_ori">
+                                                <p>정가</p>
+                                                <span>원</span>
+                                            </span>
+                                            <span class="price_cur">
+                                                <p>할인가</p>
+                                                <span>원 ~</span>
+                                            </span>
+
+                                            <button>
+                                                <img class="btnbag">
+                                            </button>
+                                        </div>
+                                        <div class="prd_flag">
+                                            <span class="bg_red">세일</span>
+                                            <span class="bg_pink">오늘드림</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="itemli_02">
+                                        <span class="img_best">베스트</span>
+                                        <img
+                                            src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0019/A00000019915301ko.jpg?l=ko">
+
+                                        <div class="title">
+                                            <p>title</p>
+                                        </div>
+                                        <div class="price">
+                                            <span class="price_ori">
+                                                <p>정가</p>
+                                                <span>원</span>
+                                            </span>
+                                            <span class="price_cur">
+                                                <p>할인가</p>
+                                                <span>원 ~</span>
+                                            </span>
+
+                                            <button>
+                                                <img class="btnbag">
+                                            </button>
+                                        </div>
+                                        <div class="prd_flag">
+                                            <span class="bg_red">세일</span>
+                                            <span class="bg_blue">증정</span>
+                                            <span class="bg_pink">오늘드림</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="btn_other">
+                                    <button>
+                                        <span class="btn_other_text">다른상품 추천해드릴게요 </span>
+                                        <em style="position: relative;">
+                                            <span class="num">1</span>
+                                            <span class="num2">5</span>
+                                        </em>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="content left">
+                            <div class="top">
+                                <strong>고객님을 위한 추천 상품</strong>
+                                <button><span>더보기</span></button>
+                            </div>
+
+                            <div class="mid">
+                                <ul>
+                                    <li class="itemli_03">
+                                        <span class="img_best">베스트</span>
+                                        <img
+                                            src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0020/A00000020419707ko.jpg?l=ko">
+
+                                        <div class="title">
+                                            <p></p>
+                                        </div>
+                                        <div class="price">
+                                            <span class="price_ori">
+                                                <p>정가</p>
+                                                <span>원</span>
+                                            </span>
+                                            <span class="price_cur">
+                                                <p>할인가</p>
+                                                <span>원 ~</span>
+                                            </span>
+
+                                            <button>
+                                                <img class="btnbag">
+
+                                            </button>
+                                        </div>
+                                        <div class="prd_flag">
+                                            <span class="bg_red">세일</span>
+                                            <span class="bg_blue">오늘드림</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="itemli_04">
+                                        <span class="img_best">베스트</span>
+                                        <img
+                                            src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0020/A00000020416702ko.jpg?l=ko">
+
+                                        <div class="title">
+                                            <p>다슈 보이 파란 수분초 스킨/로션 150mL 4종 기획 (스킨150mL+로션150mL+수분크림50mL + 세럼20mL)</p>
+                                        </div>
+                                        <div class="price">
+                                            <span class="price_ori">
+                                                <p>정가</p>
+                                                <span>원</span>
+                                            </span>
+                                            <span class="price_cur">
+                                                <p>할인가</p>
+                                                <span>원 ~</span>
+                                            </span>
+
+                                            <button>
+                                                <img class="btnbag">
+
+                                            </button>
+                                        </div>
+                                        <div class="prd_flag">
+                                            <span class="bg_red">세일</span>
+                                            <span class="bg_blue">증정</span>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <div class="btn_other">
+                                    <button>
+                                        <span class="btn_other_text">다른상품 추천해드릴게요 </span>
+                                        <em style="position: relative;">
+                                            <span class="num">1</span>
+                                            <span class="num2">5</span>
+                                        </em>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weeklySpecial_container">
+                    <p class="ws_top_text">Weekly Special</p>
+                    <div class="ws_content">
+                        <ul class="ws_ul">
+                            <li>
+                                <a href="#">
+                                    <img src="src/img/olive_img/ws_img01.jpg">
+                                    <div class="text_wrap">
+                                        <p>뜨거운 어름,</p>
+                                        <p>"해"답은 셀퓨전씨</p>
+                                        <p>#5월 한정 증량기획</p>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="src/img/olive_img/ws_img02.jpg">
+                                    <div class="text_wrap">
+                                        <p>페리페라 소다다방</p>
+                                        <p>싱그러운 청초 무드</p>
+                                        <p>올영 단독 기획 만나보기</p>
+
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="main_plan_banner">
+                    <h3 class="ws_top_text">
+                        <strong>인기 행사만 모았어요!</strong>
+                    </h3>
+
+                    <div class="banner_wrap">
+                        <div class="slider_item">
+                            <div class="slider_top">
+                                <div class="top_img">
+                                    <div class="top_img_text">
+                                        <strong>에이딕트 올영픽 키링기획</strong>
+                                        <strong>100% 당첨 리뷰이벤트!</strong>
+                                        <p>#솔리드퍼퓸 본품 증정</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="slider_ul">
+                                <li>
+                                    <span class="img_best">베스트</span>
+                                    <img
+                                        src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0020/A00000020453332ko.jpg?l=ko">
+                                    <button class="heart_btn">heart</button>
+                                    <div class="prd_name">
+                                        <span>에이딕트</span>
+                                        <p class="tx_name">[5월 올영픽/키링증정] 에이딕트 올리베 키링 단독기획 2종 중 택1 (보이드 우드/더 퍼스트)</p>
+                                        <div class="price center">
+                                            <span class="price_ori">
+                                                <p>89,000</p>
+                                                <span>원</span>
+                                            </span>
+                                            <span class="price_cur">
+                                                <p>89,000</p>
+                                                <span>원 ~</span>
+                                            </span>
+                                        </div>
+                                        <div class="prd_flag">
+                                            <span class="bg_red">세일</span>
+                                            <span class="bg_green">쿠폰</span>
+                                            <span class="bg_blue">증정</span>
+                                            <span class="bg_pink">오늘드림</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li style="margin-left: 12px;">
+                                    <span class="img_best">베스트</span>
+                                    <img src="src/img/olive_img/mid_banner03_img01.jpg">
+                                    <button class="heart_btn">heart</button>
+
+                                    <div class="prd_name">
+                                        <span>에이딕트</span>
+                                        <p class="tx_name">[5월 올영픽]에이딕트 솔리드&오드 퍼퓸 중 택1</p>
+                                        <div class="price center">
+                                            <span class="price_ori">
+                                                <p>59,000</p>
+                                                <span>원</span>
+                                            </span>
+                                            <span class="price_cur">
+                                                <p>54,400</p>
+                                                <span>원 ~</span>
+                                            </span>
+                                        </div>
+                                        <div class="prd_flag">
+                                            <span class="bg_red">세일</span>
+                                            <span class="bg_green">쿠폰</span>
+                                            <span class="bg_blue">증정</span>
+                                            <span class="bg_pink">오늘드림</span>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+                        <div class="slider_item">
+                            <div class="slider_top">
+                                <div class="top_img01">
+                                    <div class="top_img_text">
+                                        <strong>즐거운 자기관리</strong>
+                                        <strong>프로틴 기획전</strong>
+                                        <p>#스낵#음료#닭가슴살</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="slider_ul">
+                                <li>
+                                    <span class="img_best">베스트</span>
+                                    <img src="src/img/olive_img/mid_banner03_img02.jpg">
+                                    <button class="heart_btn">heart</button>
+                                    <div class="prd_name">
+                                        <span>프로티원</span>
+                                        <p class="tx_name">프로티원 달백질쉐이크 파우치형 40g 4종 택1</p>
+                                        <div class="price center">
+                                            <!-- <span class="price_ori">
+                                                <p>3,900</p>
+                                                <span>원</span>
+                                            </span> -->
+                                            <span class="price_cur">
+                                                <p>3,900</p>
+                                                <span>원 ~</span>
+                                            </span>
+                                        </div>
+                                        <div class="prd_flag">
+                                            <!-- <span class="bg_red">세일</span>
+                                            <span class="bg_green">쿠폰</span>
+                                            <span class="bg_blue">증정</span> -->
+                                            <span class="bg_pink">오늘드림</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li style="margin-left: 12px;">
+                                    <span class="img_best">베스트</span>
+                                    <img src="src/img/olive_img/mid_banner03_img03.jpg">
+                                    <button class="heart_btn">heart</button>
+
+                                    <div class="prd_name">
+                                        <span>한끼통살</span>
+                                        <p class="tx_name">한끼통살 통살 닭가슴살 2기 5종 중 택1 (10팩입)[NEW떡볶에맛 출시]</p>
+                                        <div class="price center">
+                                            <span class="price_ori">
+                                                <p>23,900</p>
+                                                <span>원</span>
+                                            </span>
+                                            <span class="price_cur">
+                                                <p>19,840</p>
+                                                <span>원 ~</span>
+                                            </span>
+                                        </div>
+                                        <div class="prd_flag">
+                                            <!-- <span class="bg_red">세일</span> -->
+                                            <span class="bg_green">쿠폰</span>
+                                            <span class="bg_purple">무배</span>
+                                            <!-- <span class="bg_blue">증정</span>
+                                            <span class="bg_pink">오늘드림</span> -->
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="only_olive_con">
+                    <h3 class="ws_top_text">
+                        <strong>오직 올리브영에서만</strong>
+                    </h3>
+
+                    <ul class="only_olive_btn_ul">
+                        <li class="only_olive_btn" id="slide_btn01">
+                            <button class="only_olive_btn_item01 active">1</button>
+                        </li>
+                        <li class="only_olive_btn" id="slide_btn02">
+                            <button class="only_olive_btn_item02">2</button>
+                        </li>
+                    </ul>
+
+                    <div class="only_olive_wrapper">
+                        <div class="slide_track01">
+                            <div class="slide_track_item">
+                                <img src="src/img/olive_img/mid_banner04_img04.jpg">
+                                <div class="slide_track_item_text">
+                                    <strong>처진모공 퀵 고정</strong>
+                                    <strong>콜라겐 패드 & 세럼</strong>
+                                    <p>바이오힐보</p>
+                                </div>
+                            </div>
+                            <div class="slide_track_item">
+                                <img src="src/img/olive_img/mid_banner04_img05.jpg">
+                                <div class="slide_track_item_text">
+                                    <strong>튼튼한 라이너</strong>
+                                    <strong>든든한 증정까지</strong>
+                                    <p>1+1기획 & 미니어처 증정</p>
+                                </div>
+                            </div>
+                            <div class="slide_track_item">
+                                <img src="src/img/olive_img/mid_banner04_img06.jpg">
+                                <div class="slide_track_item_text">
+                                    <strong>가볍게 즐기는</strong>
+                                    <strong>곤약워터젤리</strong>
+                                    <p>#다양한 맛으로 즐겨요</p>
+                                </div>
+                            </div>
+                            <div class="slide_track_item">
+                                <img src="src/img/olive_img/mid_banner04_img01.jpg">
+                                <div class="slide_track_item_text">
+                                    <strong>틴토리잼 2개사고</strong>
+                                    <strong>잼케이스 받자</strong>
+                                    <p>컬러그램 틴토리월드</p>
+                                </div>
+                            </div>
+                            <div class="slide_track_item">
+                                <img src="src/img/olive_img/mid_banner04_img02.jpg">
+                                <div class="slide_track_item_text">
+                                    <strong>포근한 숙면</strong>
+                                    <strong>필로우 미스트</strong>
+                                    <p>#특가#숙면인형 증정</p>
+                                </div>
+                            </div>
+                            <div class="slide_track_item">
+                                <img src="src/img/olive_img/mid_banner04_img03.jpg">
+                                <div class="slide_track_item_text">
+                                    <strong>마그네슘 라인</strong>
+                                    <strong>신상품 런칭 할인</strong>
+                                    <p>26% 특가 할인 중</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main_recommendation_wrap">
+                    <h3 class="ws_top_text">
+                        <strong>MD가 추천해요!</strong>
+                        <span class="flag_ad">AD</span>
+                    </h3>
+
+                    <div style="margin-top: 25px;">
+                        <ul>
+                            <li class="recommend_item01">
+                                <img
+                                    src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0018/A00000018169726ko.jpg?l=ko">
+                                <div class="recommend_text">
+                                    <p>마르시끄</p>
+                                    <p>[브라이언 PICK] 마르시끄 링클 리페어 주름패치(미간,팔자,이마)3종 택1</p>
+                                    <div class="price_left">
+                                        <span class="price_ori">
+                                            <p>12,900</p>
+                                            <span>원</span>
+                                        </span>
+                                        <span class="price_cur">
+                                            <p>10,400</p>
+                                            <span>원 ~</span>
+                                        </span>
+                                    </div>
+                                    <div class="prd_flag">
+                                        <span class="bg_red">세일</span>
+                                        <span class="bg_green">쿠폰</span>
+                                        <!-- <span class="bg_blue">증정</span> -->
+                                        <span class="bg_pink">오늘드림</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="recommend_item01">
+                                <img
+                                    src="https://image.oliveyoung.co.kr/uploads/images/goods/400/10/0000/0019/A00000019965604ko.jpg?l=ko">
+                                <div class="recommend_text">
+                                    <div class="recommend_text_item">
+                                        <span>슬로소피</span>
+                                        <p>슬로소피 더 세럼 클렌저 150ml</p>
+                                    </div>
+
+                                    <div class="price_left">
+                                        <span class="price_ori">
+                                            <p>32,000</p>
+                                            <span>원</span>
+                                        </span>
+                                        <span class="price_cur">
+                                            <p>20,800</p>
+                                            <span>원 ~</span>
+                                        </span>
+                                    </div>
+                                    <div class="prd_flag">
+                                        <span class="bg_red">세일</span>
+                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                        <!-- <span class="bg_blue">증정</span> -->
+                                        <span class="bg_pink">오늘드림</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="main_sub_container">
+                    <h3 class="ws_top_text">
+                        <strong>이 상품 어때요?</strong>
+                    </h3>
+
+                    <div class="sub_btn_container">
+                        <ul>
+                            <li id="sub_btn01">
+                                <button class="sub_btn_item01 active">1</button>
+                            </li>
+                            <li id="sub_btn02">
+                                <button class="sub_btn_item02">2</button>
+                            </li>
+                            <li id="sub_btn03">
+                                <button class="sub_btn_item03">3</button>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+
+
+                    <div style="border-top: 1px solid #ddd;">
+                        <div class="main_sub_slide_list">
+                            <div class="sub_wrap">
+                                <div class="polite">
+                                    <ul class="sub_ul">
+                                        <li class="sub_li">
+                                            <span class="img_best top10">베스트</span>
+                                            <img src="src/img/olive_img/sub_img00.jpg">
+                                            <button class="heart_btn heart_sub">heart</button>
+                                            <div class="prd_name">
+                                                <span>에이딕트</span>
+                                                <p class="tx_name">[5월 올영픽/키링증정] 에이딕트 올리베 키링 단독기획 2종 중 택1 (보이드 우드/더 퍼스트)
+                                                </p>
+                                                <div class="price center">
+                                                    <span class="price_ori">
+                                                        <p>59,000</p>
+                                                        <span>원</span>
+                                                    </span>
+                                                    <span class="price_cur">
+                                                        <p>54,400</p>
+                                                        <span>원 ~</span>
+                                                    </span>
+                                                </div>
+                                                <div class="prd_flag">
+                                                    <span class="bg_red">세일</span>
+                                                    <span class="bg_green">쿠폰</span>
+                                                    <span class="bg_blue">증정</span>
+                                                    <span class="bg_pink">오늘드림</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub_li">
+                                            <span class="img_best top10">베스트</span>
+                                            <img src="src/img/olive_img/sub_img01.jpg">
+                                            <button class="heart_btn heart_sub">heart</button>
+                                            <div class="prd_name">
+                                                <span>레이지소사이어티</span>
+                                                <p class="tx_name">래이지소사이어티 히노키 선스크린 50ml</p>
+                                                <div class="price center">
+                                                    <!-- <span class="price_ori">
+                                                        <p>3,900</p>
+                                                        <span>원</span>
+                                                    </span> -->
+                                                    <span class="price_cur">
+                                                        <p>14,900</p>
+                                                        <span>원</span>
+                                                    </span>
+                                                </div>
+                                                <div class="prd_flag">
+                                                    <!-- <span class="bg_red">세일</span>
+                                                    <span class="bg_green">쿠폰</span>
+                                                    <span class="bg_blue">증정</span> -->
+                                                    <span class="bg_pink">오늘드림</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub_li">
+                                            <span class="img_best top10">베스트</span>
+                                            <img src="src/img/olive_img/sub_img02.jpg">
+                                            <button class="heart_btn heart_sub">heart</button>
+                                            <div class="prd_name">
+                                                <span>이니스프리</span>
+                                                <p class="tx_name">[5월올영픽/썬 1+1 기획] 이니스프리 그린티 히알루론산 수분 선세럼 50ml 1+1 기획
+                                                </p>
+                                                <div class="price center">
+                                                    <span class="price_ori">
+                                                        <p>28,000</p>
+                                                        <span>원</span>
+                                                    </span>
+                                                    <span class="price_cur">
+                                                        <p>26,600</p>
+                                                        <span>원</span>
+                                                    </span>
+                                                </div>
+                                                <div class="prd_flag">
+                                                    <span class="bg_red">세일</span>
+                                                    <!-- <span class="bg_green">쿠폰</span> -->
+                                                    <span class="bg_blue">증정</span>
+                                                    <span class="bg_pink">오늘드림</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub_li">
+                                            <span class="img_best top10">베스트</span>
+                                            <img src="src/img/olive_img/sub_img03.jpg">
+                                            <button class="heart_btn heart_sub">heart</button>
+                                            <div class="prd_name">
+                                                <span>유시몰</span>
+                                                <p class="tx_name">[5월 올영픽 거울키링 증정] 유시몰 화이트닝 퍼플 미백 치약 106g 기획 + 쿠로미 거울키링
+                                                    증정</p>
+                                                <div class="price center">
+                                                    <span class="price_ori">
+                                                        <p>17,900</p>
+                                                        <span>원</span>
+                                                    </span>
+                                                    <span class="price_cur">
+                                                        <p>13,900</p>
+                                                        <span>원 ~</span>
+                                                    </span>
+                                                </div>
+                                                <div class="prd_flag">
+                                                    <span class="bg_red">세일</span>
+                                                    <!-- <span class="bg_green">쿠폰</span> -->
+                                                    <span class="bg_blue">증정</span>
+                                                    <span class="bg_pink">오늘드림</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="sub_li">
+                                            <span class="img_best top10">베스트</span>
+                                            <img src="src/img/olive_img/sub_img05.jpg">
+                                            <button class="heart_btn heart_sub">heart</button>
+                                            <div class="prd_name">
+                                                <span>딜라이트 프로젝트</span>
+                                                <p class="tx_name">딜라이트 프로젝트 베이글칩 6종 택1</p>
+                                                <div class="price center">
+                                                    <!-- <span class="price_ori">
+                                                        <p>17,900</p>
+                                                        <span>원</span>
+                                                    </span> -->
+                                                    <span class="price_cur">
+                                                        <p>2,700</p>
+                                                        <span>원 ~</span>
+                                                    </span>
+                                                </div>
+                                                <div class="prd_flag">
+                                                    <span class="bg_red">세일</span>
+                                                    <!-- <span class="bg_green">쿠폰</span> -->
+                                                    <span class="bg_blue">증정</span>
+                                                    <span class="bg_pink">오늘드림</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub_li">
+                                            <span class="img_best top10">베스트</span>
+                                            <img src="src/img/olive_img/sub_img06.jpg">
+                                            <button class="heart_btn heart_sub">heart</button>
+                                            <div class="prd_name">
+                                                <span>구달</span>
+                                                <p class="tx_name">[고윤정PICK/1+1 기획] 구달 맑은 어성초 진정 수분 선크림 50ml+50ml 기획</p>
+                                                <div class="price center">
+                                                    <span class="price_ori">
+                                                        <p>20,000</p>
+                                                        <span>원</span>
+                                                    </span>
+                                                    <span class="price_cur">
+                                                        <p>15,900</p>
+                                                        <span>원 ~</span>
+                                                    </span>
+                                                </div>
+                                                <div class="prd_flag">
+                                                    <!-- <span class="bg_red">세일</span> -->
+                                                    <span class="bg_green">쿠폰</span>
+                                                    <!-- <span class="bg_blue">증정</span> -->
+                                                    <span class="bg_pink">오늘드림</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub_li">
+                                            <span class="img_best top10">베스트</span>
+                                            <img src="src/img/olive_img/sub_img07.jpg">
+                                            <button class="heart_btn heart_sub">heart</button>
+                                            <div class="prd_name">
+                                                <span>라엘</span>
+                                                <p class="tx_name">[1+1][수지큐PICK]라엘 유기농순면커버 생리대 6종 택1</p>
+                                                <div class="price center">
+                                                    <!-- <span class="price_ori">
+                                                        <p>17,900</p>
+                                                        <span>원</span>
+                                                    </span> -->
+                                                    <span class="price_cur">
+                                                        <p>8,400</p>
+                                                        <span>원 ~</span>
+                                                    </span>
+                                                </div>
+                                                <div class="prd_flag">
+                                                    <!-- <span class="bg_red">세일</span> -->
+                                                    <!-- <span class="bg_green">쿠폰</span> -->
+                                                    <!-- <span class="bg_blue">증정</span> -->
+                                                    <span class="bg_pink">오늘드림</span>
+                                                    <span class="bg_orange">1+1</span>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub_li">
+                                            <span class="img_best top10">베스트</span>
+                                            <img src="src/img/olive_img/sub_img08.jpg">
+                                            <button class="heart_btn heart_sub">heart</button>
+                                            <div class="prd_name">
+                                                <span>비플레인</span>
+                                                <p class="tx_name">[1+1기획][모공탄력] 비플레인 녹두 모공 타이트업 세럼 30ml 1+1 기획</p>
+                                                <div class="price center">
+                                                    <span class="price_ori">
+                                                        <p>24,000</p>
+                                                        <span>원</span>
+                                                    </span>
+                                                    <span class="price_cur">
+                                                        <p>19,200</p>
+                                                        <span>원 ~</span>
+                                                    </span>
+                                                </div>
+                                                <div class="prd_flag">
+                                                    <span class="bg_red">세일</span>
+                                                    <!-- <span class="bg_green">쿠폰</span> -->
+                                                    <!-- <span class="bg_blue">증정</span> -->
+                                                    <span class="bg_pink">오늘드림</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub_li">
+                                            <span class="img_best top10">베스트</span>
+                                            <img src="src/img/olive_img/sub_img09.jpg">
+                                            <button class="heart_btn heart_sub">heart</button>
+                                            <div class="prd_name">
+                                                <span>딜라이트 프로젝트</span>
+                                                <p class="tx_name">딜라이트 프로젝트 베이글칩 6종 택1</p>
+                                                <div class="price center">
+                                                    <!-- <span class="price_ori">
+                                                        <p>17,900</p>
+                                                        <span>원</span>
+                                                    </span> -->
+                                                    <span class="price_cur">
+                                                        <p>2,700</p>
+                                                        <span>원 ~</span>
+                                                    </span>
+                                                </div>
+                                                <div class="prd_flag">
+                                                    <!-- <span class="bg_red">세일</span> -->
+                                                    <!-- <span class="bg_green">쿠폰</span> -->
+                                                    <!-- <span class="bg_blue">증정</span> -->
+                                                    <span class="bg_pink">오늘드림</span>
+                                                    <span class="bg_orange">2+1</span>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub_li">
+                                            <span class="img_best top10">베스트</span>
+                                            <img src="src/img/olive_img/sub_img10.jpg">
+                                            <button class="heart_btn heart_sub">heart</button>
+                                            <div class="prd_name">
+                                                <span>쏘피</span>
+                                                <p class="tx_name">[7일한정 초특가] 쏘피 쿨링프레쉬 2종 택1 (중형 20P/대형16P)</p>
+                                                <div class="price center">
+                                                    <span class="price_ori">
+                                                        <p>8,500</p>
+                                                        <span>원</span>
+                                                    </span>
+                                                    <span class="price_cur">
+                                                        <p>3,800</p>
+                                                        <span>원 ~</span>
+                                                    </span>
+                                                </div>
+                                                <div class="prd_flag">
+                                                    <span class="bg_red">세일</span>
+                                                    <span class="bg_green">쿠폰</span>
+                                                    <!-- <span class="bg_blue">증정</span> -->
+                                                    <span class="bg_pink">오늘드림</span>
+                                                    <!-- <span class="bg_orange">2+1</span> -->
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub_li">
+                                            <span class="img_best top10">베스트</span>
+                                            <img src="src/img/olive_img/sub_img11.jpg">
+                                            <button class="heart_btn heart_sub">heart</button>
+                                            <div class="prd_name">
+                                                <span>아누아</span>
+                                                <p class="tx_name">[피지쏙] 아누아 어성초 포어 컨트롤 클렌징오일 350ml 대용량</p>
+                                                <div class="price center">
+                                                    <span class="price_ori">
+                                                        <p>29,000</p>
+                                                        <span>원</span>
+                                                    </span>
+                                                    <span class="price_cur">
+                                                        <p>21,900</p>
+                                                        <span>원 ~</span>
+                                                    </span>
+                                                </div>
+                                                <div class="prd_flag">
+                                                    <span class="bg_red">세일</span>
+                                                    <span class="bg_green">쿠폰</span>
+                                                    <!-- <span class="bg_blue">증정</span> -->
+                                                    <span class="bg_pink">오늘드림</span>
+                                                    <!-- <span class="bg_orange">2+1</span> -->
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sub_li">
+                                            <span class="img_best top10">베스트</span>
+                                            <img src="src/img/olive_img/sub_img05.jpg">
+                                            <button class="heart_btn heart_sub">heart</button>
+                                            <div class="prd_name">
+                                                <span>라엘</span>
+                                                <p class="tx_name">[1+1] 라엘 유기농 순면커버 입는오버나이트 6종 택1</p>
+                                                <div class="price center">
+                                                    <!-- <span class="price_ori">
+                                                        <p>7,900</p>
+                                                        <span>원</span>
+                                                    </span> -->
+                                                    <span class="price_cur">
+                                                        <p>7,900</p>
+                                                        <span>원 ~</span>
+                                                    </span>
+                                                </div>
+                                                <div class="prd_flag">
+                                                    <!-- <span class="bg_red">세일</span>
+                                                    <span class="bg_green">쿠폰</span> -->
+                                                    <!-- <span class="bg_blue">증정</span> -->
+                                                    <span class="bg_pink">오늘드림</span>
+                                                    <span class="bg_orange">1+1</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="today_update_wrap">
+                    <h3 class="ws_top_text">
+                        <strong>신상 업데이트</strong>
+                    </h3>
+
+
+
+
+                    <div class="today_update_con">
+                        <ul class="today_update_ul">
+                            <li class="today_update_li">
+                                <ul class="today_update_li_ul">
+                                    <li>
+                                        <img src="src/img/olive_img/new_update_img01.jpg">
+                                        <div class="content_text_con">
+                                            <p>켈로그 최초 100% 통귀리밥 출시!</p>
+                                            <p>탱글탱글한 식감이 살아있는 갓지은 밥 그대로 즐겨요</p>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="src/img/olive_img/new_update_img02.jpg">
+                                        <div class="content_text_con">
+                                            <p>365일 데일리 산뜻 슬로우에이징</p>
+                                            <p>매일 쓸수록 피부노화를 SLOW</p>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="today_update_li">
+                                <ul class="today_update_li_ul">
+                                    <li>
+                                        <img src="src/img/olive_img/new_updateimg01.jpg">
+                                        <div class="content_text_con">
+                                            <p>x2개 쌍괄사로 x2빠르게, x2 효과적이게</p>
+                                            <p>기존 괄사의 단점을 보완한 독보적인 형태의 반지형 쌍괄사</p>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="src/img/olive_img/new_updateimg02.jpg">
+                                        <div class="content_text_con">
+                                            <p>아로마티카 NEW 페미닌 퍼퓸 런칭</p>
+                                            <p>Y존 밸런스를 케어하는 향기 한 방울</p>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="today_update_li">
+                                <ul class="today_update_li_ul">
+                                    <li>
+                                        <img src="src/img/olive_img/new_updateimg03.jpg">
+                                        <div class="content_text_con">
+                                            <p>쌀겨수와 발효성분으로 완성하는</p>
+                                            <p>본연의 맑고 투명한 쌀알피부</p>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="src/img/olive_img/new_updateimg04.jpg">
+                                        <div class="content_text_con">
+                                            <p>[NEW]닥터지 3초 비타민샷 토닝 세럼</p>
+                                            <p>#비타민C 코팅 샷 침투로 3초만에 투명 관채 UP</p>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="btn_box">
+                        <button>
+                            신상 더보기
+                            <span class="num02">1</span>
+                            <span>3</span>
+                        </button>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="main_brand_wrap">
+                    <h3 class="ws_top_text">
+                        <strong>주목해야 할 브랜드</strong>
+                    </h3>
+
+                    <div class="brand_wrapper">
+                        <div class="brand_top_container">
+                            <ul>
+                                <li class="tab_btn active">릴리바이레드</li>
+                                <li class="tab_btn">설화수</li>
+                                <li class="tab_btn">닥터탱글</li>
+                                <li class="tab_btn">라네즈</li>
+                                <li class="tab_btn">홀리카홀리카</li>
+                                <li class="tab_btn">에스트라</li>
+                                <li class="tab_btn">셀퓨전씨</li>
+                                <li class="tab_btn">센카</li>
+                                <li class="tab_btn">토리든</li>
+                                <li class="tab_btn">이니스프리</li>
+
+                            </ul>
+                        </div>
+
+                        <div class="brand_bottom_container">
+                            <div class="brand_content">
+
+                                <div class="main_brand">
+                                    <div class="brand_info_wrap">
+                                        <a>
+                                            <div class="brand_text">
+                                                <strong>릴리바이레드</strong>
+                                                <span>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    3,757명이 좋아합니다.
+                                                </span>
+                                            </div>
+
+                                            <div class="brand_img">
+                                                <img src="src/img/olive_img/brand_img01.jpg">
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                    <ul class="brand_ul">
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img01.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[매끈찰랑/5월 올영픽] 힐링버드 리바이브 노워시 트리트먼트 데미지 리페어 200ml+200ml 리필 기획</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">44,000원</span>
+                                                        <strong class="brand_pre">28,600원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <span class="bg_blue">증정</span>
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img02.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">에이솔루션 4HA 턴오버 필링패드 30매</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">24,000원</span>
+                                                        <strong class="brand_pre">19,000원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <!-- <span class="bg_blue">증정</span>
+                                                        <span class="bg_pink">오늘드림</span> -->
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="main_brand">
+                                    <div class="brand_info_wrap">
+                                        <a>
+                                            <div class="brand_text">
+                                                <strong>설화수</strong>
+                                                <span>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    222 명이 좋아합니다.
+                                                </span>
+                                            </div>
+
+                                            <div class="brand_img">
+                                                <img src="src/img/olive_img/brand_img02.jpg">
+                                            </div>
+                                        </a>
+
+
+                                    </div>
+
+                                    <ul class="brand_ul">
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img03.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[선착순 증정] 설화수 윤조에센스 90ml 기획</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">140,000원</span>
+                                                        <strong class="brand_pre">136,500원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <span class="bg_blue">증정</span>
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img04.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[선착순 증정] 설화수 탄력 3종 기획</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">190,000원</span>
+                                                        <strong class="brand_pre">161,000원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <span class="bg_blue">증정</span>
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="main_brand">
+                                    <div class="brand_info_wrap">
+                                        <a>
+                                            <div class="brand_text">
+                                                <strong>닥터탱글</strong>
+                                                <span>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    111명이 좋아합니다.
+                                                </span>
+                                            </div>
+
+                                            <div class="brand_img">
+                                                <img src="src/img/olive_img/brand_img03.jpg">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <ul class="brand_ul">
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img05.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[선물콜라겐크림/파우치증정/박하진 PICK] 닥터탱글 고주파 디바이스</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">289,000원</span>
+                                                        <strong class="brand_pre">219,600원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <!-- <span class="bg_red">세일</span> -->
+                                                        <span class="bg_green">쿠폰</span>
+                                                        <!-- <span class="bg_blue">증정</span>
+                                                        <span class="bg_pink">오늘드림</span> -->
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img06.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">닥터탱글 전용 파우치</p>
+                                                    <div class="brand_price">
+                                                        <!-- <span class="brand_ori">15,000원</span> -->
+                                                        <strong class="brand_pre">15,000원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <!-- <span class="bg_red">세일</span> -->
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <!-- <span class="bg_blue">증정</span>
+                                                        <span class="bg_pink">오늘드림</span> -->
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="main_brand">
+                                    <div class="brand_info_wrap">
+                                        <a>
+                                            <div class="brand_text">
+                                                <strong>라네즈</strong>
+                                                <span>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    7,115명이 좋아합니다.
+                                                </span>
+                                            </div>
+
+                                            <div class="brand_img">
+                                                <img src="src/img/olive_img/brand_img04.jpg">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <ul class="brand_ul">
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img07.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[라네즈X바오패밀리] 네오 쿠션 매트 15g 기획/단품 (+키링 랜덤 증정)</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">30,000원</span>
+                                                        <strong class="brand_pre">25,000원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <!-- <span class="bg_blue">증정</span> -->
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img08.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[라네즈X바오패밀리] 네오 쿠션 글로우 15g 기획/단품 (+키링 랜덤 증정)</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">30,000원</span>
+                                                        <strong class="brand_pre">25,000원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <!-- <span class="bg_blue">증정</span> -->
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="main_brand">
+                                    <div class="brand_info_wrap">
+                                        <a>
+                                            <div class="brand_text">
+                                                <strong>홀리카홀리카</strong>
+                                                <span>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    4,564명이 좋아합니다.
+                                                </span>
+                                            </div>
+
+                                            <div class="brand_img">
+                                                <img src="src/img/olive_img/brand_img05.jpg">
+                                            </div>
+                                        </a>
+
+                             
+
+                                    </div>
+                                    <ul class="brand_ul">
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img09.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[5월 올영픽/상은언니PICK] 홀리카홀리카 마이페이브 피스 아이섀도우</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">6,000원</span>
+                                                        <strong class="brand_pre">4,600원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <!-- <span class="bg_blue">증정</span> -->
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img10.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[5월 올영픽] 홀리카홀리카 마이페이브 피스 빔</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">8,000원</span>
+                                                        <strong class="brand_pre">6,000원~</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <!-- <span class="bg_blue">증정</span> -->
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="main_brand">
+                                    <div class="brand_info_wrap">
+                                        <a>
+                                            <div class="brand_text">
+                                                <strong>에스트라</strong>
+                                                <span>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    20,249명이 좋아합니다.
+                                                </span>
+                                            </div>
+
+                                            <div class="brand_img">
+                                                <img src="src/img/olive_img/brand_img06.jpeg">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <ul class="brand_ul">
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img11.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[리뷰이벤트] 에스트라 리제덤365 모공탄력 캡슐세럼 30ml+7ml 기획 (+리제덤 크림 10ml)(2405)</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">48,000원</span>
+                                                        <strong class="brand_pre">33,600원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <span class="bg_blue">증정</span>
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img12.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">에스트라 에이시카365 흔적 진정 세럼 40ml+40ml 리필기획</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">57,000원</span>
+                                                        <strong class="brand_pre">42,000원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <span class="bg_blue">증정</span>
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="main_brand">
+                                    <div class="brand_info_wrap">
+                                        <a>
+                                            <div class="brand_text">
+                                                <strong>셀퓨전씨</strong>
+                                                <span>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    9,187명이 좋아합니다.
+                                                </span>
+                                            </div>
+
+                                            <div class="brand_img">
+                                                <img src="src/img/olive_img/brand_img07.jpeg">
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <ul class="brand_ul">
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img13.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[5월올영픽/1+1+1 기획] 셀퓨전씨 레이저 UV 썬스크린 35ml 트리플 한정기획</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">29,000원</span>
+                                                        <strong class="brand_pre">24,600원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <span class="bg_blue">증정</span>
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img14.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[5월올영픽/증량기획] 셀퓨전씨 토닝 썬스크린 35ml 1+1+20ml 한정기획</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">27,000원</span>
+                                                        <strong class="brand_pre">22,000원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <span class="bg_blue">증정</span>
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="main_brand">
+                                    <div class="brand_info_wrap">
+                                        <a>
+                                            <div class="brand_text">
+                                                <strong>센카</strong>
+                                                <span>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    2,136명이 좋아합니다.
+                                                </span>
+                                            </div>
+
+                                            <div class="brand_img">
+                                                <img src="src/img/olive_img/brand_img08.jpeg">
+                                            </div>
+                                        </a>
+
+                                    
+                                    </div>
+                                    <ul class="brand_ul">
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img15.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[온라인 단독기획] 센카 퍼펙트 휩 페이셜 위시 120g*3입 세트</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">25,000원</span>
+                                                        <strong class="brand_pre">19,600원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <!-- <span class="bg_blue">증정</span> -->
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img16.jpg">
+                                                <div class="today_sale">
+                                                    <i class="fa-solid fa-bell" id="alarm"></i>
+                                                    <p>오특</p>
+                                                </div>
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[하루특가][NEW 약산성폼]센카 퍼펙트 휩 로우 pH 카밍 시카 100g</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">10,000원</span>
+                                                        <strong class="brand_pre">7,000원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <span class="bg_green">쿠폰</span>
+                                                        <!-- <span class="bg_blue">증정</span> -->
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="main_brand">
+                                    <div class="brand_info_wrap">
+                                        <a>
+                                            <div class="brand_text">
+                                                <strong>토리든</strong>
+                                                <span>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    12,651명이 좋아합니다.
+                                                </span>
+                                            </div>
+
+                                            <div class="brand_img">
+                                                <img src="src/img/olive_img/brand_img09.jpeg">
+                                            </div>
+                                        </a>
+
+                          
+
+                                    </div>
+                                    <ul class="brand_ul">
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img17.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[소의튜브개발참여/NEW] 토리든 올인원 모델링 팩 2종(히알루론산/시카)</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">6,000원</span>
+                                                        <strong class="brand_pre">4,100원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <span class="bg_green">쿠폰</span>
+                                                        <span class="bg_blue">증정</span>
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img18.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[단독기획] 토리든 다이브인 저분자 히알루론산 세럼 50ml 기획(+멀티패드 10매)</p>
+                                                    <div class="brand_price">
+                                                        <!-- <span class="brand_ori">24,000원</span> -->
+                                                        <strong class="brand_pre">22,000원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <!-- <span class="bg_red">세일</span> -->
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <!-- <span class="bg_blue">증정</span> -->
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="main_brand">
+                                    <div class="brand_info_wrap">
+                                        <a>
+                                            <div class="brand_text">
+                                                <strong>이니스프리</strong>
+                                                <span>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    3,776명이 좋아합니다.
+                                                </span>
+                                            </div>
+
+                                            <div class="brand_img">
+                                                <img src="src/img/olive_img/brand_img10.jpeg">
+                                            </div>
+                                        </a>
+
+                                        
+
+                                    </div>
+                                    <ul class="brand_ul">
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img19.jpg">
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[5월 올영픽] 이니스프리X쿠로미 비타C 그린티 엔자임 세럼 30mL 기획</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">38,000원</span>
+                                                        <strong class="brand_pre">27,600원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <span class="bg_blue">증정</span>
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="brand_li_img_con">
+                                                <img src="src/img/olive_img/brand_li/brand_li_img19.jpg">
+                                                <div class="soldout"><span>일시품절</span></div>
+                                            </div>
+                                            <div class="brand_li_text">
+                                                    <p class="brand_li_text_title">[5월 올영픽] 이니스프리X쿠로미 비타C 그린티 엔자임 잡티토닝패드 60매 기획</p>
+                                                    <div class="brand_price">
+                                                        <span class="brand_ori">28,000원</span>
+                                                        <strong class="brand_pre">20,000원</strong>
+                                                    </div>
+                                                    <div class="prd_flag">
+                                                        <span class="bg_red">세일</span>
+                                                        <!-- <span class="bg_green">쿠폰</span> -->
+                                                        <span class="bg_blue">증정</span>
+                                                        <span class="bg_pink">오늘드림</span>
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <button class="brand_btn pre" id="brand_pre">
+                                <span class="blind"></span>
+                            </button>
+                            <button class="brand_btn next" id="brand_next">
+                                <span class="blind"></span>
+                            </button>
+
+                        </div>
+
+                        <script>
+                            // $('#brand_next').on('click', function () {
+                            //     $('.main_brand').css('transform', 'translateX(-1020px)');
+                            // });
+                        </script>
+
+
+                    </div>
+
+                </div>
+
+                <div class="pop">
+                    <h3 class="ws_top_text">
+                        <strong>조회 급상승, 인기템</strong>
+                    </h3>
+
+                    <div class="live_area">
+                        <div class="live_area_item">
+                            <ul class="live_item_ul_left">
+                                <li class="live_itemli">
+                                    <img src="src/img/olive_img/sub_img00.jpg">
+
+                                    <div class="recommend_text">
+                                        <div class="watching">
+                                            <i class="fa-solid fa-eye" id="eye"></i>
+                                            <p><span>102</span>명이 보고있어요</p>
+
+                                        </div>
+                                        <p>마르시끄</p>
+                                        <p>[두피 세정] 닥터방기원 랩 샴푸 EX 탈모 케어 샴푸 (두치 노폐물 제거)</p>
+                                        <div class="price_left">
+                                            <span class="price_ori">
+                                                <p>14,900</p>
+                                                <span>원</span>
+                                            </span>
+                                            <span class="price_cur">
+                                                <p>10,400</p>
+                                                <span>원 ~</span>
+                                            </span>
+                                        </div>
+                                        <div class="prd_flag">
+                                            <span class="bg_red">세일</span>
+                                            <span class="bg_green">쿠폰</span>
+                                            <!-- <span class="bg_blue">증정</span> -->
+                                            <span class="bg_pink">오늘드림</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="live_itemli">
+                                    <img src="src/img/olive_img/sub_img01.jpg">
+
+                                    <div class="recommend_text">
+                                        <div class="watching">
+                                            <i class="fa-solid fa-eye" id="eye"></i>
+                                            <p><span>1,002</span>명이 보고있어요</p>
+                                        </div>
+                                        <p>마르시끄</p>
+                                        <p>[인씨PICK] 에센허브 티트리 100 오일 10ml 기획(+크림 10ml + 면봉)</p>
+                                        <div class="price_left">
+                                            <span class="price_ori">
+                                                <p>32,900</p>
+                                                <span>원</span>
+                                            </span>
+                                            <span class="price_cur">
+                                                <p>20,400</p>
+                                                <span>원 ~</span>
+                                            </span>
+                                        </div>
+                                        <div class="prd_flag">
+                                            <span class="bg_red">세일</span>
+                                            <span class="bg_green">쿠폰</span>
+                                            <!-- <span class="bg_blue">증정</span> -->
+                                            <span class="bg_pink">오늘드림</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="live_itemli">
+                                    <img src="src/img/olive_img/sub_img03.jpg">
+
+                                    <div class="recommend_text">
+                                        <div class="watching">
+                                            <i class="fa-solid fa-eye" id="eye"></i>
+                                            <p><span>502</span>명이 보고있어요</p>
+
+                                        </div>
+                                        <p>바이오힐보</p>
+                                        <p>[5월 올영픽]듀이셀 큐라톤즈 모이스처 40ml 기획(+코어밤 4g)</p>
+                                        <div class="price_left">
+                                            <span class="price_ori">
+                                                <p>19,900</p>
+                                                <span>원</span>
+                                            </span>
+                                            <span class="price_cur">
+                                                <p>10,400</p>
+                                                <span>원 ~</span>
+                                            </span>
+                                        </div>
+                                        <div class="prd_flag">
+                                            <span class="bg_red">세일</span>
+                                            <span class="bg_green">쿠폰</span>
+                                            <!-- <span class="bg_blue">증정</span> -->
+                                            <span class="bg_pink">오늘드림</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="live_itemli">
+                                    <img src="src/img/olive_img/sub_img04.jpg">
+
+                                    <div class="recommend_text">
+                                        <div class="watching">
+                                            <i class="fa-solid fa-eye" id="eye"></i>
+                                            <p><span>302</span>명이 보고있어요</p>
+
+                                        </div>
+                                        <p>이니스프리</p>
+                                        <p>[5월 올영픽] 이니스프리X쿠로미 비타C 그린티 엔자임 세럼 30ml 기획</p>
+                                        <div class="price_left">
+                                            <span class="price_ori">
+                                                <p>12,900</p>
+                                                <span>원</span>
+                                            </span>
+                                            <span class="price_cur">
+                                                <p>10,400</p>
+                                                <span>원 ~</span>
+                                            </span>
+                                        </div>
+                                        <div class="prd_flag">
+                                            <span class="bg_red">세일</span>
+                                            <span class="bg_green">쿠폰</span>
+                                            <!-- <span class="bg_blue">증정</span> -->
+                                            <span class="bg_pink">오늘드림</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="live_itemli">
+                                    <img src="src/img/olive_img/sub_img05.jpg">
+
+                                    <div class="recommend_text">
+                                        <div class="watching">
+                                            <i class="fa-solid fa-eye" id="eye"></i>
+                                            <p><span>1,402</span>명이 보고있어요</p>
+
+                                        </div>
+                                        <p>라네즈</p>
+                                        <p>[5월 올영픽] 라네즈 네오 파우더 7g</p>
+                                        <div class="price_left">
+                                            <span class="price_ori">
+                                                <p>12,900</p>
+                                                <span>원</span>
+                                            </span>
+                                            <span class="price_cur">
+                                                <p>10,400</p>
+                                                <span>원 ~</span>
+                                            </span>
+                                        </div>
+                                        <div class="prd_flag">
+                                            <span class="bg_red">세일</span>
+                                            <span class="bg_green">쿠폰</span>
+                                            <!-- <span class="bg_blue">증정</span> -->
+                                            <span class="bg_pink">오늘드림</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="live_item_ul_right">
+                                <li class="live_area_list live_area_item_list_active">
+                                    <div class="live_list_div">
+                                        <p class="live_num">1</p>
+                                        <p class="live_title">[두피 세정] 닥터방기원 랩 샴푸 EX 탈모 케어 샴푸 (두피 노폐물 제거)</p>
+                                    </div>
+                                </li>
+                                <li class="live_area_list">
+                                    <div class="live_list_div">
+                                        <p class="live_num">2</p>
+                                        <p class="live_title">[인씨PICK] 에센허브 티트리 100 오일 10ml 기획(+크림10ml+면봉)</p>
+                                    </div>
+                                </li>
+                                <li class="live_area_list">
+                                    <div class="live_list_div">
+                                        <p class="live_num">3</p>
+                                        <p class="live_title">[5월 올영픽]듀이셀 큐라톤즈 모이스처 40ml 기획(+코어밤 4g)</p>
+                                    </div>
+                                </li>
+                                <li class="live_area_list">
+                                    <div class="live_list_div">
+                                        <p class="live_num">4</p>
+                                        <p class="live_title">[5월 올영픽] 이니스프리X쿠로미 비타C 그린티 엔자임 세럼 30mL 기획</p>
+                                    </div>
+                                </li>
+                                <li class="live_area_list">
+                                    <div class="live_list_div">
+                                        <p class="live_num">5</p>
+                                        <p class="live_title">[5월 올영픽] 라네즈 네오 파우더 7g</p>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="main_customer">
+                    <div class="notice_con">
+                        <p class="notice_title">공지사항</p>
+                        <p>새로운 소식이 없어요</p>
+                        <span>더보기</span>
+                    </div>
+                    <div class="customer_area">
+                        <div class="notice_title"><p>고객센터<br>이용안내</p></div>
+                        <div class="tel_info">
+                            <p>온라인몰 고객센터</p>
+                            <p>1522 - 0882</p>
+                            <p>매장 고객센터</p>
+                            <p>1577 - 4887</p>
+                        </div>
+                        <div class="online_info">
+                            <p>고객센터 운영시간 [평일 09:00 - 18:00]</p>
+                            <p>주말 및 공휴일은 1:1문의하기를 이용해주세요.<br>업무가 시작되면 바로 처리해드립니다.</p>
+                            <div class="customer_btn">
+                                <button>
+                                    <span></span>
+                                    1:1문의하기
+                                </button>
+                                <button>
+                                    <span></span>
+                                    자주하는 질문
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app_down_link">
+                        <img src="https://static.oliveyoung.co.kr/pc-static-root/image/main/img_mobile_app.png">
+                    </div>
+
+                     
+                </div>
+
+        
+            </div>
+
+            <div class="footer">
+                <div class="footer_top">
+                    <div class="footer_top_contents">
+                        <ul>
+                            <li>회사소개</li>
+                            <li>채용안내</li>
+                            <li>가맨점 개설문의</li>
+                            <li>상품입점 및 제휴문의</li>
+                            <li>사이버 감사실</li>
+                            <li>고객센터</li>
+                        </ul>
+
+                        <div class="family_group">
+                            <a href="#">CJ그룹 계열사 바로가기</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_mid">
+                    <div class="footer_mid_contents">
+                        <ul class="footer_mid_ul">
+                            <li class="footer_li_first">
+                                <div class="logo">
+                                    <img src="https://static.oliveyoung.co.kr/pc-static-root/image/footer/foot_logo.png">
+
+                                </div>
+                                <div class="footer_li_first_text">
+                                    <h2>씨제이 올리브영 주식회사</h2>
+                                    <p>대표이사 : 이선정 | 사업자등록번호 : 809-81-01574</p>
+                                    <p>
+                                        주소 : (04323) 서울특별시 용산구 한강대로 372, 24층 
+                                        <br>
+                                        (동자동, KDB타워)
+                                    </p>
+                                    <p>호스팅사업자 : CJ 올리브네트웍스</p>
+                                    <p>통신판매업신고번호 : 2019-서울용산-1428</p>
+                                    <p>이메일 : oliveweb@cj.net</p>
+                                    <p>사업자 정보확인 ></p>
+                                </div>
+                                
+                            </li>
+                            <li class="footer_li_second">
+                                <ul>
+                                    <li style="display: flex;">
+                                        <p>이용약관</p>
+                                        <p>법적고지</p>
+
+                                    </li>
+                                    <li style="color: #000;"><p>개인정보처리방침</p></li>
+                                    <li><p style="color: #000;">청소년보호방침</p></li>
+                                    <li><p>영상정보처리기기 운영/관리 방침</p></li>
+                                    <li><p>이메일무단수집거부</p></li>
+                                </ul>
+                            </li>
+                            <li class="footer_li_third">
+                                <ul>
+                                    <li style="color: #000;"><p>하나은행 구매안전 서비스</p></li>
+                                    <li><p>올리브영은 현금 결제한 금액에 대해</p></li>
+                                    <li><p>하나은행과 채무지급보증 계약을체결</p></li>
+                                    <li><p>하여 안전한 거래를 보장하고 있습니다</p></li>
+                                    <li><p>서비스 가입사실 확인</p></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="noti">올리브영 홈페이지에서 판매되는 상품 중에는 올리브영에 입점한 개별 판매자가 판매하는 상품이 포함되어 있습니다. 개별 판매자의 판매 상품의 경우, 올리브영은 통신판매중개자로서 통신판매의 당사자가 아니며 판매자가 등록한 상품정보 및 거래 정보 등에 대하여 책임을 부담하지 않습니다.</div>
+
+                    </div>
+                </div>
+
+                <div class="footer_bottom">
+                    <div class="footer_bottom_text">
+                        <p>정보보호 및 개인정보보호 관리체계 ISMS-P 인증 획득 | 인증 범위 : CJ올리브영 쇼핑몰 운영 | 유효기간 : 2023.12.06~2026.12.05</p>
+                    </div>
+
+                    <div class="last">
+                        <p>Copyright ⓒ CJ OliveYoung. All Rights Reserved.</p>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+    
+
+
+</body>
+<script src="js/oliveyoung.js"></script>
+
+
+</html>

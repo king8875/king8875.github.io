@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahboard</title>
+    <link href="css/grid.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-- modal 컴포넌트 -->
+    <div class="modal-bg">
+        <div class="modal-container">
+            <p>WellCome Back <span><br>Please login</span></p>
+            <form action="main.html">
+                <div>
+                    <input type="text" id="id" class="form-control" placeholder="example@email.com">
+                </div>
+                <div>
+                    <input type="password" id="password" class="form-control" placeholder="Enter Password">
+                </div>
+                <div class="modal-btn-container">
+                    <button type="button" class="close-btn">close</button>
+
+                    <button type="submit" class="submit-btn">submit</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- 서브 메뉴 컴포넌트 -->
+    <div class="sub-menu">
+        <ul class="sub-menu-ul">
+            <li class="sub-menu-li">Menu1
+                <div>
+                    <a href="grid.html">subMenu01</a>
+                </div>
+                <div>
+                    <a href="#">subMenu01</a>
+                </div>
+                <div>
+                    <a href="#">subMenu01</a>
+                </div>
+                <div>
+                    <a href="#">subMenu01</a>
+                </div>
+
+            </li>
+            <li>Menu1</li>
+            <li>Menu1</li>
+            <li>Menu1</li>
+            <li>Menu1</li>
+        </ul>
+
+    </div>
+
+    <div class="container">
+        <div class="navigation-container">
+            <div class="nav-bar">
+                <p class="logo">Accounting</p>
+
+                <div class="input_search">
+                    <input class="search-input" placeholder="Search">
+                    <button class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="nav-item">
+                    <!-- <button class="navbar-toggler">MENU</button> -->
+                    <div class="top-icon">
+                        <i class="fa-regular fa-calendar"></i>
+                    </div>
+                    <i class="fa-regular fa-bell top-icon"></i>
+                    <button class="modal-btn">LogIn</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="content-container">
+            <div class="main-container">
+
+                <div class="top-tabbar">
+                    <span>Overview</span>
+                    <span>Transactions</span>
+                    <span>Reports</span>
+                    <span>Hire Bookkeeper</span>
+
+                </div>
+
+                <div class="main-page" style="display: flex;">
+                    <div class="left-page">
+                        <div class="main-text">
+                            <p>Cash flow</p>
+                            <div class="btn-con">
+                                <select class="form-select">
+                                    <option value="" selected>1 ~ 6 Months</option>
+                                    <option value="hat">모자</option>
+                                    <option value="shirts">셔츠</option>
+                                    <option value="pants">바지</option>
+                                </select>
+                                <select class="form-select">
+                                    <option value="" selected>1 ~ 6 Months</option>
+                                    <option value="">150</option>
+                                    <option value="">1 Year</option>
+    
+                                </select>
+                            </div>
+                        </div>
+                        <span>Cash coming in and going out of your business</span>
+    
+                        <div class="radio-con">
+                            <i class="fa-solid fa-circle">Inflow</i>
+                            <i class="fa-solid fa-circle">Outflow</i>
+                            <i class="fa-solid fa-circle">Net Changes</i>
+    
+                            <!-- <div class="circle"></div><p>Inflow</p>
+                            <div class="circle"></div><p>Outflow</p>
+                            <div class="circle"></div><p>Net Changes</p> -->
+                        </div>
+    
+                        <div class="flow-con">
+    
+                            <div class="flow-box green">
+                                <div class="box">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <p>Inflow</p>
+                                    <div>$ 80000</div>
+                                </div>
+                            </div>
+    
+                            <div class="flow-box pupple">
+                                <div class="box">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <p>Outflow</p>
+                                    <div>$ 120000</div>
+                                </div>
+                            </div>
+                            <div class="flow-box black">
+                                <div class="box">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <p>Inflow</p>
+                                    <div>$ 80000</div>
+                                </div>
+                            </div>
+    
+    
+    
+                        </div>
+    
+                        <div class="date-con">
+                            <button class="date-box">Nov 20</button>
+                            <button class="date-box">Nov 20</button>
+                            <button class="date-box">Nov 20</button>
+                            <button class="date-box">Nov 20</button>
+                            <button class="date-box">Nov 20</button>
+                            <button class="date-box">Nov 20</button>
+                            <button class="date-box">Nov 20</button>
+    
+                        </div>
+                    </div>
+    
+                    <div class="right-page">
+                        
+    
+                    </div>
+    
+                </div>
+
+
+                
+
+                <!-- <button id="more">more</button> -->
+                <!-- <div class="mainmain">
+                    <div class="boxex">
+                        <img src="https://via.placeholder.com/200">
+
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <h5>Inflow</h5>
+                        <p>$ 80000</p>
+                    </div>
+
+
+                </div> -->
+
+
+
+
+
+
+
+                <script>
+
+                    // $('#more').click(function () {
+                    //     $.get('https://codingapple1.github.io/js/more1.json')
+                    //         .done((data) => {
+                    //             console.log(data);
+
+                    //             var Box =
+                    //                 `<div class="boxex" style="display: flex;">
+                    //                 <img src="https://via.placeholder.com/200">
+                    //                 <i class="fa-solid fa-arrow-right"></i>
+                    //                 <h5>${data[0].title}</h5>
+                    //                 <p>${data[0].price}</p>
+                    //                 </div>`
+                    //             $('.mainmain').append(Box)
+
+                    //         })
+                    // })
+
+                    // var product = [
+                    //     { id: 0, price: 10000, title: 'products01' },
+                    //     { id: 1, price: 40000, title: 'products02' },
+                    //     { id: 2, price: 90000, title: 'products03' }
+
+                    // ]
+
+                    product.forEach((a, i) => {
+                        var Box =
+                            `<div class="boxex">
+                            <img src="https://via.placeholder.com/200">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <h5>${product[i].title}</h5>
+                            <p>${product[i].price}</p>
+                        </div>`
+
+                        $('.boxex').append(Box);
+                    })
+
+
+
+
+
+
+
+
+
+
+                    var dateBox = $('.date-box');
+
+                    dateBox.eq(0).on('click', function () {
+                        dateBox.eq(0).css({ 'background-color': 'black', 'color': 'white' })
+                    });
+
+                    var pantsOption = `<option value="" selected>1 ~ 6 Months</option>
+                                <option value="">28</option>
+                                <option value="">30</option>`
+
+                    var hatOption = `<option value="" selected>1 ~ 6 Months</option>
+                                <option value="">150</option>
+                                <option value="">100</option>`
+
+                    $('.form-select').eq(0).on('input', function () {
+                        var value = this.value;
+
+                        if (value == 'pants') {
+                            $('.form-select').eq(1).html(pantsOption);
+                        }
+                        else if (value == 'hat') {
+                            $('.form-select').eq(1).html(hatOption);
+
+                        };
+                    });
+
+
+                </script>
+
+
+                <div style="overflow: hidden; position: relative;">
+
+                    <div class="main-banner">
+
+
+                        <div class="slide-box">
+                            <img src="src/img/car1.png">
+                        </div>
+                        <div class="slide-box">
+                            <img src="src/img/car2.png">
+                        </div>
+                        <div class="slide-box">
+                            <img src="src/img/car3.png">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel_pagination">
+                    <div class="carousel_circle"></div>
+                    <div class="carousel_circle"></div>
+                    <div class="carousel_circle"></div>
+                    <div class="carousel_circle"></div>
+                </div>
+                <button class="slide-1">1</button>
+                <button class="slide-2">2</button>
+                <button class="slide-3">3</button>
+                <button class="pre">pre</button>
+                <!-- <button class="next">next</button> -->
+
+
+
+
+
+
+                <div class="box-container">
+
+                    <div class="box-item" data-aos="flip-left">
+                        <div class="text">
+                            <h5 class="item-1">Eae</h5>
+                            <p>price</p>
+                        </div>
+                        <div class="icon-con">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+
+                    <div class="box-item" data-aos="flip-left">
+                        <div class="text">
+                            <h5 class="item-1">Eae</h5>
+                            <p>price</p>
+                        </div>
+                        <div class="icon-con">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="box-item" data-aos="flip-left">
+                        <div class="text">
+                            <h5 class="item-1">Eae</h5>
+                            <p>price</p>
+                        </div>
+                        <div class="icon-con">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="box-item" data-aos="flip-left">
+                        <div class="text">
+                            <h5 class="item-1">Eae</h5>
+                            <p>price</p>
+                        </div>
+                        <div class="icon-con">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+
+                    var products = [
+                        { id: 0, price: 70000, title: 'Blossom Dress' },
+                        { id: 1, price: 50000, title: 'Springfield Shirt' },
+                        { id: 2, price: 60000, title: 'Black Monastery' },
+                        { id: 3, price: 30000, title: 'White Pants' }
+                    ];
+
+
+                    for (i = 0; i < 4; i++) {
+                        $('.text h5').eq(i).html(`${products[i].title}`);
+                        $('.text p').eq(i).html(`${products[i].price} ₩`);
+
+                    }
+
+
+
+
+
+
+
+                </script>
+
+                <div class="bottom-container">
+
+                    <div class="left-container"></div>
+
+                    <div class="right-container">
+                        <div class="tab-container">
+                            <input type="radio" name="tab" id="tab_1" checked>
+                            <input type="radio" name="tab" id="tab_2">
+                            <input type="radio" name="tab" id="tab_3">
+
+
+                            <div class="menu-wrap">
+                                <label for="tab_1" data-id="0" class="tab-btn orange">Active</label>
+                                <label for="tab_2" data-id="1" class="tab-btn">Inactive</label>
+                                <label for="tab_3" data-id="2" class="tab-btn">Other</label>
+                            </div>
+
+                            <div class="box box_1">tab01 content</div>
+                            <div class="box box_2">tab02 content</div>
+                            <div class="box box_3">tab03 content</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+
+        </script>
+
+        <!-- <div class="flip-outer">
+            <div class="flip-inner">
+                <img src="src/img/profile.png" class="front">
+                <div class="back">
+                    <h4>개발자 서경환</h4>
+                </div>
+
+            </div>
+        </div> -->
+    </div>
+    <script src="js/grid.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
