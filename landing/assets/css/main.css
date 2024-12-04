@@ -271,7 +271,7 @@ body.begie {
         flex: 1;
         display: flex;
         align-items: center;
-        font-size: 2vw;
+        font-size: 2em;
     }
     .sidepj-tx-block{
         position: relative;

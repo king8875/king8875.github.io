@@ -98,16 +98,6 @@ const projects = gsap.to('.projects-list',{
     x:function(){ return (window.innerWidth - 200); }
 });
 
-// ScrollTrigger.create({
-//     trigger:'.sidepj-sec',
-//     start:"0% 30%",
-//     end:"100% 100%",
-//     toggleClass: {
-//         targets:"body",
-//         className:"begie"
-//     },
-// });
-
 const sidepj = gsap.timeline({
     scrollTrigger: {
         trigger:'.sidepj-sec',
@@ -258,4 +248,23 @@ mm.add("(max-width:768px)",function(){
         xPercent: -100,
         x:function(){ return (window.innerWidth - 50); }
     });
+
+    const sidepj = gsap.timeline({
+        scrollTrigger: {
+            trigger:'.sidepj-sec',
+            start:"0% 0%",
+            end:"100% 100%",
+            scrub:1,
+            onEnter: function(){
+                gsap.to('.bottom-overlay',{autoAlpha:0});
+                $('.custom-cursor').addClass('white');
+            },
+            onLeaveBack: function(){
+                gsap.to('.bottom-overlay',{autoAlpha:1});
+            }
+        },
+    });
+    sidepj.from('.sidepj-content-list .sidepj-item:first-child',{y:100});
+    sidepj.from('.sidepj-content-list .sidepj-item:nth-child(2)',{y:150});
+    sidepj.from('.sidepj-content-list .sidepj-item:last-child',{y:170});
 });

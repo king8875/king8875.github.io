@@ -167,7 +167,7 @@
     .header-quick-item.hidden{ opacity: 0.6; }
     .header-contact-block{ display: none; }
 
-    .contact-block .contact-intro-block .contact-tit{ top: 200px; font-size: 10em; }
+    .contact-block .contact-intro-block .contact-tit{ top: 200px; font-size: 30vw; }
     .contact-address-block{ padding-top: 70px; }
     .address-content{ margin-top: 5vh; }
     
