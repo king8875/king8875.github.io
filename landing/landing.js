@@ -169,7 +169,7 @@ contact.to('.contact-tit',{
     duration:0.5
 });
 
-gsap.set('.footer-marquee-block',{y:-100});
+gsap.set('.footer-marquee-block',{y:100});
 const marquee = gsap.to('.footer-marquee-block',{
     scrollTrigger:{
         trigger:'.contact-address-block',
