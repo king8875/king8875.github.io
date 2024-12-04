@@ -1,5 +1,4 @@
-
-
+history.scrollRestoration = "manual"
 //lenis 스크롤 스무스
 const lenis = new Lenis();
 lenis.on('scroll', ScrollTrigger.update);
@@ -23,6 +22,24 @@ $('[data-text="split"]').find('.char-wrap').each(function (index) {
     const transformValue = index % 2 === 0 ? '100%' : '-100%';
     $(this).css('transform', `translateX(${transformValue})`);
 });
+
+// lenis scrollTo
+
+$('.header-quick-item:nth-child(3)').click(function(e){
+    e.preventDefault();
+    gsap.to(window,{
+        duration:1,
+        scrollTo: { y: ".projects-sec"}
+    });
+});
+$('.header-quick-item:last-child').click(function(e){
+    e.preventDefault();
+    gsap.to(window,{
+        duration:1,
+        scrollTo: { y: ".contact-address-block"}
+    });
+});
+
 
 // header gsap
 let lastScrollY = window.scrollY;
