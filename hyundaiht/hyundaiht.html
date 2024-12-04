@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyundaiHT</title>
+    <link rel="stylesheet" href="css/hyundaiht.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- lenis -->
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="js/hyundaiht.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <span class="blind">헤더</span>
+        <div class="header_side">
+            <h1 class="logo"><img src="https://www.hyundaiht.co.kr/kr/images/common/logo.svg"></h1>
+            <div class="header_btn">
+                <a href="#"><p>PRODUCTS</p></a>
+                <a href="#">
+                    <p>KOREAN</p>
+                    <img src="src/Icon/hyundai/DownArrow.svg">
+                </a>
+                <button class="sitemap_btn">
+                    <i id="side_menu_icon" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="gnb">
+            <ul class="gnb__list">
+                <li class="gnb__item">
+                    <div class="red_bg"></div>
+                    <p class="gnb__title">BUSINESS</p>
+                    <div class="gnb02">
+                        <ul class="gnb02_ul">
+                            <li>스마트홈</li>
+                            <li>good</li>
+                            <li>good</li>
+                            <li>good</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb__item">
+                    <div class="red_bg"></div>
+                    <p class="gnb__title">BRAND</p>
+                    <div class="gnb02">
+                        <ul class="gnb02_ul">
+                            <li>스마트홈</li>
+                            <li>good</li>
+                            <li>good</li>
+                            <li>good</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb__item">
+                    <div class="red_bg"></div>
+                    <p class="gnb__title">INVESTORS</p>
+                    <div class="gnb02">
+                        <ul class="gnb02_ul">
+                            <li>스마트홈</li>
+                            <li>good</li>
+                            <li>good</li>
+                            <li>good</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb__item">
+                    <div class="red_bg"></div>
+                    <p class="gnb__title">MEDIA CENTER</p>
+                    <div class="gnb02">
+                        <ul class="gnb02_ul">
+                            <li>스마트홈</li>
+                            <li>good</li>
+                            <li>good</li>
+                            <li>good</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="gnb__item">
+                    <div class="red_bg"></div>
+                    <p class="gnb__title">COMPANY</p>
+                    <div class="gnb02">
+                        <ul class="gnb02_ul">
+                            <li>스마트홈</li>
+                            <li>good</li>
+                            <li>good</li>
+                            <li>good</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="wrapper">
+        <section class="section01">
+
+            <article class="background_video_wrapper">
+                <div class="background_video">
+                    <div class="black_bg"></div>
+                    <iframe id="player" data-code="ClzkOo7n8cM" frameborder="0" allowfullscreen=""
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" width="640" height="360"
+                        src="https://www.youtube.com/embed/ClzkOo7n8cM?autoplay=1&amp;controls=0&amp;autohide=1&amp;wmode=opaque&amp;showinfo=0&amp;loop=1&amp;mute=1&amp;playsinline=1&amp;start=0&amp;suggestedQuality=hd1080&amp;playlist=ClzkOo7n8cM&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.hyundaiht.co.kr&amp;widgetid=1&amp;modestbranding=1&amp;rel=0"
+                        data-keepplaying=""></iframe>
+                </div>
+
+            </article>
+            <div class="background_video_text_wrapper">
+                <div class="bg_video_text_con">
+                    <!-- <img src="src/img/hyundai/HT_Logo_ Primary_White.png"> -->
+                    <div class="bg_logo_con">
+                        <div class="H_con">
+                            <div class="H_item"></div>
+                            <div class="H_item"></div>
+                            <div class="H_item"></div>
+                            <div class="H_item"></div>
+                            <div class="H_item"></div>
+                            <div class="H_item"></div>
+                            <div class="H_item"></div>
+                            <div class="H_item"></div>
+                            <div class="H_item"></div>
+                        </div>
+                        <div class="Y_con">
+                            <div class="Y_item"></div>
+                            <div class="Y_item"></div>
+                            <div class="Y_item"></div>
+                            <div class="Y_item"></div>
+                            <div class="Y_item"></div>
+                            <div class="Y_item"></div>
+                            <div class="Y_item"></div>
+                            <div class="Y_item"></div>
+                            <div class="Y_item"></div>
+                        </div>
+                    </div>
+                    <div class="bg_video_text">
+                        <h1>Hello Tomorrow</h1>
+                        <h1>Home Think</h1>
+                    </div>
+
+                </div>
+            </div>
+            <div class="scroll_con">
+                <span>S</span>
+                <span>C</span>
+                <span>R</span>
+                <span>O</span>
+                <span>L</span>
+                <span>L</span>
+                <span>D</span>
+                <span>O</span>
+                <span>W</span>
+                <span>N</span>
+
+            </div>
+        </section>
+
+        <section class="section02">
+            <div class="section02_wrapper">
+                <article class="sec02_article_left">
+                    <div class="sec02_text">
+                        <div class="sec02_title">
+                            <p>Smart Home</p>
+                        </div>
+                        <div class="sec02_sub color_black">
+                            <p>우리의 삶,</p>
+                            <p>일상을 편안하게</p>
+                        </div>
+                        <div class="sec02_plus_btn">
+                            <div class="sec02_plus bg_white">
+                                <i id="plus_icon" class="fa-solid fa-plus color_black"></i>
+                            </div>
+                            <div class="sec02_plus_box bg_white color_black">
+                                <p>Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <div class="sec02_right_con">
+                    <article class="sec02_article_right">
+                        <div class="sec02_text01">
+                            <div class="sec02_title">
+                                <p>Smart Security</p>
+                            </div>
+                            <div class="sec02_sub color_black">
+                                <p>당신이 언제나</p>
+                                <p>안심할 수 있도록</p>
+                            </div>
+                            <div class="sec02_plus_btn">
+                                <div class="sec02_plus bg_black">
+                                    <i id="plus_icon" class="fa-solid fa-plus color_white"></i>
+                                </div>
+                                <div class="sec02_plus_box bg_black color_white">
+                                    <p>Learn More</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="sec02_article_right">
+                        <div class="sec02_text02">
+                            <div class="sec02_title">
+                                <p>Service</p>
+                            </div>
+                            <div class="sec02_sub color_white">
+                                <p>주거환경에 최고의</p>
+                                <p>서비스를 더합니다</p>
+                            </div>
+                            <div class="sec02_plus_btn">
+                                <div class="sec02_plus color_black">
+                                    <i id="plus_icon" class="fa-solid fa-plus bg_white"></i>
+                                </div>
+                                <div class="sec02_plus_box bg_white color_black">
+                                    <p>Learn More</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section class="section03">
+            <div class="section03_wrapper">
+                <div class="section03_text_wrapper">
+                    <div class="sec03_text01_con">
+                        <p>Brand</p>
+                        <h1>Hello Tomorrow,Home Think</h1>
+                        <h4>Bridging the Life Elements</h4>
+                    </div>
+                    <div class="sec03_text02_con">
+                        <p>당신의 일상과 가장 가까운 곳에서</p>
+                        <p>우리가 맞이할 주거공간의 미래까지</p>
+                        <p><span>HT</span>는 공간과 기술,일상과 미래의</p>
+                        <p><span>새로운 가능성을 연결</span>해 갑니다.</p>
+                    </div>
+                </div>
+                <div class="section03_img_wrapper">
+                    <ul>
+                        <div class="sec03_ul_div01">
+                            <li>
+                                <span class="line_break">
+                                    BRAND
+                                    STORY
+                                </span>
+                            </li>
+                        </div>
+                        <div class="sec03_ul_div02">
+                            <li>
+                                <span class="line_break">
+                                    BRAND
+                                    CORE VALUE
+                                </span>
+                            </li>
+                            <li>
+                                <span class="line_break">
+                                    BRAND
+                                    MARK
+                                </span>
+
+                            </li>
+                        </div>
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section04">
+            <div class="sec04_wrapper">
+                <div class="sec04_top">
+                    <ul class="sec04_top_ul">
+
+                        <li>
+                            <div class="black_bg"></div>
+                            <div class="sec04_img_con"></div>
+                            <div class="sec04_top_text">
+                                <p>언론보도</p>
+                                <strong class="line_clamp">닫는 즉시 잠기는 현대에이치티㈜ 스마트 도어락, 현대홈쇼핑서 19일 2차 판매</strong>
+                                <small>2024.04.18</small>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="black_bg"></div>
+                            <div class="sec04_img_con"></div>
+                            <div class="sec04_top_text">
+                                <p>언론보도</p>
+                                <strong class="line_clamp">현대에이치티㈜, 닫는 즉시 잠기는 스마트 도어락 현대홈쇼핑 런칭</strong>
+                                <small>2024.03.28</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="black_bg"></div>
+                            <div class="sec04_img_con"></div>
+                            <div class="sec04_top_text">
+                                <p>언론보도</p>
+                                <strong class="line_clamp">현대에이치티㈜, 스마트홈 네트워크 시스템 부문 브랜드파워 20년 연속 1위 ‘쾌거’</strong>
+                                <small>2024.03.26</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="black_bg"></div>
+                            <div class="sec04_img_con"></div>
+                            <div class="sec04_top_text">
+                                <p>언론보도</p>
+                                <strong class="line_clamp">한국산업의 브랜드파워(K-BPI) '20년 연속' 1위</strong>
+                                <small>2024.03.26</small>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="sec04_bottom">
+                    <div class="sec04_bottom_bg">
+
+                        <div class="sec04_bottom_content">
+                            <div class="sec04_bottom_text">
+                                <p class="title_red">About HYUNDAI HT</p>
+                                <h1 class="main_title">당신과 함께 성장하는 기업.</h1>
+                                <p>우리의 삶을 더욱 더 행복하게 만드는 것,<br>현대HT가 존재하는 이유입니다.</p>
+                                <div class="sec04_bottom_btn">
+                                    <button>
+                                        <i id="more" class="fa-solid fa-ellipsis"></i>
+
+                                    </button>
+                                    <div class="sec04_more">
+                                        <span class="sec04_more_text">
+                                            <em>
+                                                Learn more
+                                            </em>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sec04_bottom_right">
+                                <div class="sec04_bottom_item">
+                                    <img src="src/Icon/hyundai/main_company_intro_icon01.png">
+                                    <p>MISSION</p>
+                                </div>
+                                <div class="sec04_bottom_item">
+                                    <img src="src/Icon/hyundai/main_company_intro_icon02.png">
+                                    <p>VISION</p>
+                                </div>
+                                <div class="sec04_bottom_item">
+                                    <img src="src/Icon/hyundai/main_company_intro_icon03.png">
+                                    <p>CORE VALUE</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="section05">
+
+            <div class="sec05_wrapper">
+
+                <div class="sec05_left_con">
+                    <p class="title_red">Promotion Video</p>
+                    <h1 class="main_title">브랜드 홍보영상</h1>
+                    <p class="sub_title">우리를 이어주는 힘, HT</p>
+
+                    <div class="sec04_bottom_btn">
+                        <button>
+                            <i id="more" class="fa-solid fa-ellipsis"></i>
+
+                        </button>
+                        <div class="sec04_more">
+                            <span class="sec04_more_text">
+                                <em>
+                                    Learn more
+                                </em>
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="sec05_right_con">
+                    <div class="sec05_video_con">
+                        <iframe width="560" height="315" id="sec05_video"
+                            src="https://www.youtube.com/embed/dLqaugufAS8?showinfo=0&amp;rel=0&amp;autoplay=0&amp;loop=1&amp;playlist=dLqaugufAS8&amp;enablejsapi=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+    <footer class="footer">
+
+        <div class="footer_item first">
+            <div class="footer_left">
+                <p class="color_personal">HUMAN RESOURCES</p>
+                <p class="color_black">CUSTOMER SERVICE CENTER</p>
+                <p class="color_black">LOCATION</p>
+            </div>
+            <div class="footer_right">
+                <p class="color_black">개인정보처리방침</p>
+                <p>이메일무단수집거부</p>
+            </div>
+        </div>
+
+        <div class="footer_item second">
+            <div class="footer_left">
+                <ul>
+                    <li>고객센터</li>
+                    <li>법인명</li>
+                    <li>주소지</li>
+                    <li>대표전화</li>
+                    <li>이메일</li>
+                </ul>
+                <ul>
+                    <li>고객센터</li>
+                    <li>현대에이치티(주)</li>
+                    <li>서울특별시 영등포구 여의대방로 107, 현대에이치티빌딩</li>
+                    <li>02-2240-9114</li>
+                    <li>ht_info@hyundaiht.co.kr</li>
+                </ul>
+
+            </div>
+            <div class="footer_right">
+                <ul>
+                    <li class="color_black">BUSINESS</li>
+                    <li>스마트홈</li>
+                    <li>스마트 보안</li>
+                    <li>서비스 사업</li>
+                    <li>주요 공사실적</li>
+                </ul>
+                <ul>
+                    <li class="color_black">BRAND</li>
+                    <li>브랜드 스토리</li>
+                    <li>브랜드 컨셉</li>
+                    <li>브랜드 마크</li>
+
+                </ul>
+                <ul>
+                    <li class="color_black">INVESTORS</li>
+                    <li>공시정보</li>
+                    <li>결산공고</li>
+                    <li>재무정보</li>
+                    <li>내부정보관리규정</li>
+                </ul>
+                <ul>
+                    <li class="color_black">MEDIA CENTER</li>
+                    <li>언론보도</li>
+                    <li>홍보영상</li>
+                    <li>사회공헌</li>
+
+                </ul>
+                <ul>
+                    <li class="color_black">COMPANY</li>
+                    <li>회사개요</li>
+                    <li>경영철학</li>
+                    <li>화사연혁</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_item third">
+            <div class="slide_wrapper">
+                <div class="slide_track">
+                    <div class="slide">
+                        <img src="src/img/hyundai/footer_img01.png">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/hyundai/footer_img02.png">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/hyundai/footer_img03.png">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/hyundai/footer_img04.png">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/hyundai/footer_img05.png">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/hyundai/footer_img06.png">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/hyundai/footer_img07.png">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/hyundai/footer_img08.png">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/hyundai/footer_img09.png">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/hyundai/footer_img10.png">
+                    </div>
+                    <div class="slide">
+                        <img src="src/img/hyundai/footer_img11.png">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer_item four">
+            <div class="footer_left">
+                <span>©</span>
+                <p class="color_personal">HYUNDAI HT Co.,Ltd. </p>
+            </div>
+            <div class="footer_right">
+                <div class="icon_con">
+                    <i id="facebook" class="fa-brands fa-facebook-f"></i>
+                    <i id="instargram" class="fa-brands fa-instagram"></i>
+                    <i id="youtube" class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="family_site_con">
+                    <button>
+                        <p>Family Site</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.blind{
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    line-height: 0;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+    clip: rect(0, 0, 0, 0);
+}
+
+.big-num{
+    font-size: 31vh;
+    font-family: Trash-Medium,sans-serif;
+    line-height: .9;
+    text-transform: uppercase;
+    letter-spacing: -.05em;
+    font-weight: 300;
+}

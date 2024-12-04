@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bionic</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- lottie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
+    <!-- lenis -->
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <!-- text split -->
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="./bionic.js" defer></script>
+
+</head>
+<body>
+    <div id="lottie-container">
+        <span class="blind">lottie</span>
+    </div>
+
+    <div class="video-container">
+        <img class="first_img" src="/assets/img/1031_pc.jpg" alt>
+        <img class="second_img" src="/assets/img/main2.jpg" alt>
+        <img class="third_img" src="/assets/img/teket_img01.jpg" alt>
+        <video autoplay muted loop src="/assets/video/SPEEDCROSS 6 .mp4"></video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <header class="header">
+        <h2 class="blind">매인 헤더</h2>
+        <div class="header-inner">
+            <div class="header-content">
+                <div class="header-logo">
+                    <div class="header-logo-inner">
+                        <a href="#">
+                            <img class="teket-logo" src="/assets/img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-util">
+                    <ul class="header-util-list">
+                        <li class="header-util-item">
+                            <a href="#" class="header-util-item-link">Home</a>
+                            <div class="tx-bottom-line"></div>
+                        </li>
+                        <li class="header-util-item">
+                            <a href="#" class="header-util-item-link">Waarden</a>
+                            <div class="tx-bottom-line"></div>
+                        </li>
+                        <li class="header-util-item">
+                            <a href="#" class="header-util-item-link">Services</a>
+                            <div class="tx-bottom-line"></div>
+                        </li>
+                        <li class="header-util-item">
+                            <a href="#" class="header-util-item-link">Het Model</a>
+                            <div class="tx-bottom-line"></div>
+                        </li>
+                        <li class="header-util-item">
+                            <a href="#" class="header-util-item-link">Studio</a>
+                            <div class="tx-bottom-line"></div>
+                        </li>
+                        <li class="header-util-item">
+                            <a href="#" class="header-util-item-link">Contact</a>
+                            <div class="tx-bottom-line"></div>
+                        </li>
+                    </ul>
+                    <div class="header-login-btn">
+                        <a href="" class="header-login-link">
+                            <p class="header-login-tx">Log in laser go</p>
+                            <div class="header-login-ic-block">
+                                <div class="header-login-ic">
+                                    <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.752 1.048 1 10.8M1.807 1h9.195v9.194" stroke="currentColor" stroke-width="2"></path></svg>
+                                </div>
+                                <div class="header-login-ic">
+                                    <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.752 1.048 1 10.8M1.807 1h9.195v9.194" stroke="currentColor" stroke-width="2"></path></svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header-menu-block">
+                    <div class="header-menu">
+                        <div class="header-menu-tx">
+                            <p>MENU</p>
+                            <p>CLOSE</p>
+                        </div>
+                        <div class="header-menu-lines">
+                            <div class="menu-line"></div>
+                            <div class="menu-line"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="header-sidebar-block">
+            <ul class="header-sidebar-list">
+                <li class="header-sidebar-item">
+                    <a class="header-sidebar-link" href="#">
+                        <span>01</span>
+                        <p>Home</p>
+                        <div class="tx-bottom-line"></div>
+                    </a>
+                </li>
+                <li class="header-sidebar-item">
+                    <a class="header-sidebar-link" href="#">
+                        <span>02</span>
+                        <p>Waarden</p>
+                    </a>
+                </li>
+                <li class="header-sidebar-item">
+                    <a class="header-sidebar-link" href="#">
+                        <span>03</span>
+                        <p>Services</p>
+                    </a>
+                </li>
+                <li class="header-sidebar-item">
+                    <a class="header-sidebar-link" href="#">
+                        <span>04</span>
+                        <p>Het Model</p>
+                    </a>
+                </li>
+                <li class="header-sidebar-item">
+                    <a class="header-sidebar-link" href="#">
+                        <span>05</span>
+                        <p>Studio</p>
+                    </a>
+                </li>
+                <li class="header-sidebar-item">
+                    <a class="header-sidebar-link" href="#">
+                        <span>06</span>
+                        <p>Contact</p>
+                    </a>
+                </li>
+                <li class="header-sidebar-item">
+                    <a class="header-sidebar-link" href="#">
+                        <span>07</span>
+                        <p>go</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+    </header>
+    <main>
+        <div class="main-wrapper">
+            <div class="main-inner">
+            
+                <div class="horizontal-inner">
+                    <div class="scroll-content">
+                        <section class="sec-hero">
+                            <span class="blind">LASER</span>
+                            <div class="hero-inner">
+                                <div class="hero-laser-block">
+                                    <svg width="100%" height="100%" viewBox="0 0 1360 385" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Frame 102">
+                                            <path id="letter-l" d="M0 381.49H80.0009V0H0V381.49Z" fill="currentColor" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; clip-path: inset(0%);"></path>
+                                            <path id="letter-a" d="M332.598 255.76C306.636 293.632 254.207 322.178 220.764 322.178C202.883 322.178 190.209 313.387 190.209 298.027C190.209 269.812 286.877 250.908 332.598 239.865V255.76ZM332.677 381.49H412.22V109.22H160.081V180.269H313.707C236.247 203.096 100.834 213.588 100.834 302.438C100.834 352.188 140.053 384.215 192.514 384.215C255.58 384.215 309.587 337.805 332.882 274.176L332.677 381.506V381.49Z" fill="currentColor" data-svg-origin="100.83399963378906 109.22000122070312" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; clip-path: inset(0%);"></path>
+                                            <path id="letter-s" d="M525.917 189.469C525.917 175.196 560.512 170.265 599.163 170.265C644.711 170.265 667.2 183.987 676.433 195.518L754.288 165.87C726.605 124.706 667.216 104.951 607.811 103.297C526.5 101.658 444.038 134.583 444.038 192.761C444.038 257.525 524.196 274.554 593.386 274.554H645.295C670.089 274.554 682.778 277.295 682.778 290.481C682.778 314.632 636.646 319.027 597.427 317.373C542.646 315.719 518.42 300.91 509.203 283.896L429.628 313.529C448.078 344.264 491.337 383.239 598.011 384.893C665.48 386.531 764.672 370.069 767.545 289.378C769.281 218.014 690.274 210.342 623.957 208.688C574.937 207.05 525.917 207.05 525.917 189.485" fill="currentColor" data-svg-origin="429.62799072265625 103.23857879638672" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; clip-path: inset(0%);"></path>
+                                            <path id="letter-e" d="M1035.34 215.872H875.023C879.632 186.082 917.699 171.447 952.878 171.447C989.793 171.447 1030.73 185.531 1035.34 215.872ZM1120.11 266.788C1131.06 153.031 1039.37 103.738 949.989 103.738C866.943 103.738 781.023 149.234 781.023 246.214C781.023 324.761 838.692 384.909 958.054 384.909C1060.12 384.909 1102.21 343.193 1120.09 313.387L1030.13 286.842C1020.33 299.855 999.578 316.097 958.054 316.097C916.531 316.097 875.591 298.768 875.591 267.339L1120.09 266.804L1120.11 266.788Z" fill="currentColor" data-svg-origin="781.0230102539062 103.73799896240234" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; clip-path: inset(0%);"></path>
+                                            <path id="letter-r" d="M1360 182.663V103.076C1270.78 103.076 1235.9 161.995 1221.67 211.729V109.236H1141.67V381.522H1221.67V236.824C1235.65 199.425 1261.47 178.394 1360 182.679" fill="currentColor" data-svg-origin="1141.6700439453125 103.07599639892578" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; clip-path: inset(0%);"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="sec-breek" id="sc1">
+                            <div class="breek-inner">
+                                <div class="breek-sticky-block">
+                                    <h2 data-text="split">Wij zijn een allround<br>
+                                        muzieklabel met focus op<br>
+                                        twee dingen: autonomie en<br>
+                                        creativiteit
+                                    </h2>
+                                    <p data-text="split">Als artiest weet je waar je heen wilt. Wij zorgen dat je<br>
+                                        er komt. Met precies de ondersteuning die je nodig hebt<br>
+                                        om maximale impact te maken. Van talentontwikkeling<br>
+                                        tot A&R, van content creatie tot funding. Jij loopt<br>
+                                        voorop, wij zorgen voor beweging.
+                                    </p>
+                                </div>
+                                <div class="breek-bot-block">
+                                    <h2 class="breek-bot-tx">Breek met de norm</h2>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="sec-waar">
+                            <div class="waar-inner">
+                                <div class="waar-sticky-block">
+                                    <h2 data-text="split">Waar we voor<br>staan</h2>
+                                    <p data-text="split">Samen bouwen we jouw platform. Versterken we wat<br>
+                                        goed is. Brengen we nieuwe ideeën tot leven. Zorgen<br>
+                                        we voor meer bereik. En leggen we het fundament voor<br>
+                                        succes op de lange termijn.
+                                    </p>
+                                </div>
+                                <div class="waar-bot-block">
+                                    <ul class="waar-bot-list">
+                                        <li class="waar-bot-item">
+                                            <h2 class="waar-tx-big">01</h2>
+                                            <div class="waar-tx-small">
+                                                <h3 data-text="split">Autonomie</h3>
+                                                <p data-text="split">Bepaal zelf de richting van je carrière en maak je ambities waar.</p>
+                                            </div>
+                                        </li>
+                                        <li class="waar-bot-item">
+                                            <h2 class="waar-tx-big">02</h2>
+                                            <div class="waar-tx-small">
+                                                <h3 data-text="split">Creativiteit</h3>
+                                                <p data-text="split">Geef je eigen visie vorm en maak je beste muziek ooit.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="sec-card">
+                            <div class="frame">
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                                <div class="item"><div class="box"></div></div>
+                            </div>
+                        </section>
+                        <section class="sec-space">
+                            <div class="space-inner">
+                                <h2 class="main-tx" data-text="split">
+                                    De sterkste mix<br>
+                                    voor makers zoals<br>
+                                    jij
+                                </h2>
+                                <p data-text="split" class="sub-tx">We stemmen onze diensten af op wat jij nodig hebt.<br>
+                                    Ons team staat op scherp om alles uit je carrière te<br>
+                                    halen, met creatieve en technologische ondersteuning<br>
+                                    op maat. Samen maken we de sterkste mix
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="vertical-inner" data-white="true">
+                <div class="vertical-sticky-block">
+                    <section class="sec-hero02">
+                        <div class="hero02-inner">
+
+                            <div class="hero02-circle-block">
+                                <div class="hero02-circle-inner">
+                                    <div class="hero02-circle">
+                                        <div class="circle-line">
+                                            <svg width="100%" height="100%"> <circle style="stroke-dasharray: 1539.38px; stroke-dashoffset: 1539.38px;" fill="none" class="js-circle-line" height="100%" width="100%" stroke="currentColor" stroke-width="1" cx="50%" cy="50%" r="49%"> </circle> </svg>
+                                        </div>
+                                        <ul class="hero02-point-list">
+                                            <li class="hero02-point-item">
+                                                <div class="point"></div>
+                                            </li>
+                                            <li class="hero02-point-item">
+                                                <div class="point"></div>
+                                            </li>
+                                            <li class="hero02-point-item">
+                                                <div class="point"></div>
+                                            </li>
+                                            <li class="hero02-point-item">
+                                                <div class="point"></div>
+                                            </li>
+                                            <li class="hero02-point-item">
+                                                <div class="point"></div>
+                                            </li>
+                                            <li class="hero02-point-item">
+                                                <div class="point"></div>
+                                            </li>
+                                            <li class="hero02-point-item">
+                                                <div class="point"></div>
+                                            </li>
+                                            <li class="hero02-point-item">
+                                                <div class="point"></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="circle-tx-block">
+                                        <ul class="circle-tx-list">
+                                            <li class="circle-tx-item">
+                                                <div class="circle-top-tx">
+                                                    <div class="circle-top-cur-tx-block">
+                                                        <div class="circle-top-cur-tx">
+                                                            <p>01</p>
+                                                            <p>02</p>
+                                                            <p>03</p>
+                                                            <p>04</p>
+                                                            <p>05</p>
+                                                            <p>06</p>
+                                                            <p>07</p>
+                                                            <p>08</p>
+                                                        </div>
+                                                    </div>
+                                                    <div><p>/08</p></div>
+                                                </div>
+                                                <ul class="circle-bot-tx-list">
+                                                    <li class="circle-bot-tx-item">
+                                                        <h3 class="circle-bot-tx">Scouting en upstream</h3>
+                                                        <h3 class="circle-bot-tx">Marketing, content en PR </h3>
+                                                        <h3 class="circle-bot-tx">A&R</h3>
+                                                        <h3 class="circle-bot-tx">Community building</h3>
+                                                        <h3 class="circle-bot-tx">High-end distributie</h3>
+                                                        <h3 class="circle-bot-tx">DSP pitching</h3>
+                                                        <h3 class="circle-bot-tx">Project funding</h3>
+                                                        <h3 class="circle-bot-tx">Scouting en upstream</h3>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul class="hero02-service-list">
+
+                                <li class="hero02-service-item">
+                                    <div class="arrow-ic-block">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="arrow-ic-block02">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="hero02-service-tx">
+                                        <h3>State of the art studio’s</h3>
+                                    </div>
+                                </li>
+                                <li class="hero02-service-item">
+                                    <div class="arrow-ic-block">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="arrow-ic-block02">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="hero02-service-tx">
+                                        <h3>Marketing, content en PR</h3>
+                                    </div>
+                                </li>
+                                <li class="hero02-service-item">
+                                    <div class="arrow-ic-block">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="arrow-ic-block02">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="hero02-service-tx">
+                                        <h3>A&R</h3>
+                                    </div>
+                                </li>
+                                <li class="hero02-service-item">
+                                    <div class="arrow-ic-block">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="arrow-ic-block02">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="hero02-service-tx">
+                                        <h3>Community building</h3>
+                                    </div>
+                                </li>
+                                <li class="hero02-service-item">
+                                    <div class="arrow-ic-block">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="arrow-ic-block02">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="hero02-service-tx">
+                                        <h3>High-end distributie</h3>
+                                    </div>
+                                </li>
+                                <li class="hero02-service-item">
+                                    <div class="arrow-ic-block">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="arrow-ic-block02">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="hero02-service-tx">
+                                        <h3>DSP pitching</h3>
+                                    </div>
+                                </li>
+                                <li class="hero02-service-item">
+                                    <div class="arrow-ic-block">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="arrow-ic-block02">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="hero02-service-tx">
+                                        <h3>Project funding</h3>
+                                    </div>
+                                </li>
+                                <li class="hero02-service-item">
+                                    <div class="arrow-ic-block">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="arrow-ic-block02">
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                    </div>
+                                    <div class="hero02-service-tx">
+                                        <h3>Scouting en upstream</h3>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <div class="hero02-bignum-block">
+                                <ul class="hero02-bignum-list">
+                                    <li class="hero02-bignum-item">01</li>
+                                    <li class="hero02-bignum-item">02</li>
+                                    <li class="hero02-bignum-item">03</li>
+                                    <li class="hero02-bignum-item">04</li>
+                                    <li class="hero02-bignum-item">05</li>
+                                    <li class="hero02-bignum-item">06</li>
+                                    <li class="hero02-bignum-item">07</li>
+                                    <li class="hero02-bignum-item">08</li>
+                                </ul>
+                                <div class="white-block"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="horizontal-container">
+                <div class="horizontal02-inner">
+                    <div class="scroll-content02">
+
+                        <section class="blank-block"></section>
+
+                        <section class="sec-space02">
+
+                            <div class="space02-inner">
+                                <div class="space02-left-block">
+                                    <div class="space02-left-title-block">
+                                        <div class="big-num"><span>01</span></div>
+                                        <h3 class="sub-tx" data-text="split">
+                                            Creativiteit is key. Wij maken jouw ideeën<br>
+                                            werkelijkheid, met een effectieve aanpak en<br>
+                                            op het hoogste niveau.
+                                        </h3>
+                                    </div>
+                                    <div class="space02-left-list-block">
+                                        <ul class="space02-left-list">
+                                            <li class="space02-left-item" >
+                                                <div class="space02-arrow-block">
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="space02-left-list-tx" data-text="split">
+                                                    Creatieve partnership
+                                                    <div class="tx-bar"></div>
+                                                </h3>
+                                            </li>
+                                            <li class="space02-left-item">
+                                                <div class="space02-arrow-block">
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="space02-left-list-tx" data-text="split">
+                                                    Platform ontwikkeling
+                                                    <div class="tx-bar"></div>
+                                                </h3>
+                                            </li>
+                                            <li class="space02-left-item">
+                                                <div class="space02-arrow-block">
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="space02-left-list-tx" data-text="split">
+                                                    Multidisciplinair team
+                                                    <div class="tx-bar"></div>
+                                                </h3>
+                                            </li>
+                                            <li class="space02-left-item">
+                                                <div class="space02-arrow-block">
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="space02-left-list-tx" data-text="split">
+                                                    State-of-the-art studio’s
+                                                    <div class="tx-bar"></div>
+                                                </h3>
+                                            </li>
+                                            <li class="space02-left-item">
+                                                <div class="space02-arrow-block">
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="space02-left-list-tx" data-text="split">
+                                                    Powered by Sony en AWAL
+                                                    <div class="tx-bar"></div>
+                                                </h3>
+                                            </li>
+                                    
+                                        </ul>
+                                        <div class="space02-hidden-block">
+                                            <ul class="space02-hidden-list">
+                                                <li class="space02-hidden-item" >
+                                                <p>Autonomierontrole, wij brengen jouw carrière naar nieuwe levels. Waar je ambitie ook ligt.</p>
+                                                </li>
+                                                <li class="space02-hidden-item" >
+                                                <p>gergsrsole, wij brengen jouw carrière naar nieuwe levels. Waar je ambitie ook ligt.</p>
+                                                </li>
+                                                <li class="space02-hidden-item" >
+                                                <p>Autonomie voor alles. Jij hebt de controle, wij beuwe levels. Waar je ambitie ook ligt.</p>
+                                                </li>
+                                                <li class="space02-hidden-item" >
+                                                <p>Autoalles. Jij hebt de controle, wij brengen jouw carrière naar nieuwe levels. Waar je ambitie ook ligt.</p>
+                                                </li>
+                                                <li class="space02-hidden-item" >
+                                                <p>Autowdqdqwnomie voor alles. Jij hebt de controle, wij brengen jouw caevels. Waar je ambitie ook ligt.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="space02-mid-bar"><span class="blind">가운데 바</span></div>
+
+                                <div class="space02-right-block">
+                                    <div class="space02-left-title-block">
+                                        <div class="big-num">02</div>
+                                        <h3 class="sub-tx" data-text="split">Autonomie voor alles. Jij hebt de<br>
+                                            controle, wij brengen jouw<br>
+                                            carrière naar nieuwe levels. Waar<br>
+                                            je ambitie ook ligt.
+                                        </h3>
+                                    </div>
+                                    <div class="space02-left-list-block">
+                                        <ul class="space02-left-list">
+                                            <li class="space02-left-item">
+                                                <div class="space02-arrow-block">
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="space02-left-list-tx" data-text="split">
+                                                    Talentontwikkeling
+                                                    <div class="tx-bar"></div>
+                                                </h3>
+                                            </li>
+                                            <li class="space02-left-item">
+                                                <div class="space02-arrow-block">
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="space02-left-list-tx" data-text="split">
+                                                    Persoonlijke backoffice
+                                                    <div class="tx-bar"></div>
+                                                </h3>
+                                            </li>
+                                            <li class="space02-left-item">
+                                                <div class="space02-arrow-block">
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="space02-left-list-tx" data-text="split">
+                                                    Lokaal netwerk
+                                                    <div class="tx-bar"></div>
+                                                </h3>
+                                            </li>
+                                            <li class="space02-left-item">
+                                                <div class="space02-arrow-block">
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="space02-left-list-tx" data-text="split">
+                                                    Dedicated contactpersoon
+                                                    <div class="tx-bar"></div>
+                                                </h3>
+                                            </li>
+                                            <li class="space02-left-item">
+                                                <div class="space02-arrow-block">
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                    <div class="arrow-ic">
+                                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.818 3.271v16.547H3.27M19.732 19.37 2.182 1.82" stroke="currentColor" stroke-width="3.599"></path></svg>
+                                                    </div>
+                                                </div>
+                                                <h3 class="space02-left-list-tx" data-text="split">
+                                                    Powered by Sony & AWAL
+                                                    <div class="tx-bar"></div>
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                        <div class="space02-hidden-block">
+                                            <ul class="space02-hidden-list">
+                                                <li class="space02-hidden-item">
+                                                    <p>Auengen jouw carrièere naar nieuwe levels. Waar je ambitie ook ligt.</p>
+                                                </li>
+                                                <li class="space02-hidden-item">
+                                                    <p> voor alles. Jij hebij brengeewfn jouw ls. Waar je ambitie ook ligt.</p>
+                                                </li>
+                                                <li class="space02-hidden-item">
+                                                    <p>Autoneeomie voort de controle, wij brengen jouw carrière naar aewn. Waar je ambitie ook ligt.</p>
+                                                </li>
+                                                <li class="space02-hidden-item">
+                                                    <p>Autowefwnomie voor alle hebt de controle, wij brengen jouw euwe levels. Waar je ambitie ook ligt.</p>
+                                                </li>
+                                                <li class="space02-hidden-item">
+                                                    <p>ntrole, wij brengen jouw carrière naar ne levels. Waarfwef je ambitie ook ligt.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <section class="sec-studio">
+                            <div class="studio-inner">
+                                <h2 class="studio-bigtx">Onze nieuwe<br>Amsterdamse<br>studio</h2>
+                                <p class="studio-smalltx">_check<br>Instagram</p>
+                            </div>
+                        </section>
+
+                        <section class="sec-studio01">
+                            <div class="studio-inner01">
+                                <h2 class="studio-bigtx">Goede artiesten<br>
+                                    komen we vanzelf<br>
+                                    tegen. Dus blijf<br>
+                                    creëren.
+                                </h2>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-inner">
+
+            <div class="footer-progressbar-block">
+                <div class="footer-progress-curr"></div>
+                <div class="footer-progress-curr-back"></div>
+            </div>
+            <div class="footer-util-block">
+                <div class="footer-util-left">
+                    <p>laser</p>
+                    <p>
+                        <span>instagram</span>
+                        <span>tiktok</span>
+                    </p>
+                </div>
+                <div class="footer-util-right">
+                    <a href="#">
+                        Blijf creëren
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

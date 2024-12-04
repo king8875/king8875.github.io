@@ -1,0 +1,136 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+}
+.dimmed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+}
+.layout-container{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #0000;
+}
+.layout-container-p40{
+    max-width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.play-icon-block{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    height: 74px;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+    background-color: #f9fc50;
+}
+
+.main-title-block{
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    padding-left: 40px;
+}
+.main-title-icon-block{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.main-title-text-block {
+    font-size: 40px;
+    letter-spacing: -.8px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.paragraph-3{
+    color: #ffffffb3;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.play-video-container{
+    position: absolute;
+    z-index: 1100;
+    border-radius: 100px;
+    width: 370px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    bottom: 80px;
+    right: 40px;
+    background-color: #373737;
+}
+.play-video-container .author-image-content-block{
+    display: flex;
+    gap: 15px;
+}
+.author-image-content-block .author-icon-block{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+.author-info-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.author-name{
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.author-designation{
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    display: none;
+    background: none;
+    border: none;
+    color: inherit; /* Swiper 기본 화살표 색상을 없앱니다 */
+    width: auto; /* 버튼 크기를 SVG 크기에 맞추기 위해 조정 */
+    height: auto;
+}
+
+@media (max-width:600px) {
+
+    .layout-container-p40{
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .paragraph-3{
+        font-size: 12px;
+    }
+}

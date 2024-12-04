@@ -1,0 +1,40 @@
+
+/* 
+    woff - 웹 오픈 폰트 포맷
+    woff2 - 웹 오픈 폰트 포맷 woff 20%~50% 압축
+
+    ttf - 원본폰트파일 트루타입 - 지원범위 오래된브라우저까지 지원
+    otf - 원본폰트파일 오픈트루타입 - 지원범위 오래된브라우저까지 지원
+
+    eot 익스
+*/
+
+
+@font-face {
+    font-family: 'a1';
+    src: url('../fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2') format('woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'a1';
+    src: url('../fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2') format('woff2');
+    font-weight: 500;
+}
+
+
+
+@font-face {
+    font-family: 'RestartSoft';
+    src: url('../fonts/668541cc9d738a9405e2c6c2_RestartSoft-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'RestartSoft';
+    src: url('../fonts/668541d882aae62591cc7e50_RestartSoft-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'RestartSoft';
+    src: url('../fonts/668541e70eac814a09fe0a84_RestartSoft-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}

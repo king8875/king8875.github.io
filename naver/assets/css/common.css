@@ -1,0 +1,87 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+}
+.select{
+    color: #080808;
+    color: var(--color_title);
+}
+.on{
+    color: #080808;
+    color: var(--color_title);
+}
+.st-up{
+    color: #f44336;
+}
+.st-down{
+    color: #2196f3;
+}
+.st-ic-up{
+    background-position: -26px -428px;
+    width: 12px;
+    height: 12px;
+    margin-top: 4px;
+}
+.st-ic-down{
+    background-position: 0px -428px;
+    width: 12px;
+    height: 12px;
+    margin-top: 5px;
+}
+/* sp1 */
+#header .search-area .btn-keyboard::before,
+#header .search-area .btn-auto::before,
+#header .util-area [class*="btn-"]::before,
+#header .nav-area .icon::before,
+#header .nav-area .icon::after,
+.sc-login .link-login::before,
+.sc-news .group-issue .issue-area .btn-all::after,
+.sc-news .group-control .control-area .btn.prev::before,
+.sc-news .group-control .control-area .btn.next::before,
+.sc-news .group-control .view-area .btn-list::before,
+.sc-news .group-control .view-area .btn-thumb::before,
+.sc-food .food-box-bottom .fbb-content .btn::before,
+footer .footer-box2 .notice .link::after,
+.sc-weather .weat-head .compare::before,
+.sc-stock .st-head-area .info::before,
+.sc-stock .st-head-area .refresh::before,
+.sc-stock .st-main-area .st-main-box.left .st-updown .up-icon,
+.sc-stock .st-main-area .st-main-box.right .btn-more::after,
+.st-ic-up,
+.st-ic-down,
+.sc-widget .wg-content-area .wg-content-bot .papago-box .papa-link::before,
+.sc-widget .wg-content-area .wg-content-bot .papago-box .papa-link::after,
+.sc-widget .wg-link-area::before,
+.sc-widget .wg-link-area a .ic-more::after,
+.sc-widget .wg-content-area .wg-content-top .wg-content-main .ic-search::after,
+.sc-widget .wg-content-area .btn-left::before
+{
+    background-image: url(../images/sp1.png);
+    background-size: 463px auto;
+    background-repeat: no-repeat;
+}
+
+/* sp2 */
+.group-main .quickmenu-area .quickmenu-list .icon.ic-my::before,
+.group-main .quickmenu-area .quickmenu-list .icon.ic-review::before,
+.group-main .quickmenu-area .quickmenu-list .icon.ic-order::before,
+.group-main .quickmenu-area .quickmenu-list .icon.ic-cart::before,
+.group-bottom-control .control-area .btn::before
+{
+    background-image: url(../images/sp2.png);
+    background-size: 316px auto;
+    background-repeat: no-repeat;
+}
+
+/* sp3 */
+.sc-weather .weat-main .wm-box .wm-weat-info .weat-icon::before,
+.sc-weather .wm-box .weather-list .weather-item .w-icon::before
+{
+    background-image: url(../images/sp3.png);
+    background-size: 316px auto;
+    background-repeat: no-repeat;
+}

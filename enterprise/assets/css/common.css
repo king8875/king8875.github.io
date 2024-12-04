@@ -1,0 +1,36 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+}
+.dimmed{
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card__item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 34px;
+    border-radius: 20px;
+    color: #fff;
+    width: 400px;
+    height: 540px;
+    border: 2px solid #fff;
+    background: #000;
+}
+.section-inner{ position: relative; margin: 0 100px; }
+body.dark{ background: #000; transition: .3s; }
+
+@media (max-width:720px) {
+    .section-inner{ margin: 0; }
+  
+}

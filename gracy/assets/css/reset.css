@@ -1,0 +1,30 @@
+:root{
+    --body-font: Restartsoft, sans-serif;
+    --black: black;
+    --dark-shade: #373737;
+    --bg-color: #fbf8f4;
+    --white: white;
+    --white-70: #ffffffb3;
+    --black-60: #0009;
+    --lime-green: #d2ff56;
+    --transparent: #0000;
+}
+
+*{margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;}
+
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+ul{list-style: none;}
+fieldset,input{border: 0;}
+img, picture, video, canvas, svg {display: block;max-width:100%;object-fit: cover;}
+html{ }
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #fbf8f4;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: 'RestartSoft',sans-serif;
+}

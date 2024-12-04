@@ -1,0 +1,200 @@
+@import './reset.css';
+@import './fonts.css';
+@import './common.css';
+/* header css */
+.header{
+    position: fixed;
+    top: 30px;
+    padding: 0 36px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 990;
+    transform: translateY(0%);
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 100px;
+    backdrop-filter: blur(10px);
+}
+.header .header-inner.mo-v{ width: 100%; }
+.header .header-logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 12px 32px;
+    z-index: 10;
+    color: #fff;
+}
+.header .header-nav{ background: #373737; border-radius: 100px; }
+.header .header-nav.mo-v{ display: none; }
+.header .header-nav-list{
+    display: flex;
+    z-index: 10;
+    background-color: #373737;
+    border-radius: 100px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 275px;
+}
+.header .header-nav-list .nav-item a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing: .25px;
+    border-radius: 100px;
+    padding: 16px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    transition: .4s;
+}
+.header .header-nav-list .nav-item a:hover{
+    background-color: var(--lime-green);
+    color: var(--black);
+}
+.header .header-btn-wrapper a{
+    text-transform: capitalize;
+    border-radius: 100px;
+    padding: 16px 32px 16px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    transition: .4s;
+    color: #000;
+    background-color: #f9fc50;
+}
+.header .header-btn-wrapper a:hover{
+    color: var(--white);
+    background-color: var(--black);
+}
+@media (max-width:600px) {
+    .header .header-btn-wrapper a{
+        padding: 16px 10px 16px 10px;
+    }
+    
+}
+/* email alert css */
+.email-alert-block{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;left: 0;bottom: 0;right: 0;
+    background: #0009;
+    backdrop-filter: blur(20px);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+.email-alert-block.hidden{ display: none; }
+.email-alert-content{
+    position: relative;
+    border-radius: 60px;
+    max-width: 522px;
+    padding: 56px;
+    background-color: var(--white);
+}
+.email-alert-content .email-alert-inner{ margin: 0 0 15px; }
+.email-alert-inner .email-alert-title{
+    letter-spacing: -1.3px;
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 32px;
+}
+.email-alert-inner .email-alert-subtitle{
+    margin-top: 12px;
+    color: #8d8d8d;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.email-alert-inner .email-form-block{
+    margin-top: 32px;
+}
+.email-alert-inner .email-form-input-block label{
+    color: var(--black);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 5px;
+}
+.email-alert-inner .email-form-input-block .input-email{
+    min-height: 68px;
+    color: var(--black);
+    border-radius: 117px;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 1.2;
+
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 10px;
+    display: block;
+}
+.email-alert-inner .email-form-btn-block{
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.email-alert-inner .email-form-btn-block .btn-submit{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    height: 100%;
+    color: var(--black);
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    border: none;
+    transition: background-color .4s, color .4s;
+    background-color: #f9fc50;
+}
+
+.form-close-btn{
+    position: absolute;
+    display: flex;
+    top: 0;right: 0;
+    z-index: 2;
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    transition: .4s;
+}
+.form-close-btn .close-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-close-btn:hover{
+    background: #ff0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

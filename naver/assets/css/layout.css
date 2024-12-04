@@ -1,0 +1,205 @@
+@import './reset.css';
+@import './common.css';
+#wrap{ min-width: 1340px; }
+#header{
+    position: relative;
+    width: 1280px;
+    height: 215px;
+    margin: 0 auto;
+}
+#header .logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 285px;    
+}
+#header .group-header{
+    position: absolute;
+    left: 50%;
+    top: 52px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+#header .search-area{
+    width: 706px;
+    border: 1px solid #03c75a;
+    border-radius: 33px;
+    background-color: #fff;
+}
+#header .search-area:hover{ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); }
+.header-active-block{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    background: #ccc;
+}
+#header .search-area form{}
+#header .search-area fieldset{
+    display: flex;
+    padding-left: 28px;
+}
+#header .search-area .input-search{
+    flex: 1;
+    height: 58px;
+    color: #000;
+    color: var(--color_search);
+    z-index: 10;
+    padding: 17px 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2rem;
+    line-height: 24px;
+    font-weight: bold;
+    outline: 0;
+}
+#header .search-area .btn-keyboard{
+    padding: 22px 3px;
+}
+#header .search-area .btn-keyboard::before{
+    display: block;
+    width: 24px;
+    height: 14px;
+    background-position: -148px -301px;
+    content: '';
+}
+#header .search-area .btn-auto{
+    padding: 26px 6px;
+}
+#header .search-area .btn-auto::before{
+    display: block;
+    width: 10px;
+    height: 6px;
+    background-position: -221px -184px;
+    content: '';
+}
+#header .search-area .btn-submit{
+    padding: 17px 27px 16px 10px;
+}
+#header .search-area .btn-submit svg{
+    width: 25px;
+}
+
+
+#header .util-area{
+    position: absolute;
+    display: flex;
+    top: 5px;
+}
+#header .util-area.left{
+    left: -10px;
+}
+#header .util-area.right{
+    right: -10px;
+}
+#header .util-area [class*="btn-"]{
+    padding: 8px;
+}
+#header .util-area [class*="btn-"]::before{
+    display: block;
+    width: 32px;
+    height: 32px;
+    content: '';
+}
+#header .util-area .btn-menu::before{
+    background-position: -311px -166px;
+}
+#header .util-area .btn-pay::before{
+    background-position: -248px -260px;
+}
+#header .util-area .btn-talk::before{
+    background-position: -99px -316px;
+}
+#header .util-area .btn-alert::before{
+    background-position: -311px -232px;
+}
+#header .util-area .btn-cart::before{
+    background-position: -33px -316px;
+}
+
+#header .nav-area{
+    margin-top: 8px;
+    width: 676px;
+    margin: 8px auto 0;
+}
+#header .nav-area .nav-list{
+    display: flex;
+}
+#header .nav-area .nav-item{
+    text-align: center;
+    width: 64px;
+}
+
+/* 공통 */
+#header .nav-area a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+#header .nav-area .icon{
+    position: relative;
+    width: 44px;
+    height: 44px;
+}
+#header .nav-area .icon::before{
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -3px;
+    background-position: -153px -142px;
+    width: 50px;
+    height: 50px;
+}
+#header .nav-area .icon::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    content: '';
+}
+
+/* 개별 */
+#header .nav-area .icon.ic-mail::after{
+    background-position: -205px -219px;
+}
+#header .nav-area .icon.ic-cafe::after{
+    background-position: -41px -219px;
+}
+#header .nav-area .icon.ic-blog::after{
+    background-position: 0px -219px;
+}
+#header .nav-area .icon.ic-shop::after{
+    background-position: -41px -260px;
+}
+#header .nav-area .icon.ic-news::after{
+    background-position: -270px -205px;
+}
+#header .nav-area .icon.ic-stock::after{
+    background-position: -123px -260px;
+}
+#header .nav-area .icon.ic-property::after{
+    background-position: 0px -260px;
+}
+#header .nav-area .icon.ic-map::after{
+    background-position: -270px 0px;
+}
+#header .nav-area .icon.ic-webtoon::after{
+    background-position: -164px -260px;
+}
+#header .nav-area .icon.ic-chzzk::after{
+    background-position: -153px -142px;
+}
+.chzzk-img{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#header .nav-area .icon.ic-more::after{
+    background-position: -270px -164px;
+}

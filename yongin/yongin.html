@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>용인특례시</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- lenis -->
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="./yongin.js" defer></script>
+</head>
+
+<body>
+
+    <aside class="side-block">
+        <span class="blind">앙쪽 사이드 fixed content</span>
+        <div class="side-content">
+            <div class="side-left-block">
+                <ul class="side-navi-list">
+                    <li class="side-navi-item on" id="main"> <a href="#">메인</a></li>
+                    <li class="side-navi-item" id="news"> <a href="#">소식</a></li>
+                    <li class="side-navi-item" id="admin"> <a href="#">행정</a></li>
+                </ul>
+            </div>
+            <div class="side-right-block">
+                <ul class="side-passport-block">
+                    <li>
+                        <div class="top">
+                            <strong>여권발급</strong>
+                            <h2>대기현황</h2>
+                            <a href="#">새로고침</a>
+                        </div>
+                        <div class="bot">
+                            <h2>신청 대기인원</h2>
+                            <p class="blue">5</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>찾기 대기인원</h2>
+                        <p class="red">0</p>
+                    </li>
+                </ul>
+                <div class="side-gym-block">
+                    <h2><span>공공체육시설</span><br>통합예약시스템</h2>
+                    <a href="#">바로가기</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__top">
+                <div class="header__top__inner">
+                    <div class="site">
+                        <a href="#" class="site__link"> 용인특례시의회 </a>
+                    </div>
+                    <div class="header__top--util">
+                        <div class="weather-area">
+                            <a href="#" class="weather-area__btn">
+                                미세먼지<span class="weather-area__btn--good">좋음</span>
+                                초미세먼지<span class="weather-area__btn--good">좋음</span>
+                            </a>
+                        </div>
+                        <div class="login-area">
+                            <ul class="login-area__list">
+                                <li class="login-area__item">
+                                    <a href="#" title="로그인 화면 이동">로그인</a>
+                                </li>
+                                <li class="login-area__item">
+                                    <a href="#" title="회원가입 화면 이동">회원가입</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="print__btn">
+                            <a href="#" title="프린트하기" class="print__btn__icon">
+                                <span class="blind">프린트하기</span>
+                            </a>
+                        </div>
+                        <div class="magnify">
+                            <ul class="magnify__list">
+                                <li class="magnify__item">
+                                    <a href="#">화면</a>
+                                </li>
+                                <li class="magnify__item">
+                                    <a href="#" class="zoomin">
+                                        <img class="zoomin__img" src="https://www.yongin.go.kr/resources/user/main/img/layout/txt_plus_icon.png" alt="zoomin">
+                                    </a>
+                                </li>
+                                <li class="magnify__item">
+                                    <a href="#" class="zoomout">
+                                        <img class="zoomout__img" src="https://www.yongin.go.kr/resources/user/main/img/layout/txt_minus_icon.png" alt="zoomout">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="language">
+                            <button class="lang__btn">언어선택</button>
+                            <div class="lang__dropdown">
+                                <ul class="lang__list">
+                                    <li class="lang__item">
+                                        <a class="lang__item--link" href="#">한국어</a>
+                                    </li>
+                                    <li class="lang__item">
+                                        <a class="lang__item--link" href="#">English</a>
+                                    </li>
+                                    <li class="lang__item">
+                                        <a class="lang__item--link" href="#">中國語</a>
+                                    </li>
+                                    <li class="lang__item">
+                                        <a class="lang__item--link" href="#">日本語</a>
+                                    </li>
+                                    <li class="lang__item">
+                                        <a class="lang__item--link" href="#">그 외 언어</a>
+                                    </li>
+                                </ul>
+                                <button class="close"> 언어선택 닫기 </button>
+                            </div>    
+                        </div>
+                        <div class="familyPop__btn">
+                            <div class="familyPop__swiper swiper">
+                                <ul class="familyPop__list swiper-wrapper">
+                                    <li class="familyPop__item swiper-slide">
+                                        <a class="familyPop__item--link" href="#">용인시평생학습관</a>
+                                    </li>
+                                    <li class="familyPop__item swiper-slide">
+                                        <a class="familyPop__item--link" href="#">용인시평생학습관</a>
+                                    </li>
+                                    <li class="familyPop__item swiper-slide">
+                                        <a class="familyPop__item--link" href="#">용인시평생학습관</a>
+                                    </li>
+                                    <li class="familyPop__item swiper-slide">
+                                        <a class="familyPop__item--link" href="#">용인시평생학습관</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="more__btn">
+                                <a class="more__btn__link" href="#">더보기</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__main">
+                <div class="header__logo">
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            <h1 class="blind">용인시청 로고</h1>
+                            <img class="logo__img" src="./assets/img/header_logo_img.jpg" alt="용인특례시 로고 이미지">
+                        </a>
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item" data-tab="tab01">
+                            <a class="header__item__link" href="#">용인소식</a>
+                            <div id="tab01" class="tab__item">
+                                <div class="tab__item__inner">
+                                    <div class="tab__item__left">
+                                        <div class="tab__item__img-block"><img class="tab__item__img" src="/assets/img/header-tab-img.png" alt="용인소식아이콘"></div>
+                                        <h2>용인소개</h2>
+                                        <p>용인의 시정정보와<br>새로운소식</p>
+                                    </div>
+                                    <div class="tab__item__right">
+                                        <ul class="tab__item__list">
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">새소식</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">시정소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">도정소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">언론보도</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">문화행사/공연</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">채용/시험정보</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">코로나19 관련소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인소식지</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">스마트반상회</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인시 e-book</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">손바닥소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">인구정책 브리핑</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">직장운동경기부 소식</a>
+                                                    </li>
+                                    
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">입법예고/공고</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">입법예고</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">고시공고</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">입찰계약정보</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">입찰공고용인시</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">계약정보공개시스템</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">용인사진관</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2000년 이전</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2000-2020년</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2021-2023년</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인의 현재</a>
+                                                    </li>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__item" data-tab="tab02">
+                            <a class="header__item__link" href="#">민원안내</a>
+                            <div id="tab02" class="tab__item">
+                                <div class="tab__item__inner">
+                                    <div class="tab__item__left">
+                                        <div class="tab__item__img-block"><img class="tab__item__img" src="/assets/img/header-tab-img.png" alt="용인소식아이콘"></div>
+                                        <h2>민원안내</h2>
+                                        <p>용인의 시정정보와<br>새로운소식</p>
+                                    </div>
+                                    <div class="tab__item__right">
+                                        <ul class="tab__item__list">
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">새소식</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">시정소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">도정소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">언론보도</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">문화행사/공연</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">채용/시험정보</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">코로나19 관련소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인소식지</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">스마트반상회</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인시 e-book</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">손바닥소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">인구정책 브리핑</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">직장운동경기부 소식</a>
+                                                    </li>
+                                    
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">입법예고/공고</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">입법예고</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">고시공고</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">입찰계약정보</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">입찰공고용인시</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">계약정보공개시스템</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">용인사진관</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2000년 이전</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2000-2020년</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2021-2023년</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인의 현재</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__item" data-tab="tab03">
+                            <a class="header__item__link" href="#">정보공개</a>
+                            <div id="tab03" class="tab__item">
+                                <div class="tab__item__inner">
+                                    <div class="tab__item__left">
+                                        <div class="tab__item__img-block"><img class="tab__item__img" src="/assets/img/header-tab-img.png" alt="용인소식아이콘"></div>
+                                        <h2>정보공개</h2>
+                                        <p>용인의 시정정보와<br>새로운소식</p>
+                                    </div>
+                                    <div class="tab__item__right">
+                                        <ul class="tab__item__list">
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">새소식</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">시정소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">도정소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">언론보도</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">문화행사/공연</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">채용/시험정보</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">코로나19 관련소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인소식지</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">스마트반상회</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인시 e-book</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">손바닥소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">인구정책 브리핑</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">직장운동경기부 소식</a>
+                                                    </li>
+                                    
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">입법예고/공고</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">입법예고</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">고시공고</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">입찰계약정보</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">입찰공고용인시</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">계약정보공개시스템</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">용인사진관</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2000년 이전</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2000-2020년</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2021-2023년</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인의 현재</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__item" data-tab="tab04">
+                            <a class="header__item__link" href="#">시민참여</a>
+                            <div id="tab04" class="tab__item">
+                                <div class="tab__item__inner">
+                                    <div class="tab__item__left">
+                                        <div class="tab__item__img-block"><img class="tab__item__img" src="/assets/img/header-tab-img.png" alt="용인소식아이콘"></div>
+                                        <h2>시민참여</h2>
+                                        <p>용인의 시정정보와<br>새로운소식</p>
+                                    </div>
+                                    <div class="tab__item__right">
+                                        <ul class="tab__item__list">
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">새소식</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">시정소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">도정소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">언론보도</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">문화행사/공연</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">채용/시험정보</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">코로나19 관련소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인소식지</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">스마트반상회</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인시 e-book</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">손바닥소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">인구정책 브리핑</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">직장운동경기부 소식</a>
+                                                    </li>
+                                    
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">입법예고/공고</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">입법예고</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">고시공고</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">입찰계약정보</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">입찰공고용인시</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">계약정보공개시스템</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">용인사진관</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2000년 이전</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2000-2020년</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2021-2023년</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인의 현재</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__item" data-tab="tab05">
+                            <a class="header__item__link" href="#">용인소개</a>
+                            <div id="tab05" class="tab__item">
+                                <div class="tab__item__inner">
+                                    <div class="tab__item__left">
+                                        <div class="tab__item__img-block"><img class="tab__item__img" src="/assets/img/header-tab-img.png" alt="용인소식아이콘"></div>
+                                        <h2>용인소개</h2>
+                                        <p>용인의 시정정보와<br>새로운소식</p>
+                                    </div>
+                                    <div class="tab__item__right">
+                                        <ul class="tab__item__list">
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">새소식</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">시정소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">도정소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">언론보도</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">문화행사/공연</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">채용/시험정보</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">코로나19 관련소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인소식지</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">스마트반상회</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인시 e-book</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">손바닥소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">인구정책 브리핑</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">직장운동경기부 소식</a>
+                                                    </li>
+                                    
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">입법예고/공고</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">입법예고</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">고시공고</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">입찰계약정보</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">입찰공고용인시</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">계약정보공개시스템</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">용인사진관</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2000년 이전</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2000-2020년</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2021-2023년</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인의 현재</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__item" data-tab="tab06">
+                            <a class="header__item__link" href="#">분야별정보</a>
+                            <div id="tab06" class="tab__item">
+                                <div class="tab__item__inner">
+                                    <div class="tab__item__left">
+                                        <div class="tab__item__img-block"><img class="tab__item__img" src="/assets/img/header-tab-img.png" alt="용인소식아이콘"></div>
+                                        <h2>분야별정보</h2>
+                                        <p>용인의 시정정보와<br>새로운소식</p>
+                                    </div>
+                                    <div class="tab__item__right">
+                                        <ul class="tab__item__list">
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">새소식</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">시정소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">도정소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">언론보도</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">문화행사/공연</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">채용/시험정보</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">코로나19 관련소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인소식지</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">스마트반상회</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인시 e-book</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">손바닥소식</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">인구정책 브리핑</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">직장운동경기부 소식</a>
+                                                    </li>
+                                    
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">입법예고/공고</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">입법예고</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">고시공고</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">입찰계약정보</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">입찰공고용인시</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">계약정보공개시스템</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tab__item__item">
+                                                <h3 class="tab__item__title">용인사진관</h3>
+                                                <ul class="tab__item__tab-list">
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2000년 이전</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2000-2020년</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">2021-2023년</a>
+                                                    </li>
+                                                    <li class="tab__item__tab-item">
+                                                        <a href="#">용인의 현재</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="header__form">
+                        <button class="search__icon">
+                            <span class="blind">검색 아이콘</span>
+                        </button>
+                        <button class="menu__icon">
+                            <span class="blind">매뉴 아이콘</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="dimmed"></div>
+            <section class="sec-main">
+                <div class="main__inner">
+                    <div class="contentSearch-group">
+                        <span class="blind">검색창</span>
+                        <div class="yongin-banner">
+                            <div class="front-card">
+                                <a class="yongin-banner-link" href="#">
+                                    <img src="./assets/img/logo_img.png" alt="용인시 배너">
+                                </a>
+                            </div>
+                            <div class="back-card">
+                                <a class="yongin-banner-link" href="#">
+                                    <h5>용인르네상스 의미</h5>
+                                    <p>
+                                        시민과 함께 지혜를 모아 시의 발전과<br>
+                                        모든 분야의 질적 변화와 양적 성장을<br> 통해
+                                        시민 삶의 질을 업그레이드하겠다는<br>
+                                        미래 비전입니다
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search-block">
+                            <div class="search-left-block">
+                                <form class="search-form" method="">
+                                    <span class="blind">검색창</span>
+                                    <input class="search-input" placeholder="검색어를 입력해주세요"></input>
+                                    <button class="btn-search">
+                                        <img src="/assets/icon/search-ic.png" alt="검색아이콘">
+                                    </button>
+                                </form>
+                                <div class="hottag-block">
+                                    <div class="hot-keyword">
+                                        <h3>인기검색어</h3>
+                                    </div>
+                                    <ul class="hottag-list">
+                                        <li class="hottag-item">폐기물</li>
+                                        <li class="hottag-item">교류</li>
+                                        <li class="hottag-item">대형폐기물</li>
+                                        <li class="hottag-item">지구단위계획</li>
+                                        <li class="hottag-item">폐가전</li>
+                                        <li class="hottag-item">민간임대</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="chatbot-area">
+                                <a href="#"> <img src="/assets/img/chatbot_img.png" alt="실시간 챗봇 이미지"> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentBanner-group">
+                        <div class="swiper-area">
+                            <nav class="swiper-tab-block">
+                                <div class="visual-tab on" data-tab="tab01"> <h3>주요소식</h3> </div>
+                                <div class="visual-tab" data-tab="tab02"> <h3>시민참여</h3> </div>
+                            </nav>
+                            <div class="visual-swiper swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="/assets/img/swiper_img01.png" alt>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="/assets/img/swiper_img02.jpg" alt>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="/assets/img/swiper_img03.jpg" alt>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-ctrl-block">
+                                <div class="swiper-pagination"></div>
+                                <div class="visual-btn prev swiper-button-prev">
+                                    <span class="blind">prev</span>
+                                    <img src="/assets/icon/prev_btn-ic.png" alt="이전">
+                                </div>
+                                <div class="visual-btn next swiper-button-next">
+                                    <span class="blind">next</span>
+                                    <img src="/assets/icon/prev_btn-ic.png" alt="다음">
+                                </div>
+                                <button class="swiper-play-pause">
+                                    <img class="play-ic" src="/assets/icon/play_ic.png" alt="시작">
+                                    <img class="pause-ic" src="/assets/icon/pause_ic.png" alt="정지">
+                                    <span class="blind">Pause</span>
+                                </button>
+                                <button class="visual-btn btn-tooltip">
+                                    <span class="blind">tooltip</span>
+                                    <img src="/assets/icon/tooltip_ic.png" alt="tooltip-ic">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mayor-area">
+                            <div class="mayor-top-block">
+                                <ul class="mayor-top-list">
+                                    <li class="mayor-top-item">
+                                        <a href="#"> <i class="ico ic-organ"></i>조직도</a>
+                                    </li>
+                                    <li class="mayor-top-item">
+                                        <a href="#"><i class="ico ico-office"></i>청사안내</a>
+                                    </li>
+                                    <li class="mayor-top-item">
+                                        <a href="#"><i class="ico ico-live"></i>용인라이브</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mayor-mid-block">
+                                <img src="/assets/img/mayor_img.jpg" alt>
+                                <h3 class="section-title">
+                                    <span>용인특례시장</span>
+                                    <span><strong>이상일</strong>입니다.</span>
+                                </h3>
+                                <span class="mayor-mid-subtitle"> 용인특례시를 <br> 세계 최고의 반도체 혁신 클러스터로 </span>
+                            </div>
+                            <div class="mayor-bot-block">
+                                <ul class="mayor-bot-list">
+                                    <li class="mayor-bot-item">
+                                        <a href="#">시민시장실</a>
+                                    </li>
+                                    <li class="mayor-bot-item">
+                                        <a href="#">공약과 실천</a>
+                                    </li>
+                                    <li class="mayor-bot-item">
+                                        <a href="#">시민참여플랫폼</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="sec-service">
+                <div class="service-inner">
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img01.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">공공체육통합예약</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img02.png" alt="service02">
+                                </div>
+                                <h3 class="service-text">통합일자리</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img03.png" alt="service03">
+                                </div>
+                                <h3 class="service-text">채용/시험정보</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img04.png" alt="service04">
+                                </div>
+                                <h3 class="service-text">생활폐기물</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img05.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">통합예약</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img06.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">용인관광</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img07.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">복지(생애주기별 서비스)</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img08.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">문화·예술</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img09.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">빅데이터 플랫폼</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img10.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">용인기업지원시스템</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img11.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">청년LAB</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img12.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">복지용구 공유 플랫폼</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img13.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">용인 온마켓</h3>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="#">
+                                <div class="service-icon-block">
+                                    <img src="/assets/icon/service-item_img14.png" alt="service01">
+                                </div>
+                                <h3 class="service-text">공간정보 포털</h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="ai-area">
+                        <div class="ai-inner">
+                            <h3 class="ai-title-block"> 용인특례시<br> AI 맞춤서비스 </h3>
+                            <div class="ai-mygroup-block">
+                                <div class="ai-mygroup-content">
+                                    <div class="ai-group-title">
+                                        <h3><span class="blue">나의</span> 관심정보</h3>
+                                    </div>
+                                    <ul class="ai-tag-list">
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">실시간 채용정보</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">채용/시험정보</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ai-mygroup-content">
+                                    <div class="ai-group-title">
+                                        <h3><span class="blue">나의</span> 관심정보</h3>
+                                    </div>
+                                    <ul class="ai-tag-list">
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">실시간 채용정보</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">채용/시험정보</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                        <li class="ai-tag-item">
+                                            <a class="ai-tag-item-link" href="#">통합검색</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-area" id="news-tab">
+                        <div class="news-inner">
+                            <div class="news-title-block">
+                                <h2 class="news-title-tx">용인특례시 <strong>소식</strong></h2>
+                            </div>
+                            <div class="news-tab-list-block">
+                                <ul class="news-tab-list">
+                                    <li class="news-tab-item">
+                                        <a class="news-tab-item-link on" href="#tab1">
+                                            <p class="news-tab-item-tx">시정소식</p>
+                                        </a>
+                                    </li>
+                                    <li class="news-tab-item">
+                                        <a class="news-tab-item-link" href="#tab2">
+                                            <p class="news-tab-item-tx">채용/시험정보</p>
+                                        </a>
+                                    </li>
+                                    <li class="news-tab-item">
+                                        <a class="news-tab-item-link" href="#tab3">
+                                            <p class="news-tab-item-tx">입찰공고</p>
+                                        </a>
+                                    </li>
+                                    <li class="news-tab-item">
+                                        <a class="news-tab-item-link" href="#tab4">
+                                            <p class="news-tab-item-tx">고시/공고</p>
+                                        </a>
+                                    </li>
+                                    <li class="news-tab-item">
+                                        <a class="news-tab-item-link" href="#tab5">
+                                            <p class="news-tab-item-tx">e-book 전자책</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="news-tab-content">
+                                <div id="tab1" class="news-tab-pane active">
+                                    <div class="news-tab-pane-inner">
+                                        <div class="tab-pane-top">
+                                            <p>더보기</p>
+                                        </div>
+                                        <ul class="tab-pane-mid-list">
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> (병원) 동절기 대비 화재안전점검 매뉴얼 등 게시</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title">12월 심폐소생술 등 응급처치교육 신청 안내(기초 과정)</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">14</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> (모의훈련)초미세먼지 위기경보 ‘주의’단계 발령 및 비상저감</h3>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="tab2" class="news-tab-pane">
+                                    <div class="news-tab-pane-inner">
+                                        <div class="tab-pane-top">
+                                            <p>더보기</p>
+                                        </div>
+                                        <ul class="tab-pane-mid-list">
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="tab3" class="news-tab-pane">
+                                    <div class="news-tab-pane-inner">
+                                        <div class="tab-pane-top">
+                                            <p>더보기</p>
+                                        </div>
+                                        <ul class="tab-pane-mid-list">
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2028-11</p>
+                                                        <p class="num">12</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트  - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">16</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는  6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title">  임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="tab4" class="news-tab-pane">
+                                    <div class="news-tab-pane-inner">
+                                        <div class="tab-pane-top">
+                                            <p>더보기</p>
+                                        </div>
+                                        <ul class="tab-pane-mid-list">
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-10</p>
+                                                        <p class="num">13</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">35</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-05</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="tab5" class="news-tab-pane">
+                                    <div class="news-tab-pane-inner">
+                                        <div class="tab-pane-top">
+                                            <p>더보기</p>
+                                        </div>
+                                        <ul class="tab-pane-mid-list">
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                            <li class="tab-pane-mid-item">
+                                                <a class="tab-pane-mid-link" href="#">
+                                                    <div class="pane-date-block">
+                                                        <p class="pane-date">2024-11</p>
+                                                        <p class="num">15</p>
+                                                    </div>
+                                                    <h3 class="pane-title"> 링크 임팩트 아카데미 - 나를 바꾸는 시간 6 참여 안내</h3>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news01-area">
+                        <div class="news01-inner">
+                            <div class="news01-head-block">
+                                <h2 class="news01-title-tx">보도자료</h2>
+                                <p>더보기</p>
+                            </div>
+                            <div class="news01-content swiper">
+                                <ul class="news01-list swiper-wrapper">
+                                    <li class="news01-item swiper-slide">
+                                        <a class="news01-item-link" href="#">
+                                            <img src="/assets/img/news01_img01.jpg" alt="">
+                                            <h3 class="news01-item-title">이상일 용인특례시장, 처인구 삼가동 ‘늘푸른오스카빌’ 입주자들과 생활환경 개선 위한 간담회 열어 </h3>
+                                            <p class="news01-item-subtitle">- 산단 내 전체 부지의 19.6%에 달하는 5만3292㎡(1만6120평) 확보해 입주 계약 체결 - </p>
+                                            <span class="news01-item-date">2024-11-15</span>
+                                        </a>
+                                    </li>
+                                    <li class="news01-item swiper-slide">
+                                        <a class="news01-item-link" href="#">
+                                            <img src="/assets/img/news01_img01.jpg" alt="">
+                                            <h3 class="news01-item-title">이상일 용인특례시장, 처인구 삼가동 ‘늘푸른오스카빌’ 입주자들과 생활환경 개선 위한 간담회 열어 </h3>
+                                            <p class="news01-item-subtitle">- 산단 내 전체 부지의 19.6%에 달하는 5만3292㎡(1만6120평) 확보해 입주 계약 체결 - </p>
+                                            <span class="news01-item-date">2024-11-15</span>
+                                        </a>
+                                    </li>
+                                    <li class="news01-item swiper-slide">
+                                        <a class="news01-item-link" href="#">
+                                            <img src="/assets/img/news01_img01.jpg" alt="">
+                                            <h3 class="news01-item-title">이상일 용인특례시장, 처인구 삼가동 ‘늘푸른오스카빌’ 입주자들과 생활환경 개선 위한 간담회 열어 </h3>
+                                            <p class="news01-item-subtitle">- 산단 내 전체 부지의 19.6%에 달하는 5만3292㎡(1만6120평) 확보해 입주 계약 체결 - </p>
+                                            <span class="news01-item-date">2024-11-15</span>
+                                        </a>
+                                    </li>
+                                    <li class="news01-item swiper-slide">
+                                        <a class="news01-item-link" href="#">
+                                            <img src="/assets/img/news01_img01.jpg" alt="">
+                                            <h3 class="news01-item-title">이상일 용인특례시장, 처인구 삼가동 ‘늘푸른오스카빌’ 입주자들과 생활환경 개선 위한 간담회 열어 </h3>
+                                            <p class="news01-item-subtitle">- 산단 내 전체 부지의 19.6%에 달하는 5만3292㎡(1만6120평) 확보해 입주 계약 체결 - </p>
+                                            <span class="news01-item-date">2024-11-15</span>
+                                        </a>
+                                    </li>
+                                    <li class="news01-item swiper-slide">
+                                        <a class="news01-item-link" href="#">
+                                            <img src="/assets/img/news01_img01.jpg" alt="">
+                                            <h3 class="news01-item-title">이상일 용인특례시장, 처인구 삼가동 ‘늘푸른오스카빌’ 입주자들과 생활환경 개선 위한 간담회 열어 </h3>
+                                            <p class="news01-item-subtitle">- 산단 내 전체 부지의 19.6%에 달하는 5만3292㎡(1만6120평) 확보해 입주 계약 체결 - </p>
+                                            <span class="news01-item-date">2024-11-15</span>
+                                        </a>
+                                    </li>
+                                    <li class="news01-item swiper-slide">
+                                        <a class="news01-item-link" href="#">
+                                            <img src="/assets/img/news01_img01.jpg" alt="">
+                                            <h3 class="news01-item-title">이상일 용인특례시장, 처인구 삼가동 ‘늘푸른오스카빌’ 입주자들과 생활환경 개선 위한 간담회 열어 </h3>
+                                            <p class="news01-item-subtitle">- 산단 내 전체 부지의 19.6%에 달하는 5만3292㎡(1만6120평) 확보해 입주 계약 체결 - </p>
+                                            <span class="news01-item-date">2024-11-15</span>
+                                        </a>
+                                    </li>
+                                    <li class="news01-item swiper-slide">
+                                        <a class="news01-item-link" href="#">
+                                            <img src="/assets/img/news01_img01.jpg" alt="">
+                                            <h3 class="news01-item-title">이상일 용인특례시장, 처인구 삼가동 ‘늘푸른오스카빌’ 입주자들과 생활환경 개선 위한 간담회 열어 </h3>
+                                            <p class="news01-item-subtitle">- 산단 내 전체 부지의 19.6%에 달하는 5만3292㎡(1만6120평) 확보해 입주 계약 체결 - </p>
+                                            <span class="news01-item-date">2024-11-15</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                        
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="sec-admin">
+                <img class="admin-bg" src="/assets/img/admin_bg.jpg" alt="">
+                <div class="admin-inner">
+                    <div class="admin-content">
+                        <div class="admin-tab-block">
+                            <ul class="admin-tab-list">
+                                <li class="admin-tab-item active"><a href="#tab1">민원</a></li>
+                                <li class="admin-tab-item"><a href="">행정</a></li>
+                                <li class="admin-tab-item"><a href="">생활</a></li>
+                                <li class="admin-tab-item"><a href="">체험</a></li>
+                            </ul>
+                        </div>
+                        <div class="admin-tab-swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="admin-tab-link" href="#">
+                                        <img src="/assets/icon/admin-item01.png" alt="">
+                                        <p class="admin-tab-link-tx">민원발급</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="admin-tab-link" href="#">
+                                        <img src="/assets/icon/admin-item02.png" alt="">
+                                        <p class="admin-tab-link-tx">민원발급</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="admin-tab-link" href="#">
+                                        <img src="/assets/icon/admin-item03.png" alt="">
+                                        <p class="admin-tab-link-tx">민원발급</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="admin-tab-link" href="#">
+                                        <img src="/assets/icon/admin-item04.png" alt="">
+                                        <p class="admin-tab-link-tx">민원발급</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="admin-tab-link" href="#">
+                                        <img src="/assets/icon/admin-item05.png" alt="">
+                                        <p class="admin-tab-link-tx">민원발급</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="admin-tab-link" href="#">
+                                        <img src="/assets/icon/admin-item06.png" alt="">
+                                        <p class="admin-tab-link-tx">민원발급</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="admin-tab-link" href="#">
+                                        <img src="/assets/icon/admin-item07.png" alt="">
+                                        <p class="admin-tab-link-tx">민원발급</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="admin-tab-link" href="#">
+                                        <img src="/assets/icon/admin-item08.png" alt="">
+                                        <p class="admin-tab-link-tx">민원발급</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="btn prev swiper-button-prev">
+                                <span class="blind">이전</span>
+                            </div>
+                            <div class="btn next swiper-button-next"><span class="blind">다음</span></div>
+                        </div>
+                        <div class="admin-sns-block">
+                            <div class="admin-sns-content">
+                                <h3 class="sns-title"># 용인 특례시 SNS</h3>
+                                <ul class="sns-icon-list">
+                                    <li class="sns-icon-item">
+                                        <a href="#">
+                                            <img src="/assets/img/naver_blog_img.png" alt="네이버블로그링크">
+                                        </a>
+                                    </li>
+                                    <li class="sns-icon-item">
+                                        <a href="#">
+                                            <img src="/assets/img/kakao_img.png" alt="카카오링크">
+                                        </a>
+                                    </li>
+                                    <li class="sns-icon-item">
+                                        <a href="#">
+                                            <img src="/assets/img/instar_img.png" alt="인스타그램링크">
+                                        </a>
+                                    </li>
+                                    <li class="sns-icon-item">
+                                        <a href="#">
+                                            <img src="/assets/img/facebook_img.png" alt="페이스북링크">
+                                        </a>
+                                    </li>
+                                    <li class="sns-icon-item">
+                                        <a href="#">
+                                            <img src="/assets/img/youtube_img.png" alt="유튜브링크">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer-inner">
+            <div class="familysite-block">
+                <ul class="familysite-list">
+                    <li class="familysite-item">
+                        <a class="familysite-item-link" href="#">
+                            <h3>부서/직속기관/사업소</h3>
+                        </a>
+                    </li>
+                    <li class="familysite-item">
+                        <a class="familysite-item-link" href="#">
+                            <h3>구청/행정복지센터/주민자치</h3>
+                        </a>
+                    </li>
+                    <li class="familysite-item">
+                        <a class="familysite-item-link" href="#">
+                            <h3>산하/기타기관</h3>
+                        </a>
+                    </li>
+                    <li class="familysite-item">
+                        <a class="familysite-item-link" href="#">
+                            <h3>복지단체</h3>
+                        </a>
+                    </li>
+                    <li class="familysite-item">
+                        <a class="familysite-item-link" href="#">
+                            <h3>관계기관</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <div class="footer-content">
+                    <ul class="footer-list">
+                       <li class="footer-item">
+                            <div class="call-num">
+                                <span>민원안내콜센터</span>
+                                <span>1577-1122 / 031-6193-2114</span>
+                            </div>
+                            <div class="call-num02">
+                                <span>휴대전화 문자상담(09:00 ~ 18:00) <strong>1577-1122</strong></span>
+                            </div>
+                       </li> 
+                       <li class="footer-item">
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item"> <a href="#">개인정보처리방침</a> </li>
+                                <li class="footer-menu-item"><a href="#">저작권정책</a></li>
+                                <li class="footer-menu-item"><a href="#">누리집 안내(사이트맵)</a></li>
+                                <li class="footer-menu-item"><a href="#">이메일무단수집거부</a></li>
+                                <li class="footer-menu-item"><a href="#">부서별FAX번호</a></li>
+                            </ul>
+                       </li> 
+                       <li class="footer-item">
+                            <address>(17019) 경기도 용인시 처인구 중부대로 1199(삼가동) ⓒ YONGIN CITY. ALL RIGHTS RESERVED. </address>
+                       </li> 
+                    </ul>
+                    <div class="footer-right">
+                        <img src="/assets/img/footer_img01.png" alt="qr code">
+                        <img src="/assets/img/footer_img02.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
