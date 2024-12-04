@@ -85,18 +85,7 @@ const about02 = gsap.to('.about-right-block',{
     duration:1
 });
 
-// mainprojects gsap
-const projects = gsap.to('.projects-list',{
-    scrollTrigger: {
-        trigger: '.projects-sec',
-        start:"0% 0%",
-        end: "100% 100%",
-        scrub: 1,
-        invalidateOnRefresh: true,
-    },
-    xPercent: -100,
-    x:function(){ return (window.innerWidth - 200); }
-});
+
 
 
 
@@ -149,6 +138,7 @@ mm.add("(min-width:769px)",function(){
     });
     // intro gsap
     gsap.set('.intro-tx .char-wrap',{autoAlpha:0});
+    gsap.set('intro__ic-scrolldown',{autoAlpha:0});
     const intro = gsap.timeline();
     intro.to('.intro-tx .char-wrap',{ 
         x:0,
@@ -157,10 +147,9 @@ mm.add("(min-width:769px)",function(){
         delay:1
     })
     intro.from('.header',{autoAlpha:0});
-    intro.from('.intro-tx',{
-        y:-300,
-        duration:1
-    })
+    intro.from('.intro-tx',{ y:-300, duration:1 });
+    intro.from('intro__ic-scrolldown',{autoAlpha:1});
+
     const introtx = gsap.to('.intro-tx .char-wrap',{
         scrollTrigger : {
             trigger :'.intro-sec',
@@ -169,6 +158,18 @@ mm.add("(min-width:769px)",function(){
             scrub:1,
         },
         y:-100
+    });
+    // mainprojects gsap
+    const projects = gsap.to('.projects-list',{
+        scrollTrigger: {
+            trigger: '.projects-sec',
+            start:"0% 0%",
+            end: "100% 100%",
+            scrub: 1,
+            invalidateOnRefresh: true,
+        },
+        xPercent: -100,
+        x:function(){ return (window.innerWidth - 200); }
     });
     // sidepj gsap
     const sidepj = gsap.timeline({
