@@ -98,15 +98,15 @@ const projects = gsap.to('.projects-list',{
     x:function(){ return (window.innerWidth - 200); }
 });
 
-ScrollTrigger.create({
-    trigger:'.sidepj-sec',
-    start:"0% 30%",
-    end:"100% 100%",
-    toggleClass: {
-        targets:"body",
-        className:"begie"
-    },
-});
+// ScrollTrigger.create({
+//     trigger:'.sidepj-sec',
+//     start:"0% 30%",
+//     end:"100% 100%",
+//     toggleClass: {
+//         targets:"body",
+//         className:"begie"
+//     },
+// });
 
 const sidepj = gsap.timeline({
     scrollTrigger: {
@@ -186,6 +186,15 @@ let mm = gsap.matchMedia();
 
 //pc
 mm.add("(min-width:769px)",function(){
+    ScrollTrigger.create({
+        trigger:'.sidepj-sec',
+        start:"0% 30%",
+        end:"100% 100%",
+        toggleClass: {
+            targets:"body",
+            className:"begie"
+        },
+    });
     // intro gsap
     gsap.set('.intro-tx .char-wrap',{autoAlpha:0});
     const intro = gsap.timeline();
@@ -212,6 +221,7 @@ mm.add("(min-width:769px)",function(){
 });
 //mobie
 mm.add("(max-width:768px)",function(){
+    
     // intro gsap
     gsap.set('.intro-tx .char-wrap',{autoAlpha:0});
     const intro = gsap.timeline();
@@ -234,5 +244,18 @@ mm.add("(max-width:768px)",function(){
             scrub:1,
         },
         y:-100
+    });
+
+    // mainprojects gsap
+    const projects = gsap.to('.projects-list',{
+        scrollTrigger: {
+            trigger: '.projects-sec',
+            start:"0% 0%",
+            end: "100% 100%",
+            scrub: 1,
+            invalidateOnRefresh: true,
+        },
+        xPercent: -100,
+        x:function(){ return (window.innerWidth - 50); }
     });
 });
