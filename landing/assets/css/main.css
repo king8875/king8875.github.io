@@ -10,7 +10,9 @@ body.begie {
     color: var(--dark);
     transition: .5s;
 }
-
+.main-wrapper{
+    max-width: 100%;
+}
 /* intro section */
 .intro-sec{ position: relative; }
 .intro-overlay{
@@ -259,7 +261,10 @@ body.begie {
   
 
     /* sidepj section */
-    .sidepj-sec{ padding: 0px; }
+    .sidepj-sec{ 
+        height: 200vh;
+        padding: 0px; 
+    }
     .sidepj-sec .sidepj-inner{ padding: 100px 20px; }
     .sidepj-item{
         width: 100%;
@@ -285,5 +290,11 @@ body.begie {
     .sidepj-item-btn-block{
         padding: 20px;
         width: 100%;
+    }
+    .sidepj-content-list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 100px;
     }
 }
