@@ -20,9 +20,7 @@
     transform: translate(-50%, -50%);
     opacity: 0.9;
 }
-.custom-cursor.white{
-    background: #fff;
-}
+.custom-cursor.white{ background: #fff; }
 
 .sidepj-overlay{
     position: absolute;
@@ -32,4 +30,10 @@
     background: #000;
     opacity: 0.5;
     border-radius: 10px;
+}
+
+@media (max-width:768px) {
+    .custom-cursor {
+        visibility: hidden;
+    }
 }

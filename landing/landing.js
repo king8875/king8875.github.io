@@ -24,7 +24,6 @@ $('[data-text="split"]').find('.char-wrap').each(function (index) {
 });
 
 // lenis scrollTo
-
 $('.header-quick-item:nth-child(3)').click(function(e){
     e.preventDefault();
     gsap.to(window,{
@@ -58,29 +57,7 @@ $('.header-quick-item').on('click',function(){
     $(this).addClass('on');
 });
 
-gsap.set('.intro-tx .char-wrap',{autoAlpha:0});
-const intro = gsap.timeline();
 
-intro.to('.intro-tx .char-wrap',{ 
-    x:0,
-    duration:0.8,
-    autoAlpha:1,
-    delay:1
-})
-intro.from('.header',{autoAlpha:0});
-intro.from('.intro-tx',{
-    y:-300,
-    duration:1
-})
-const introtx = gsap.to('.intro-tx .char-wrap',{
-    scrollTrigger : {
-        trigger :'.intro-sec',
-        start:"50% 50%",
-        end: "100% 50%",
-        scrub:1,
-    },
-    y:-100
-});
 
 // about gsap
 gsap.set('.about-left-block',{autoAlpha:0});
@@ -205,3 +182,57 @@ const marquee = gsap.to('.footer-marquee-block',{
 });
 
 
+let mm = gsap.matchMedia();
+
+//pc
+mm.add("(min-width:769px)",function(){
+    // intro gsap
+    gsap.set('.intro-tx .char-wrap',{autoAlpha:0});
+    const intro = gsap.timeline();
+    intro.to('.intro-tx .char-wrap',{ 
+        x:0,
+        duration:0.8,
+        autoAlpha:1,
+        delay:1
+    })
+    intro.from('.header',{autoAlpha:0});
+    intro.from('.intro-tx',{
+        y:-300,
+        duration:1
+    })
+    const introtx = gsap.to('.intro-tx .char-wrap',{
+        scrollTrigger : {
+            trigger :'.intro-sec',
+            start:"50% 50%",
+            end: "100% 50%",
+            scrub:1,
+        },
+        y:-100
+    });
+});
+//mobie
+mm.add("(max-width:768px)",function(){
+    // intro gsap
+    gsap.set('.intro-tx .char-wrap',{autoAlpha:0});
+    const intro = gsap.timeline();
+    intro.to('.intro-tx .char-wrap',{ 
+        x:0,
+        duration:0.8,
+        autoAlpha:1,
+        delay:1
+    })
+    intro.from('.header',{autoAlpha:0});
+    intro.from('.intro-tx',{
+        y:-400,
+        duration:1
+    });
+    const introtx = gsap.to('.intro-tx .char-wrap',{
+        scrollTrigger : {
+            trigger :'.intro-sec',
+            start:"50% 50%",
+            end: "100% 50%",
+            scrub:1,
+        },
+        y:-100
+    });
+});
