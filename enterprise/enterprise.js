@@ -125,17 +125,11 @@ const tl5_1 = gsap.timeline({
         start: "0% 40%",
         end: "100% 30%",
         scrub: 0,
-        onEnter: () => {
-            document.querySelector('.feature__content').classList.add('opacity');
-        },
-        onLeaveBack: () => {
-            document.querySelector('.feature__content').classList.remove('opacity'); 
-        }
+        onEnter: () => { document.querySelector('.feature__content').classList.add('opacity'); },
+        onLeaveBack: () => { document.querySelector('.feature__content').classList.remove('opacity'); }
     }
 });
-tl5_1.to('.feature__title', {
-    opacity: 1,
-});
+tl5_1.to('.feature__title', { opacity: 1, });
 
 const titleScroll = gsap.timeline({
     scrollTrigger: {
@@ -155,14 +149,10 @@ titleScroll.to(".ser__body .card__item",1, {
     xPercent: (index) => -100 * index,  
     x:(index) => -40 * index,
 });
-titleScroll.to(".icon-card-img",0.5, {
-    opacity: 0
-},'b-=1');
-titleScroll.to(".icon-card-img-active",0.5, {
-    opacity: 1
-},'b-=0.7');
+titleScroll.to(".icon-card-img",0.5, { opacity: 0 },'b-=1');
+titleScroll.to(".icon-card-img-active",0.5, { opacity: 1 },'b-=0.7');
 
-
+gsap.set('#serviceArea2 .service__main--title',{autoAlpha:0});
 ScrollTrigger.create({
     trigger: "#serviceArea2",
     start:"0% 0%",
@@ -186,9 +176,11 @@ const titleScroll03 = gsap.timeline({
     }
 });
 
-titleScroll03.to(".slide03__item", { xPercent: (index) => -110 * index, });
+titleScroll03.to(".slide03__item", { xPercent: (index) => -105 * index, });
 titleScroll03.to(".service__slide03-wrap .right", { opacity:1, });
 titleScroll03.to('slide03__item',{autoAlpha:0});
+
+gsap.set('#serviceArea3 .first_card',{autoAlpha:0});
 ScrollTrigger.create({
     trigger: "#serviceArea3",
     start:"0% 0%",
@@ -292,7 +284,7 @@ gsap.to(".banner__inner", {
     ease: "linear",
     repeat: -1,
     modifiers: {
-        x: gsap.utils.wrap(-document.querySelector(".banner__inner").scrollWidth / 2, 0) // 배너가 끝까지 이동하면 다시 시작하도록 설정
+        x: gsap.utils.wrap(-document.querySelector(".banner__inner").scrollWidth / 1, 0) 
     }
 });
 

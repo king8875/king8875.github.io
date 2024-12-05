@@ -41,6 +41,6 @@ img, picture, video, canvas, svg {display: block;max-width:100%;object-fit: cove
 
 body{
     font-family: 'Archivo', 'NotoSansCJKkr';
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     overflow-x: hidden;
 }

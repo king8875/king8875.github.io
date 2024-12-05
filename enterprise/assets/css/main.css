@@ -1,8 +1,6 @@
 
 /* intro css */
-.intro-sec {
-    height: 800vh;
-}
+.intro-sec { height: 800vh; }
 .intro-sec .sticky{
     position: sticky;
     top: 0;
@@ -18,10 +16,7 @@
     width: 100%;
     height: 100%;
 }
-.intro-text {
-    position: relative;
-    height: 100vh;
-}
+.intro-text { position: relative; height: 100vh; }
 .intro-text .intro-text-item {
     position: absolute;
     top: 50%;
