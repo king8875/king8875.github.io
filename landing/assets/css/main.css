@@ -270,10 +270,7 @@ body.begie {
 }
 /* mobile */
 @media (max-width:768px) {
-    body{ 
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
+    body{ overflow-x: hidden; }
     /* about section */
     .about-inner .about-left-block{ font-size: 10vw; }
     .about-inner .about-right-block{ font-size: 3vw; }
