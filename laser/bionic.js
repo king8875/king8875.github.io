@@ -17,7 +17,7 @@ const animation = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: true,
-    path: '/assets/video/lottie.json',
+    path: '/laser/assets/video/lottie.json',
 });
 animation.addEventListener('complete', function () {
     gsap.to('#lottie-container', { autoAlpha: 0, duration: 1 });
