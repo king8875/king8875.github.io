@@ -273,7 +273,11 @@ body.begie {
     body{ overflow-x: hidden; }
     /* about section */
     .about-inner .about-left-block{ font-size: 10vw; }
-    .about-inner .about-right-block{ font-size: 3vw; }
+    .about-inner .about-right-block{ 
+        width: 100%;
+        text-align: right;
+        font-size: 2.5vw; 
+    }
 
     /* project section */
     .projects-sec{
