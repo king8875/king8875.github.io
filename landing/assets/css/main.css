@@ -4,6 +4,7 @@ body{
     overflow-x: hidden;
     cursor: none;
     transition: .5s;
+    text-rendering: optimizeLegibility;
 }
 body.begie {
     background: var(--beige);
