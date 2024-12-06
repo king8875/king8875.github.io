@@ -97,7 +97,7 @@ body.begie {
 .projects-inner .projects-item{
     position: relative;
     width: 70vw;
-    height: 60vh;
+    min-height: 60vh;
     border-radius: 50px;
     border: 2px solid var(--beige);
     overflow: hidden;

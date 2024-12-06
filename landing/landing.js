@@ -3,7 +3,7 @@ history.scrollRestoration = "manual"
 const lenis = new Lenis();
 lenis.on('scroll', ScrollTrigger.update);
 gsap.ticker.add((time) => {
-  lenis.raf(time * 700); // Convert time from seconds to milliseconds
+  lenis.raf(time * 900); // Convert time from seconds to milliseconds
 });
 gsap.ticker.lagSmoothing(0);
 
@@ -96,7 +96,6 @@ const contact = gsap.timeline({
         start: "40% 50%",
         end: "40% 50%",
         scrub:1,
-        // markers:true
     }
 });
 contact.to('.contact-tit',{
@@ -108,9 +107,10 @@ gsap.set('.footer-marquee-block',{y:100});
 const marquee = gsap.to('.footer-marquee-block',{
     scrollTrigger:{
         trigger:'.contact-address-block',
-        start:"0% 0%",
+        start:"90% 100%",
         end:"100% 100%",
         scrub:1,
+        // markers:true,
         onEnter:function(){
             gsap.to('.footer-marquee-block',{
                 y:0,
