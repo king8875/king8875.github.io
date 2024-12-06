@@ -277,11 +277,7 @@
     max-width: 1400px;
     margin: 0 auto;
 }
-.header__logo{
 
-    /* width: 200px;
-    background: #f00; */
-}
 .header__nav{
     display: flex;
     align-items: center;
@@ -435,9 +431,9 @@
     line-height: 30px;
     font-size: 14px;
 }
-.side-left-block .side-navi-item:nth-child(1) a{ background: url("/assets/icon/side_left-ic01.png") no-repeat 25px 9px; }
-.side-left-block .side-navi-item:nth-child(2) a{ background: url("/assets/icon/side_left-ic02.png") no-repeat 25px 9px; }
-.side-left-block .side-navi-item:nth-child(3) a{ background: url("/assets/icon/side_left-ic03.png") no-repeat 25px 9px; }
+.side-left-block .side-navi-item:nth-child(1) a{ background: url("/yongin/assets/icon/side_left-ic01.png") no-repeat 25px 9px; }
+.side-left-block .side-navi-item:nth-child(2) a{ background: url("/yongin/assets/icon/side_left-ic02.png") no-repeat 25px 9px; }
+.side-left-block .side-navi-item:nth-child(3) a{ background: url("/yongin/assets/icon/side_left-ic03.png") no-repeat 25px 9px; }
 .side-left-block .side-navi-item.on{ color: #fff; background: #222; }
 .side-left-block .side-navi-item a::after{
     content: "";
@@ -498,7 +494,7 @@
     margin-left: 5px;
     width: 13px;
     height: 15px;
-    background: url("/assets/icon/reload-ic.png") no-repeat;
+    background: url("/yongin/assets/icon/reload-ic.png") no-repeat;
 }
 .side-passport-block li:nth-child(1) .bot{
     display: flex;
@@ -534,7 +530,7 @@
     left: 30px;
     width: 15px;
     height: 23px;
-    background: url("/assets/icon/passport01.png") no-repeat;
+    background: url("/yongin/assets/icon/passport01.png") no-repeat;
 }
 .side-right-block .side-passport-block li:nth-child(2)::after{
     content: '';
@@ -543,7 +539,7 @@
     right: 30px;
     width: 15px;
     height: 23px;
-    background: url("/assets/icon/passport01.png") no-repeat;
+    background: url("/yongin/assets/icon/passport01.png") no-repeat;
 }
 .side-right-block .side-passport-block li:nth-child(2) h2{
     font-size: 17px;
