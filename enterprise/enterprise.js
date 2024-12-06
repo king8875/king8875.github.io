@@ -91,20 +91,7 @@ ScrollTrigger.create({
     },
 });
 
-//possibility gsap
-gsap.to(".possibility-sec .slider__inner", {
-    scrollTrigger: {
-        trigger: ".possibility-sec",
-        start: "0% 0%",
-        end:"100% 100%",
-        scrub: true,
-        invalidateOnRefresh:true,
-    },
-    xPercent:-100,
-    x: function(){
-        return window.innerWidth - 160;
-    }
-});
+
 
 // feature gsap
 const tl5 = gsap.timeline({
@@ -136,7 +123,7 @@ const titleScroll = gsap.timeline({
         trigger: "#serviceArea1", 
         start: "0% 0%",
         end:"100% 100%",
-        scrub: 0,  
+        scrub: 1,  
         invalidateOnRefresh:true,
     },
 });
@@ -149,8 +136,8 @@ titleScroll.to(".ser__body .card__item",1, {
     xPercent: (index) => -100 * index,  
     x:(index) => -40 * index,
 });
-titleScroll.to(".icon-card-img",0.5, { opacity: 0 },'b-=1');
-titleScroll.to(".icon-card-img-active",0.5, { opacity: 1 },'b-=0.7');
+titleScroll.to(".icon-card-img",0.5, { autoAlpha:0 },'b-=1');
+titleScroll.to(".icon-card-img-active",0.5, { autoAlpha: 1 },'b-=0.7');
 
 gsap.set('#serviceArea2 .service__main--title',{autoAlpha:0});
 ScrollTrigger.create({
@@ -344,7 +331,28 @@ $('.header__hamburger').on('click',function(){
 
 const mm = gsap.matchMedia();
 
-mm.add("(max-width: 720px)", () => {
+mm.add("(min-width: 769px)", function(){
+    //possibility gsap
+    gsap.to(".possibility-sec .slider__inner", {
+        scrollTrigger: {
+            trigger: ".possibility-sec",
+            start: "0% 0%",
+            end:"100% 100%",
+            scrub: true,
+            invalidateOnRefresh:true,
+        },
+        xPercent:-100,
+        x: function(){
+            return window.innerWidth - 160;
+        }
+    });
+})
+
+
+
+
+//mobile
+mm.add("(max-width: 768px)", () => {
     const mobileScroll03 = gsap.timeline({
         scrollTrigger: {
             trigger: ".service__slide03",
@@ -355,4 +363,41 @@ mm.add("(max-width: 720px)", () => {
     });
   
     mobileScroll03.to(".service__slide03-wrap .right", { opacity:1, });
+
+
+    //possibility gsap
+    gsap.to(".possibility-sec .slider__inner", {
+        scrollTrigger: {
+            trigger: ".possibility-sec",
+            start: "0% 0%",
+            end:"100% 100%",
+            scrub: true,
+            invalidateOnRefresh:true,
+        },
+        xPercent:-100,
+        x: function(){
+            return window.innerWidth - 220;
+        }
+    });
+
+    const titleScroll = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#serviceArea1", 
+            start: "0% 0%",
+            end:"100% 100%",
+            scrub: 1,  
+            invalidateOnRefresh:true,
+        },
+    });
+    titleScroll.to("#serviceArea1 .sticky-content", {
+        x: function(){
+            return -(document.querySelector("#serviceArea1 .ser__head").scrollWidth );
+        },
+    });
+    titleScroll.to(".ser__body .card__item",1, {
+        xPercent: (index) => -100 * index,  
+        x:(index) => -40 * index,
+    });
+    titleScroll.to(".icon-card-img",0.5, { autoAlpha:0 },'b-=1');
+    titleScroll.to(".icon-card-img-active",0.5, { autoAlpha: 1 },'b-=0.7');
 });

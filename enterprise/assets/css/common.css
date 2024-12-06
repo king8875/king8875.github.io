@@ -29,8 +29,10 @@
 }
 .section-inner{ position: relative; margin: 0 100px; }
 body.dark{ background: #000; transition: .3s; }
-
-@media (max-width:720px) {
+.mobile{
+    display: none;
+}
+@media (max-width:768px) {
     .section-inner{ margin: 0; }
-  
+    .mobile{ display: block; }
 }
