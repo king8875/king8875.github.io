@@ -274,7 +274,10 @@ body.begie {
 }
 /* mobile */
 @media (max-width:768px) {
-    body{ overflow-x: hidden; }
+    body{ 
+        min-width: 320px;
+        overflow-x: hidden;
+    }
     /* about section */
     .about-inner .about-left-block{ font-size: 10vw; }
     .about-inner .about-right-block{ 
