@@ -31,8 +31,11 @@
     opacity: 0.5;
     border-radius: 10px;
 }
+.mobile{ display: none; }
 
 @media (max-width:768px) {
+    .mobile{ display: block; }
+
     .custom-cursor {
         visibility: hidden;
     }

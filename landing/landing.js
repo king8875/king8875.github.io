@@ -187,30 +187,9 @@ mm.add("(min-width:769px)",function(){
             }
         },
     });
-    sidepj.from('.sidepj-content-list .sidepj-item:first-child',{y:150});
-    sidepj.from('.sidepj-content-list .sidepj-item:nth-child(2)',{y:250});
-    sidepj.from('.sidepj-content-list .sidepj-item:last-child',{y:300});
-    
-    gsap.set('.sidepj-content-list .sidepj-item:first-child .sidepj-subtit',{autoAlpha:0});
-    const sidepj02 = gsap.timeline({
-        scrollTrigger:{
-            trigger: '.sidepj-item',
-            start: "0% 50%",
-            end:"0% 50%",
-            onEnter:function(){
-                gsap.to('.sidepj-content-list .sidepj-item:first-child .sidepj-subtit',{
-                    autoAlpha:1,
-                    y:10
-                });
-            },
-            onLeaveBack: function(){
-                gsap.to('.sidepj-content-list .sidepj-item:first-child .sidepj-subtit',{
-                    autoAlpha:0,
-                    y:0
-                })
-            }
-        },
-    });
+    sidepj.from('.sidepj-content-list .sidepj-item:first-child',{y:100});
+    sidepj.from('.sidepj-content-list .sidepj-item:nth-child(2)',{y:150});
+   
 });
 //mobie
 mm.add("(max-width:768px)",function(){
