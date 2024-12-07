@@ -2,6 +2,7 @@ body{
     background: var(--dark);
     color: var(--beige);
     overflow-x: hidden;
+    overflow: hidden;
     cursor: none;
     transition: .5s;
     text-rendering: optimizeLegibility;
