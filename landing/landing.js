@@ -57,8 +57,6 @@ $('.header-quick-item').on('click',function(){
     $(this).addClass('on');
 });
 
-
-
 // about gsap
 gsap.set('.about-left-block',{autoAlpha:0});
 gsap.set('.about-right-block',{autoAlpha:0});
@@ -84,10 +82,6 @@ const about02 = gsap.to('.about-right-block',{
     y:20,
     duration:1
 });
-
-
-
-
 
 gsap.set('.contact-tit',{autoAlpha:0});
 const contact = gsap.timeline({

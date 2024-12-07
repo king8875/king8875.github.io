@@ -121,7 +121,7 @@
     height: auto;
 }
 
-@media (max-width:600px) {
+@media (max-width:768px) {
 
     .layout-container-p40{
         max-width: 100%;
@@ -130,7 +130,11 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .paragraph-3{
-        font-size: 12px;
+    .paragraph-3{ font-size: 12px; }
+
+    .play-video-container{
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

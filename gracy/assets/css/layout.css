@@ -72,11 +72,10 @@
     color: var(--white);
     background-color: var(--black);
 }
-@media (max-width:600px) {
-    .header .header-btn-wrapper a{
-        padding: 16px 10px 16px 10px;
-    }
-    
+@media (max-width:768px) {
+    .header{ padding: 0 12px; }
+    .header .header-btn-wrapper a{ padding: 16px 10px 16px 10px; }
+    .header-inner{ padding: 10px; }
 }
 /* email alert css */
 .email-alert-block{

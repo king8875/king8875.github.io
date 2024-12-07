@@ -79,9 +79,7 @@ body{ background: var(--dark-shade); }
     width: 57px;
     margin-right: 10px;
 }
-.hero-wrapper .star-icon.mo-v{
-    width: 40px;
-}
+.hero-wrapper .star-icon.mo-v{ width: 40px; }
 .hero-content-bot{
     display: flex;
     justify-content: flex-start;
@@ -1623,8 +1621,17 @@ body{ background: var(--dark-shade); }
 }
 /* 모바일 대응 */
 
-@media (max-width:600px) {
+@media (max-width:768px) {
+    .hero-content-bot{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:auto;
+    }
+    .hero-content-bot .hero-bot-text:last-child{
+        grid-column: 1 / -1;
+    }
     .hero-wrapper .hero-content{ left: 10px; }
+  
 
     .problem-card-wrapper .card-content{ top: 250px; bottom: auto; left: 30%; }
     .service-sticky-container{
@@ -1634,6 +1641,20 @@ body{ background: var(--dark-shade); }
         align-items: center;
         height: 100vh;
         transform: translateX(0%);
+    }
+    .service-sticky-container .service-item{
+        display: flex;
+        flex-direction: column;
+        width: 35vw;
+        border-top-left-radius: 80px;
+        border-top-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+        max-width: 660px;
+        min-width: 660px;
+        min-height: 760px;
+        max-height: 760px;
+        overflow: hidden;
+        transition: .4s;
     }
     .hero02-wrapper .hero02-inner .hero02-text-wrapper{ margin-top: 50px; margin-left: 20px; }
     .hero02-text-icon{ width: 30px; }

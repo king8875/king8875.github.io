@@ -44,39 +44,7 @@ const swiper04 = new Swiper(".swiper04", {
 });
 
 
-//header gsap
-let lastScrollY = window.scrollY;
-const header = document.querySelector('.header');
 
-window.addEventListener('scroll', () => {
-const currentScrollY = window.scrollY;
-
-if (currentScrollY > lastScrollY) {
-    gsap.to(header, { y: '-200%', duration: 1 });
-    } else {
-    gsap.to(header,{ y: '0%', duration: 1 });
-}
-lastScrollY = currentScrollY; 
-});
-
-headerWidthMotion =  gsap.to('.header-inner',{ width:'90%' });
-ScrollTrigger.create({
-    animation:headerWidthMotion,
-    trigger: ".hero-section",
-    start:"0% 0%", 
-    end:"50% 0%", 
-    scrub: 1,
-    onEnter:function(){
-        gsap.to('.header-inner',{
-            backgroundColor:"#26282ccc"
-        })
-    },
-    onLeaveBack:function(){
-        gsap.to('.header-inner',{
-            backgroundColor:"transparent"
-        })
-    },
-});
 // 스타 아이콘 애니메이션
 gsap.to(".star-icon", {
     rotate: 360,  
@@ -149,21 +117,6 @@ herotext.to('.subtitle-text.three p', { width: 0, duration: 1, delay:1 });
 
 
 
-
-
-//가로 스크롤 gsap
-
-const service = gsap.timeline({
-    scrollTrigger:{
-        trigger:'.service-section',
-        start:"0% 100%",
-        end:"100% 100%",
-    },
-})
-service.from('.service-title-block',{
-    yPercent:20,
-    opacity:0
-})
 
 gsap.to(".slider-item:nth-child(2) .single-star-icon.v1",{ opacity:1 })
 gsap.set('.slider-item:nth-child(n+2)',{ opacity:0, scale:0 })
@@ -390,12 +343,43 @@ postsItem.each(function (index, item) {
 
 //반응형
 let mm = gsap.matchMedia();
+
 //pc
+mm.add("(min-width: 1001px)", () => {
 
-mm.add("(min-width: 1010px)", () => {
+    //header gsap
+    let lastScrollY = window.scrollY;
+    const header = document.querySelector('.header');
 
-   
+    window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
 
+    if (currentScrollY > lastScrollY) {
+        gsap.to(header, { y: '-200%', duration: 1 });
+        } else {
+        gsap.to(header,{ y: '0%', duration: 1 });
+    }
+    lastScrollY = currentScrollY; 
+    });
+
+    headerWidthMotion =  gsap.to('.header-inner',{ width:'90%' });
+    ScrollTrigger.create({
+        animation:headerWidthMotion,
+        trigger: ".hero-section",
+        start:"0% 0%", 
+        end:"50% 0%", 
+        scrub: 1,
+        onEnter:function(){
+            gsap.to('.header-inner',{
+                backgroundColor:"#26282ccc"
+            })
+        },
+        onLeaveBack:function(){
+            gsap.to('.header-inner',{
+                backgroundColor:"transparent"
+            })
+        },
+    });
     //card gsap
     gsap.set('.card-item',{y:1000});
     gsap.set($('.card-item .card-back'),{ transform: "rotateY(180deg)"});
@@ -433,7 +417,18 @@ mm.add("(min-width: 1010px)", () => {
     card.to('.card-item .card-back',{ rotateY:'0deg' },"<")
     card.to('.problem-section',{ backgroundColor:"var(--bg-color)" });
 
-
+    //가로 스크롤 gsap
+    const service = gsap.timeline({
+        scrollTrigger:{
+            trigger:'.service-section',
+            start:"0% 100%",
+            end:"100% 100%",
+        },
+    });
+    service.from('.service-title-block',{
+        yPercent:20,
+        opacity:0
+    });
 
     gsap.to(".service-section .service-list", {
         scrollTrigger: {
@@ -461,9 +456,42 @@ mm.add("(max-width: 1000px)", () => {
     $('.service-title').addClass('mo-v');
 });
 
+//mobile
+mm.add("(max-width: 768px)", () => {
 
-mm.add("(max-width: 600px)", () => {
-    $('.header .header-inner').addClass('mo-v');
+    //header gsap
+    let lastScrollY = window.scrollY;
+    const header = document.querySelector('.header');
+
+    window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY) {
+        gsap.to(header, { y: '-200%', duration: 1 });
+        } else {
+        gsap.to(header,{ y: '0%', duration: 1 });
+    }
+    lastScrollY = currentScrollY; 
+    });
+
+    headerWidthMotion =  gsap.to('.header-inner',{ width:'100%' });
+    ScrollTrigger.create({
+        animation:headerWidthMotion,
+        trigger: ".hero-section",
+        start:"0% 0%", 
+        end:"50% 0%", 
+        scrub: 1,
+        onEnter:function(){
+            gsap.to('.header-inner',{
+                backgroundColor:"#26282ccc"
+            })
+        },
+        onLeaveBack:function(){
+            gsap.to('.header-inner',{
+                backgroundColor:"transparent"
+            })
+        },
+    });
 
     //card gsap
     gsap.set('.card-item',{y:1000});
@@ -501,16 +529,17 @@ mm.add("(max-width: 600px)", () => {
     card.to('.card-item .card-back',{ rotateY:'0deg' },"<")
     card.to('.problem-section',{ backgroundColor:"var(--bg-color)" });
 
-    
-
+   
     gsap.to(".service-section .service-list", {
         scrollTrigger: {
             trigger: ".service-section",
-            start: "0% 100%",
+            start: "0% 0%",
             end:"100% 100%",
             scrub: 0,
             invalidateOnRefresh:true,
+            markers:true,
         },
+        xPercent:-100,
     });
 
     const Reviewswiper = new Swiper('.review-inner.swiper', {
