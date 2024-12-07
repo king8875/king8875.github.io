@@ -2,7 +2,6 @@ body{
     background: var(--dark);
     color: var(--beige);
     overflow-x: hidden;
-    overflow: hidden;
     cursor: none;
     transition: .5s;
     text-rendering: optimizeLegibility;
@@ -99,6 +98,7 @@ body.begie {
     position: relative;
     width: 70vw;
     min-height: 60vh;
+    max-height: 60vh;
     border-radius: 50px;
     border: 2px solid var(--beige);
     overflow: hidden;
