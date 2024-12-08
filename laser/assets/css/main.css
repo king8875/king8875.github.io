@@ -808,18 +808,19 @@ body.white{ background: #fff; transition: .5s; }
     }
 
     .hero02-circle{
-        top:10%; right: 0px;
-        transform: translate(0px, -10%);
-        transform: scale(0.7);
+        top: 10%; left: 50%;
+        transform: translate(-50%, -10%) scale(0.7);  
     }
     .circle-tx-block{
-        top:10%; right: 0px;
-        transform: translate(0px, -10%);
-        transform: scale(0.7);
+        top: 10%; left: 50%;
+        transform: translate(-50%, -10%) scale(0.7); 
     }
     .hero02-service-list{
         position: absolute;
-        top: 60%; left: 50px;
+        top: 60%; left: 50%;
+        transform: translate(-50%, -60%);
+        width: 100%;
+        padding-left: 10px;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,auto);
@@ -828,17 +829,13 @@ body.white{ background: #fff; transition: .5s; }
         font-size: 1rem;
     }
     .hero02-bignum-block{
-        left: 0rem;
+        left: 0;
         bottom: 10%;
-        font-size: 31vh;
+        font-size: 29vh;
     }
-    .white-block{
-        position: absolute;
-        bottom: -187px;
-        background: #fff;
-        width: 600px;
-        height: 160px;
-    }
+   
+    /* space css */
+    .sec-space{ background: #fff; }
     /* space02 mov */
     .space02-left-title-block .big-num{ font-size: 5rem; }
 

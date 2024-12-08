@@ -141,6 +141,8 @@ $('.header-util-item-link').each(function () {
         gsap.to($(this).siblings('.tx-bottom-line'), { x: -100 });
     });
 });
+
+// 배경색 변경
 ScrollTrigger.create({
     trigger:`[data-white="true"]`,
     start:"0% 50%",
@@ -150,6 +152,7 @@ ScrollTrigger.create({
         className:"white"
     },
 });
+
 let mm = gsap.matchMedia();
 //pc 버전
 mm.add("(min-width: 769px)", function () {
