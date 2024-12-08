@@ -3,7 +3,6 @@ body{
     background: #000; 
     transition: .5s;
     overflow-x: hidden;
-    overflow-y: hidden; 
     color: #000;
 }
 body.white{ background: #fff; transition: .5s; }
@@ -215,7 +214,7 @@ body.white{ background: #fff; transition: .5s; }
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: #fff;
+    /* background: #fff; */
 }
 .sec-space .space-inner{
     display: flex;
@@ -769,12 +768,44 @@ body.white{ background: #fff; transition: .5s; }
     }
 }
 
-@media (max-width:550px) {
+@media (max-width:768px) {
+    .hero-laser-block{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    /* breek */
     .breek-inner{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
-    .breek-bot-block{ font-size: 17vh; }
+    .breek-bot-block{ 
+        font-size: 17vh; 
+        padding-bottom: 1rem;
+    }
+    /* waar */
+    .waar-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .waar-bot-block .waar-bot-item{ gap: 1rem; }
+    .waar-bot-block .waar-bot-item .waar-tx-big{ font-size: 10vh; }
+    .waar-bot-block .waar-bot-item .waar-tx-small{ width: 40vh; }
+    .waar-bot-block .waar-bot-item .waar-tx-small h3{ font-size: 2vh; }
+    .waar-bot-block .waar-bot-item .waar-tx-small p{
+        font-size: .9rem;
+        margin-top: .9rem;
+        max-width: 260px;
+    }
+
+    /* card */
+    .sec-card.hidden{
+        visibility: hidden;
+        opacity: 0;
+    }
 
     .hero02-circle{
         top:10%; right: 0px;
@@ -811,6 +842,19 @@ body.white{ background: #fff; transition: .5s; }
     /* space02 mov */
     .space02-left-title-block .big-num{ font-size: 5rem; }
 
-    
+    /* studio */
+    .sec-studio{ position: relative; width: 100vw; height: 100vh; }
+    .sec-studio01{ width: 100vw; height: 100vh; }
+    .sec-studio .studio-inner{
+        justify-content: center;
+        align-items: flex-start;
+    }
+  
+    .studio-bigtx{
+        padding: 40vh 0 0 5vw;
+    }
+    .studio-smalltx{
+        padding-left: 5vw;
+    }
 }
 

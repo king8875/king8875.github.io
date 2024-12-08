@@ -1,5 +1,4 @@
 history.scrollRestoration = "manual"
-
 // //lenis 스크롤 스무스
 const lenis = new Lenis();
 lenis.on('scroll', ScrollTrigger.update);
@@ -7,7 +6,6 @@ gsap.ticker.add((time) => {
     lenis.raf(time * 900);
 });
 gsap.ticker.lagSmoothing(0);
-
 
 // Lottie 애니메이션 로드 및 설정
 gsap.set('.header', { autoAlpha: 0 });
@@ -29,7 +27,7 @@ animation.addEventListener('complete', function () {
     gsap.from('.hero-laser-block #letter-e', { autoAlpha: 0, x: -100, duration: 1 });
     gsap.from('.hero-laser-block #letter-r', { autoAlpha: 0, x: -100, duration: 1 });
 });
-
+// lenis scrollTo
 $('.header .header-content .header-util-item-link').click(function (e) {
     e.preventDefault();
     gsap.to(window, {
@@ -37,8 +35,6 @@ $('.header .header-content .header-util-item-link').click(function (e) {
         scrollTo: { x: "#footer" },
     });
 });
-
-
 
 //text분리 함수
 const splitTextH2 = new SplitType('[data-text="split"]', { types: 'chars' });
@@ -62,7 +58,6 @@ gsap.to('.video-container video', {
     },
     opacity: 0,
 });
-
 
 //footer gsap
 gsap.to('.footer-progress-curr', {
@@ -116,7 +111,6 @@ document.querySelectorAll('.header-util-item-link').forEach(element => {
     });
 });
 
-
 const LoginsplitText = new SplitType('.header-login-tx', { types: 'chars' });
 
 $('.header-login-link').on('mouseenter', function () {
@@ -128,9 +122,6 @@ $('.header-login-link').on('mouseenter', function () {
     gsap.to('.header-login-ic-block .header-login-ic:last-child', { x: -10, y: 10 });
 
 });
-
-
-
 
 // 텍스트 분리 함수
 function wrapEachCharacter(element) {
@@ -150,15 +141,21 @@ $('.header-util-item-link').each(function () {
         gsap.to($(this).siblings('.tx-bottom-line'), { x: -100 });
     });
 });
-
-
-
+ScrollTrigger.create({
+    trigger:`[data-white="true"]`,
+    start:"0% 50%",
+    end:"100% 50%",
+    toggleClass: {
+        targets:"body",
+        className:"white"
+    },
+});
 let mm = gsap.matchMedia();
 //pc 버전
-mm.add("(min-width: 1001px)", function () {
+mm.add("(min-width: 769px)", function () {
     if (!sessionStorage.getItem('reloaded')) {
-        sessionStorage.setItem('reloaded', true); // 새로고침 확인용 플래그 설정
-        location.reload(); // 새로고침
+        sessionStorage.setItem('reloaded', true); 
+        location.reload(); 
     }
     // 첫번째 가로 스크롤 gsap
     const hori1 = gsap.to('.scroll-content', {
@@ -168,7 +165,6 @@ mm.add("(min-width: 1001px)", function () {
             end: "100% 100%",
             scrub: 1,
             invalidateOnRefresh: true,
-
         },
         ease: "none",
         xPercent: -100,
@@ -192,7 +188,6 @@ mm.add("(min-width: 1001px)", function () {
     hero.to('.hero-laser-block #letter-s', { autoAlpha: 0, x: -100, duration: 1 });
     hero.to('.hero-laser-block #letter-e', { autoAlpha: 0, x: -100, duration: 1 });
     hero.to('.hero-laser-block #letter-r', { autoAlpha: 0, x: -100, duration: 1 });
-
 
     //2번째 section gsap
     const breek = gsap.timeline({
@@ -225,19 +220,10 @@ mm.add("(min-width: 1001px)", function () {
             end: '20% 70%',
             containerAnimation: hori1,
             toggleActions: "play none none reverse",
-            onLeave: function () {
-                gsap.to('.breek-sticky-block p .char-wrap', { x: 0 });
-            },
-
-            // onEnter
-            // onLeave 
-            // onEnterBack
-            // onLeaveBack
+            onLeave: function () { gsap.to('.breek-sticky-block p .char-wrap', { x: 0 }); },
         },
     });
     breekText.to('.breek-sticky-block h2 .char-wrap', { x: 0 });
-
-
 
     // waar gsap
     const waar = gsap.timeline({
@@ -267,8 +253,6 @@ mm.add("(min-width: 1001px)", function () {
     waar2.to('.waar-bot-list .waar-bot-item:nth-child(2) .waar-tx-small p .char-wrap', { x: 0 }, "<");
     waar2.from('.waar-bot-list .waar-bot-item:nth-child(2) .waar-tx-big', { x: 100, autoAlpha: 0 });
 
-
-
     // card gsap
     const card = gsap.timeline({
         scrollTrigger: {
@@ -290,6 +274,9 @@ mm.add("(min-width: 1001px)", function () {
         duration: 1
     });
 
+    
+
+    // space01 gsap
     const space01 = gsap.timeline({
         scrollTrigger: {
             trigger: '.sec-space',
@@ -314,7 +301,6 @@ mm.add("(min-width: 1001px)", function () {
     gsap.set('.hero02-point-item .point', { scale: 0 });
     gsap.set('.hero02-service-item', { opacity: 0 });
 
-    let lastScroll = 0;
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: ".vertical-inner",
@@ -351,6 +337,8 @@ mm.add("(min-width: 1001px)", function () {
         ease: 'none',
         strokeDashoffset: 0,
     }, 'line');
+
+   
 
     // 두번째 가로 스크롤 gsap
     const hori2 = gsap.to('.scroll-content02', {
@@ -537,7 +525,7 @@ mm.add("(min-width: 1001px)", function () {
 });
 
 //모바일 버전
-mm.add("(max-width: 1000px)", function () {
+mm.add("(max-width: 768px)", function () {
     if (!sessionStorage.getItem('reloaded')) {
         sessionStorage.setItem('reloaded', true); // 새로고침 확인용 플래그 설정
         location.reload(); // 새로고침
