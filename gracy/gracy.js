@@ -314,11 +314,7 @@ const Reviewswiper = new Swiper('.review-inner.swiper', {
     spaceBetween:30,
 
 });
-const Postsswiper = new Swiper('.posts-content-block.swiper', {
-    slidesPerView: 'auto',
-    spaceBetween:30,
 
-});
 // const Skillswiper = new Swiper('.skill-section .swiper', {
 //     slidesPerView: 2,
 
@@ -446,6 +442,13 @@ mm.add("(min-width: 1001px)", () => {
     $('.hero-wrapper .star-icon').removeClass('mo-v');
     $('.header-nav').removeClass('mo-v');
     $('.service-title').removeClass('mo-v');
+
+
+    // posts
+    const Postsswiper = new Swiper('.posts-content-block.swiper', {
+        slidesPerView: 'auto',
+        spaceBetween:30,
+    });
 });
 
 //tablet
@@ -537,9 +540,12 @@ mm.add("(max-width: 768px)", () => {
             end:"100% 100%",
             scrub: 0,
             invalidateOnRefresh:true,
-            markers:true,
         },
         xPercent:-100,
+        x:function(){
+            return (window.innerWidth + 20 );
+        },
+    
     });
 
     const Reviewswiper = new Swiper('.review-inner.swiper', {
@@ -547,6 +553,11 @@ mm.add("(max-width: 768px)", () => {
         slidesPerView: 1, 
         spaceBetween:0,
     
+    });
+    // posts
+    const Postsswiper = new Swiper('.posts-content-block.swiper', {
+        slidesPerView: 'auto',
+        spaceBetween:0,
     });
 
 });

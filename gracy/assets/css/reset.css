@@ -21,7 +21,7 @@ img, picture, video, canvas, svg {display: block;max-width:100%;object-fit: cove
 html{ }
 body{
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     background-color: #fbf8f4;
     font-size: 16px;
     font-weight: 400;

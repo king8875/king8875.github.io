@@ -1642,19 +1642,20 @@ body{ background: var(--dark-shade); }
         height: 100vh;
         transform: translateX(0%);
     }
-    .service-sticky-container .service-item{
+    .service-sticky-container .service-list{
         display: flex;
-        flex-direction: column;
-        width: 35vw;
-        border-top-left-radius: 80px;
-        border-top-right-radius: 80px;
-        border-bottom-left-radius: 80px;
-        max-width: 660px;
-        min-width: 660px;
-        min-height: 760px;
-        max-height: 760px;
-        overflow: hidden;
-        transition: .4s;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        padding-right: 20px;
+        padding: 20px;
+    }
+    .service-sticky-container .service-item{
+        max-width: 460px;
+        min-width: 460px;
+        min-height: 560px;
+        max-height: 560px;
     }
     .hero02-wrapper .hero02-inner .hero02-text-wrapper{ margin-top: 50px; margin-left: 20px; }
     .hero02-text-icon{ width: 30px; }
@@ -1695,6 +1696,40 @@ body{ background: var(--dark-shade); }
         grid-template-rows: repeat(2,auto);
         gap: 30px;
     }
+
+
+    /* posts */
+    .posts-wrapper .posts-content-block{  margin-top: 0px; }
+    .posts-wrapper .posts-content-block .posts-content-list{
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    /* skill */
+    .skill-inner .skill-content-block{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 10px;
+        padding-right: 0px;
+        margin-top: 55px;
+        min-height: auto;
+    }
+    .skill-inner .skill-content-item-block{
+        display: flex;
+        border-top-left-radius: 80px;
+        border-top-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-direction: column;
+        overflow:auto;
+        min-height: 560px;
+        max-height: 560px;
+        width: 400px;
+        background-color: #f9fc50;
+    }
+    /* footer */
     .footer{
         padding: 130px 0;
         padding-left: 20px;
