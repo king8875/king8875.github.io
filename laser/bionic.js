@@ -49,7 +49,7 @@ $('[data-text="split"]').find('.char-wrap').each(function (index) {
 gsap.set('.video-container .first_img', { autoAlpha: 0 });
 gsap.set('.video-container .second_img', { autoAlpha: 0 });
 gsap.set('.video-container .third_img', { autoAlpha: 0 });
-gsap.to('.video-container video', {
+gsap.to('.video-container .video-content', {
     scrollTrigger: {
         trigger: 'body',
         start: "0% 0%",
@@ -144,13 +144,25 @@ $('.header-util-item-link').each(function () {
 
 // 배경색 변경
 ScrollTrigger.create({
-    trigger:`[data-white="true"]`,
+    trigger:".vertical-inner",
     start:"0% 50%",
     end:"100% 50%",
+
     toggleClass: {
         targets:"body",
         className:"white"
     },
+    onLeave: function(){
+        gsap.to(".white-block",{
+            backgroundColor:"#000",
+        });
+    },
+    onEnterBack: function(){
+        gsap.to(".white-block",{
+            backgroundColor:"#fff",
+        });
+    }
+  
 });
 
 let mm = gsap.matchMedia();
@@ -261,7 +273,7 @@ mm.add("(min-width: 769px)", function () {
         scrollTrigger: {
             trigger: '.sec-card',
             containerAnimation: hori1,
-            start: "0% 0%",
+            start: "0% 70%",
             end: "100% 100%",
             scrub: 1,
         },
@@ -523,7 +535,7 @@ mm.add("(min-width: 769px)", function () {
             toggleActions: "play none none reverse",
         },
     });
-    StudioView01.to('.video-container video', { opacity: 1 });
+    StudioView01.to('.video-container .video-content', { opacity: 1 });
 
 });
 
@@ -904,7 +916,7 @@ mm.add("(max-width: 768px)", function () {
             toggleActions: "play none none reverse",
         },
     });
-    StudioView01.to('.video-container video', { opacity: 1 });
+    StudioView01.to('.video-container .video-content', { opacity: 1 });
 });
 
 
