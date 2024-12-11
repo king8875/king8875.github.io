@@ -3,7 +3,7 @@ history.scrollRestoration = "manual"
 const lenis = new Lenis();
 lenis.on('scroll', ScrollTrigger.update);
 gsap.ticker.add((time) => {
-  lenis.raf(time * 900); // Convert time from seconds to milliseconds
+  lenis.raf(time * 900); 
 });
 gsap.ticker.lagSmoothing(0);
 
@@ -12,6 +12,14 @@ const cursor = document.querySelector('.custom-cursor');
 document.addEventListener('mousemove', (e) => {
     cursor.style.top = `${e.clientY}px`;
     cursor.style.left = `${e.clientX}px`;
+});
+// lottie
+lottie.loadAnimation({
+    container: document.getElementById('lottie'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '/landing/assets/video/lottie_01.json'
 });
 
 //text분리 함수
@@ -83,6 +91,7 @@ const about02 = gsap.to('.about-right-block',{
     duration:1
 });
 
+// contact gsap
 gsap.set('.contact-tit',{autoAlpha:0});
 const contact = gsap.timeline({
     scrollTrigger: {
@@ -152,6 +161,16 @@ mm.add("(min-width:769px)",function(){
             scrub:1,
         },
         y:-100
+    });
+    // about gsap
+    const lottie01 = gsap.to('.lottie-block',{
+        scrollTrigger : {
+            trigger :'.about-sec',
+            start:"0% 0%",
+            end: "100% 100%",
+            scrub:1, 
+        },
+        x:200,
     });
     // mainprojects gsap
     const projects = gsap.to('.projects-list',{
@@ -224,6 +243,4 @@ mm.add("(max-width:768px)",function(){
         xPercent: -100,
         x:function(){ return (window.innerWidth - 50); }
     });
-
-   
 });
